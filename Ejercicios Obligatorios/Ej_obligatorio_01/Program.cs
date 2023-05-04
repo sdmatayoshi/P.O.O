@@ -80,18 +80,29 @@ namespace Ej_obligatorio_01
                     cantidad = double.Parse(Console.ReadLine());
                     if (cantidad > 0)
                     {
-                        cantidad_en_cuenta = cantidad_en_cuenta - cantidad;
-                        if (cantidad_en_cuenta > 0)
-                        {
-                        Console.WriteLine("se han retirado $" + cantidad + " en la cuenta.");
+                        //if (cantidad_en_cuenta > 0)
+                        if(cantidad < cantidad_en_cuenta)
+                            {
+                            cantidad_en_cuenta = cantidad_en_cuenta - cantidad;
+                            Console.WriteLine("se han retirado $" + cantidad + " de la cuenta.");
                         Console.WriteLine(" ");
                         Console.WriteLine("Elija la operación que desea realizar.");
                         Console.WriteLine("1. Volver a retirar");
                         Console.WriteLine("2. Volver atrás");
-                        }else if (cantidad_en_cuenta < 0)
+                        }/*else if (cantidad_en_cuenta < 0)
                         {
                             cantidad_en_cuenta = cantidad_en_cuenta + cantidad;
                             Console.WriteLine("el saldo ingresado supera la cantidad almacenada en su cuenta");
+                            Console.WriteLine(" ");
+                            Console.WriteLine("Elija la operación que desea realizar.");
+                            Console.WriteLine("1. Volver a ingresar la cantidad a retirar");
+                            Console.WriteLine("2. Volver atrás");
+                        }*/
+                        else if (cantidad > cantidad_en_cuenta)
+                        {
+                            Console.WriteLine("el saldo ingresado supera la cantidad almacenada en su cuenta");
+                            Console.WriteLine("se han retirado $" + cantidad_en_cuenta + " de la cuenta.");
+                            cantidad_en_cuenta = 0;
                             Console.WriteLine(" ");
                             Console.WriteLine("Elija la operación que desea realizar.");
                             Console.WriteLine("1. Volver a ingresar la cantidad a retirar");
@@ -119,7 +130,7 @@ namespace Ej_obligatorio_01
                 else if (opcion == "3")
                 {
                     Console.WriteLine("Nombre del titular: "+titular);
-                    Console.WriteLine("Saldo: "+cantidad_en_cuenta);
+                    Console.WriteLine("Saldo: $"+cantidad_en_cuenta);
                     Console.WriteLine("Presione cualquier tecla para volver.");
                     Console.ReadKey();
                     goto B;
