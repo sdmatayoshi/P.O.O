@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Eventing.Reader;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -76,15 +77,15 @@ namespace Ej_obligatorio_01
                 {
                     D:
                     Console.Clear();
-                    Console.Write("Escriba el monto a ingresar: ");
+                    Console.Write("Escriba el monto a retirar: ");
                     cantidad = double.Parse(Console.ReadLine());
                     if (cantidad > 0)
                     {
                         //if (cantidad_en_cuenta > 0)
                         if(cantidad < cantidad_en_cuenta)
-                            {
-                            cantidad_en_cuenta = cantidad_en_cuenta - cantidad;
-                            Console.WriteLine("se han retirado $" + cantidad + " de la cuenta.");
+                        {
+                        cantidad_en_cuenta = cantidad_en_cuenta - cantidad;
+                        Console.WriteLine("se han retirado $" + cantidad + " de la cuenta.");
                         Console.WriteLine(" ");
                         Console.WriteLine("Elija la operación que desea realizar.");
                         Console.WriteLine("1. Volver a retirar");
