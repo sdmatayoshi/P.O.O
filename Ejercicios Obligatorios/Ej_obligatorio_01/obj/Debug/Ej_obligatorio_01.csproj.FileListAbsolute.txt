@@ -1,0 +1,8 @@
+C:\Users\Alumno\Desktop\Ejercicios Obligatorios\Ej_obligatorio_01\bin\Debug\Ej_obligatorio_01.exe.config
+C:\Users\Alumno\Desktop\Ejercicios Obligatorios\Ej_obligatorio_01\bin\Debug\Ej_obligatorio_01.exe
+C:\Users\Alumno\Desktop\Ejercicios Obligatorios\Ej_obligatorio_01\bin\Debug\Ej_obligatorio_01.pdb
+C:\Users\Alumno\Desktop\Ejercicios Obligatorios\Ej_obligatorio_01\obj\Debug\Ej_obligatorio_01.csproj.AssemblyReference.cache
+C:\Users\Alumno\Desktop\Ejercicios Obligatorios\Ej_obligatorio_01\obj\Debug\Ej_obligatorio_01.csproj.SuggestedBindingRedirects.cache
+C:\Users\Alumno\Desktop\Ejercicios Obligatorios\Ej_obligatorio_01\obj\Debug\Ej_obligatorio_01.csproj.CoreCompileInputs.cache
+C:\Users\Alumno\Desktop\Ejercicios Obligatorios\Ej_obligatorio_01\obj\Debug\Ej_obligatorio_01.exe
+C:\Users\Alumno\Desktop\Ejercicios Obligatorios\Ej_obligatorio_01\obj\Debug\Ej_obligatorio_01.pdb
