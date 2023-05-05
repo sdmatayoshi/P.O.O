@@ -11,7 +11,7 @@ namespace Ej_obligatorio_02
         public string nombre;
         public int edad;
         public int dni;
-        public char sexo;
+        public string sexo;
         public double peso;
         public double altura;
 
@@ -31,11 +31,17 @@ namespace Ej_obligatorio_02
             this.peso = peso;
             this.altura = altura;
         }
+        calcularIMC()
+        {
+            double pesopersona=peso/(altura^2)
+        }
     }
     internal class Program
     {
         static void Main(string[] args)
         {
+            List<Persona> persona = new List<Persona>
+                persona.Add(new Persona("Juan",23,45324112,"M",47.4,1.82));
         }
     }
 }
