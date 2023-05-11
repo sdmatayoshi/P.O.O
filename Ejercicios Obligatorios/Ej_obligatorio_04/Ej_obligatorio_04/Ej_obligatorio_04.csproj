@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{48CF3CB8-E471-477C-8EE1-ECC52939774E}</ProjectGuid>
+    <ProjectGuid>{818C8946-7ED4-4D60-8C90-C9C5CAC28115}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Ej_obligatorio_02</RootNamespace>
-    <AssemblyName>Ej_obligatorio_02</AssemblyName>
+    <RootNamespace>Ej_obligatorio_04</RootNamespace>
+    <AssemblyName>Ej_obligatorio_04</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

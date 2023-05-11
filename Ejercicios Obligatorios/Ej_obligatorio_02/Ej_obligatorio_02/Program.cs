@@ -12,8 +12,8 @@ namespace Ej_obligatorio_02
         public int edad;
         public int dni;
         public char sexo;
-        public double peso;
-        public double altura;
+        public float peso;
+        public float altura;
 
         public Persona(string nombre, int edad, char sexo)
         {
@@ -22,7 +22,7 @@ namespace Ej_obligatorio_02
             this.sexo = sexo;
         }
 
-        public Persona(string nombre, int edad, int dni, char sexo, double peso, double altura)
+        public Persona(string nombre, int edad, int dni, char sexo, float peso, float altura)
         {
             this.nombre = nombre;
             this.edad = edad;
@@ -30,6 +30,24 @@ namespace Ej_obligatorio_02
             this.sexo = sexo;
             this.peso = peso;
             this.altura = altura;
+        }
+        public int calcularIMC(float peso, float altura)
+        {
+            double peso_ideal = peso / (Math.Pow(altura, 2));
+            //int ans;
+            if (peso_ideal < 20)
+            {
+                return -1;
+            }
+            else if (peso_ideal >= 20 && peso_ideal <= 25)
+            {
+                return 0;
+            }
+            else if (peso_ideal > 25)
+            {
+                return 1;
+            }
+            return peso_ideal;
         }
     }
     internal class Program
