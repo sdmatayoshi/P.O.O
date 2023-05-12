@@ -10,12 +10,21 @@ namespace Ej_obligatorio_02
 {
     class Persona
     {
+<<<<<<< HEAD
         public string nombre = "Elpepe";
         public int edad = 18;
         public int dni = 47127984;
         public char sexo = 'M';
         public double peso = 50.0;
         public double altura = 1.70;
+=======
+        public string nombre;
+        public int edad;
+        public int dni;
+        public string sexo;
+        public double peso;
+        public double altura;
+>>>>>>> ba01a318cb96392ae6a0092db9d07c9b2de4d28c
 
         public Persona()
         {
@@ -43,6 +52,7 @@ namespace Ej_obligatorio_02
             this.peso = peso;
             this.altura = altura;
         }
+<<<<<<< HEAD
 
 
         public float calcularIMC()
@@ -111,10 +121,16 @@ namespace Ej_obligatorio_02
         public float Altura
         {
             set { altura = value; }
+=======
+        calcularIMC()
+        {
+            double pesopersona=peso/(altura^2)
+>>>>>>> ba01a318cb96392ae6a0092db9d07c9b2de4d28c
         }
     }
     internal class Program
     {
+<<<<<<< HEAD
         static void Main(string[] args) {
             Persona[] personas = new Persona[3];
             personas[0] = new Persona("Juana", 25, 23432873,'F',52.4,1.6);
@@ -206,6 +222,12 @@ namespace Ej_obligatorio_02
                 cp3++;
             }
             Console.ReadKey();
+=======
+        static void Main(string[] args)
+        {
+            List<Persona> persona = new List<Persona>
+                persona.Add(new Persona("Juan",23,45324112,"M",47.4,1.82));
+>>>>>>> ba01a318cb96392ae6a0092db9d07c9b2de4d28c
         }
     }
 }
