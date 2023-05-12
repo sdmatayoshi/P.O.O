@@ -70,7 +70,7 @@ namespace Ej_obligatorio_05
     class Videojuego
     {
         public string titulo = "default_game_title=minecraft";
-        public float horas_estimadas = 10;
+        public int horas_estimadas = 10;
         public bool entregado = false;
         public string genero = "default_game_type=adventure";
         public string compañia = "default_developer_name=v-chan_studios";
@@ -79,13 +79,13 @@ namespace Ej_obligatorio_05
         {
         }
 
-        public Videojuego(string titulo, float horas_estimadas)
+        public Videojuego(string titulo, int horas_estimadas)
         {
             this.titulo = titulo;
             this.horas_estimadas = horas_estimadas;
         }
 
-        public Videojuego(string titulo, float horas_estimadas, string genero, string compañia) : this(titulo, horas_estimadas)
+        public Videojuego(string titulo, int horas_estimadas, string genero, string compañia) : this(titulo, horas_estimadas)
         {
             this.titulo = titulo;
             this.horas_estimadas = horas_estimadas;
@@ -99,7 +99,7 @@ namespace Ej_obligatorio_05
             get { return titulo; }
             set { titulo = value; }
         }
-        public float Horas_estimadas
+        public int Horas_estimadas
         {
             get { return horas_estimadas; }
             set { horas_estimadas = value; }
@@ -187,7 +187,7 @@ namespace Ej_obligatorio_05
             }
             //foreach (Videojuego v in videojuegos)
             //{
-                
+
             //    horas = videojuegos[cont].horas_estimadas;
             //    puente = videojuegos[cont+1].horas_estimadas;
             //    if (horas < puente)
@@ -197,6 +197,8 @@ namespace Ej_obligatorio_05
             //    }
             //    cont++;
             //}
+
+            Console.WriteLine("----------------Series----------------");
             Console.WriteLine("Series entregadas: "+contserentre);
 
             //int a = 0;
@@ -204,20 +206,68 @@ namespace Ej_obligatorio_05
             {
                 if (series[a].entregado == true)
                 {
-                    Console.WriteLine(series[a].titulo);
+                    Console.WriteLine("- " + series[a].titulo);
                 }
                 //a++;
             }
+
+
+
+            Console.WriteLine(" ");
+            int maxs = series[0].temporadas;
+            for (int i = 1; i < series.Length; i++)
+            {
+                if (series[i].temporadas > maxs)
+                    maxs = series[i].temporadas;
+            }
+            cv = 0;
+            foreach (Videojuego v in videojuegos)
+            {
+                if (series[cv].temporadas == maxs)
+                {
+                    Console.WriteLine("Serie con mayor cantidad de temporadas: ");
+                    Console.WriteLine("- Título: "+series[cv].titulo);
+                    Console.WriteLine("- Temporadas: " + series[cv].temporadas);
+                    Console.WriteLine("- Género: " + series[cv].genero);
+                    Console.WriteLine("- Autor: " + series[cv].creador);
+                }
+                cv++;
+            }
+
+            Console.WriteLine("--------------Videojuegos-------------");
+
             Console.WriteLine("Juegos entregados: "+ contvidentre);
-            //int b = 0;
+
             for (int b = 0; b < series.Count(); b++)
             {
                 if (videojuegos[b].entregado == true)
                 {
-                    Console.WriteLine(videojuegos[b].titulo);
+                    Console.WriteLine("- "+videojuegos[b].titulo);
                 }
-                //b++;
+                
             }
+            Console.WriteLine(" ");
+            int max = videojuegos[0].horas_estimadas;
+            for (int i = 1; i < videojuegos.Length; i++)
+            {
+                if (videojuegos[i].horas_estimadas > max)
+                    max = videojuegos[i].horas_estimadas;
+            }
+            cv = 0;
+            foreach (Videojuego v in videojuegos)
+            {
+                if (videojuegos[cv].horas_estimadas == max)
+                {
+                    Console.WriteLine("Juego con mayor cantidad de horas: ");
+                    Console.WriteLine("- Título: " + videojuegos[cv].titulo);
+                    Console.WriteLine("- Horas: " + videojuegos[cv].horas_estimadas + "hs");
+                    Console.WriteLine("- Género: " + videojuegos[cv].genero);
+                    Console.WriteLine("- Compañía: " + videojuegos[cv].compañia);
+                }
+                cv++;
+            }
+
+            //Console.WriteLine("Juego con mayor cantidad de horas: " + max);
             Console.ReadKey();  
         }
     }

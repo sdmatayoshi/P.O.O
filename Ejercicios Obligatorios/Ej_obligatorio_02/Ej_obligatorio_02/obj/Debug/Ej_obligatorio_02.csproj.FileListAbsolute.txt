@@ -1,0 +1,8 @@
+C:\xampp\htdocs\P.O.O\Ejercicios Obligatorios\Ej_obligatorio_02\Ej_obligatorio_02\bin\Debug\Ej_obligatorio_02.exe.config
+C:\xampp\htdocs\P.O.O\Ejercicios Obligatorios\Ej_obligatorio_02\Ej_obligatorio_02\bin\Debug\Ej_obligatorio_02.exe
+C:\xampp\htdocs\P.O.O\Ejercicios Obligatorios\Ej_obligatorio_02\Ej_obligatorio_02\bin\Debug\Ej_obligatorio_02.pdb
+C:\xampp\htdocs\P.O.O\Ejercicios Obligatorios\Ej_obligatorio_02\Ej_obligatorio_02\obj\Debug\Ej_obligatorio_02.csproj.AssemblyReference.cache
+C:\xampp\htdocs\P.O.O\Ejercicios Obligatorios\Ej_obligatorio_02\Ej_obligatorio_02\obj\Debug\Ej_obligatorio_02.csproj.SuggestedBindingRedirects.cache
+C:\xampp\htdocs\P.O.O\Ejercicios Obligatorios\Ej_obligatorio_02\Ej_obligatorio_02\obj\Debug\Ej_obligatorio_02.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\P.O.O\Ejercicios Obligatorios\Ej_obligatorio_02\Ej_obligatorio_02\obj\Debug\Ej_obligatorio_02.exe
+C:\xampp\htdocs\P.O.O\Ejercicios Obligatorios\Ej_obligatorio_02\Ej_obligatorio_02\obj\Debug\Ej_obligatorio_02.pdb

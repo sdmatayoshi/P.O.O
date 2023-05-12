@@ -564,8 +564,9 @@ namespace Ej_obligatorio_04
                     lavarropas++;
                 }
             }
-            Console.WriteLine("Televisores: {0} \n Lavarropas: {1} \n Electrodomesticos: {2}", televisores, lavarropas, televisores + lavarropas);
-           
+            Console.WriteLine("Televisores: "+  televisores);
+            Console.WriteLine("Lavarropas: " + lavarropas);
+            Console.WriteLine("Electrodomesticos:" + (televisores + lavarropas));
             foreach (Electrodomestico e in electrodomesticos)
             {
                 if (!lista.Contains(e.GetType()))
@@ -573,7 +574,7 @@ namespace Ej_obligatorio_04
                     lista.Add(e.GetType());
                 }
             }
-            Console.WriteLine(lista.Count());
+            Console.WriteLine("Cantidad de tipos de electrodomesticos distintos: "+lista.Count());
             
 
 
