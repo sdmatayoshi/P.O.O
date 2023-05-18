@@ -1,0 +1,8 @@
+C:\xampp\htdocs\P.O.O\Ej_ABM\Ej_ABM\obj\Debug\Ej_ABM.csproj.AssemblyReference.cache
+C:\xampp\htdocs\P.O.O\Ej_ABM\Ej_ABM\obj\Debug\Ej_ABM.csproj.SuggestedBindingRedirects.cache
+C:\xampp\htdocs\P.O.O\Ej_ABM\Ej_ABM\obj\Debug\Ej_ABM.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\P.O.O\Ej_ABM\Ej_ABM\bin\Debug\Ej_ABM.exe.config
+C:\xampp\htdocs\P.O.O\Ej_ABM\Ej_ABM\bin\Debug\Ej_ABM.exe
+C:\xampp\htdocs\P.O.O\Ej_ABM\Ej_ABM\bin\Debug\Ej_ABM.pdb
+C:\xampp\htdocs\P.O.O\Ej_ABM\Ej_ABM\obj\Debug\Ej_ABM.exe
+C:\xampp\htdocs\P.O.O\Ej_ABM\Ej_ABM\obj\Debug\Ej_ABM.pdb

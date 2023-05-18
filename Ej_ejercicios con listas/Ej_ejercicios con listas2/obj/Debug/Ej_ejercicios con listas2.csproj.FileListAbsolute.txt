@@ -1,0 +1,8 @@
+C:\xampp\htdocs\P.O.O\Ej_ejercicios con listas\Ej_ejercicios con listas\bin\Debug\Ej_ejercicios con listas.exe.config
+C:\xampp\htdocs\P.O.O\Ej_ejercicios con listas\Ej_ejercicios con listas\bin\Debug\Ej_ejercicios con listas.exe
+C:\xampp\htdocs\P.O.O\Ej_ejercicios con listas\Ej_ejercicios con listas\bin\Debug\Ej_ejercicios con listas.pdb
+C:\xampp\htdocs\P.O.O\Ej_ejercicios con listas\Ej_ejercicios con listas\obj\Debug\Ej_ejercicios con listas2.csproj.AssemblyReference.cache
+C:\xampp\htdocs\P.O.O\Ej_ejercicios con listas\Ej_ejercicios con listas\obj\Debug\Ej_ejercicios con listas2.csproj.SuggestedBindingRedirects.cache
+C:\xampp\htdocs\P.O.O\Ej_ejercicios con listas\Ej_ejercicios con listas\obj\Debug\Ej_ejercicios con listas2.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\P.O.O\Ej_ejercicios con listas\Ej_ejercicios con listas\obj\Debug\Ej_ejercicios con listas.exe
+C:\xampp\htdocs\P.O.O\Ej_ejercicios con listas\Ej_ejercicios con listas\obj\Debug\Ej_ejercicios con listas.pdb
