@@ -1,0 +1,8 @@
+C:\xampp\htdocs\P.O.O\Evaluacion_2do_Bim\Evaluacion_2do_Bim\bin\Debug\Evaluacion_2do_Bim.exe.config
+C:\xampp\htdocs\P.O.O\Evaluacion_2do_Bim\Evaluacion_2do_Bim\bin\Debug\Evaluacion_2do_Bim.exe
+C:\xampp\htdocs\P.O.O\Evaluacion_2do_Bim\Evaluacion_2do_Bim\bin\Debug\Evaluacion_2do_Bim.pdb
+C:\xampp\htdocs\P.O.O\Evaluacion_2do_Bim\Evaluacion_2do_Bim\obj\Debug\Evaluacion_2do_Bim.csproj.AssemblyReference.cache
+C:\xampp\htdocs\P.O.O\Evaluacion_2do_Bim\Evaluacion_2do_Bim\obj\Debug\Evaluacion_2do_Bim.csproj.SuggestedBindingRedirects.cache
+C:\xampp\htdocs\P.O.O\Evaluacion_2do_Bim\Evaluacion_2do_Bim\obj\Debug\Evaluacion_2do_Bim.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\P.O.O\Evaluacion_2do_Bim\Evaluacion_2do_Bim\obj\Debug\Evaluacion_2do_Bim.exe
+C:\xampp\htdocs\P.O.O\Evaluacion_2do_Bim\Evaluacion_2do_Bim\obj\Debug\Evaluacion_2do_Bim.pdb
