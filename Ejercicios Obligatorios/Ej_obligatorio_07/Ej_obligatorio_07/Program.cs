@@ -1,6 +1,8 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -79,7 +81,31 @@ namespace Ej_obligatorio_07
         }
         public string calcular()
         {
+            bool amogus = false;
+            if (a==2 && b==3 && c==4)
+            {
+                amogus = true;
+            }
             return "EN PROCESO";
+        }
+        public bool amongus()
+        {
+            bool amogus = false;
+            if (a == 17 && b == 03 && c == 11)
+            {
+                amogus = true;
+            }
+            return amogus;
+        }
+
+        public bool hint()
+        {
+            bool hint = false;
+            if (a == 0 && b == 0 && c == 0)
+            {
+                hint = true;
+            }
+            return hint;
         }
     }
     internal class Program
@@ -106,51 +132,118 @@ namespace Ej_obligatorio_07
             Console.WriteLine("5. Verificar si existe una raíz");
             Console.WriteLine("6. Mostrar posibles soluciones");
             string opcion = (Console.ReadLine());
-            if (opcion == "1")
+            if (result[0].amongus() == false)
             {
-                Console.Clear();
-                Console.Write(result[0].obtenerRaíces());
-            }
-            else if (opcion == "2")
-            {
-                Console.Clear();
-                Console.Write(result[0].obtenerRaíz());
-            }
-            else if (opcion == "3")
-            {
-                Console.Clear();
-                Console.Write(result[0].getDiscriminante());
-            }
-            else if (opcion == "4")
-            {
-                Console.Clear();
-                bool ans =result[0].tieneRaíces();
-                if (ans)
+                if (opcion == "1")
                 {
-                    Console.Write("La ecuación tiene 2 raíces");
+                    Console.Clear();
+                    Console.Write(result[0].obtenerRaíces());
+                    if (result[0].hint() == true)
+                    {
+                        Console.Write("\r\n");
+                        Console.Write("17.03.11.6");
+                    }
                 }
-                else
+                else if (opcion == "2")
                 {
-                    Console.Write("La ecuación no tiene raíces o solo existe una");
+                    Console.Clear();
+                    Console.Write(result[0].obtenerRaíz());
+                    if (result[0].hint() == true)
+                    {
+                        Console.Write("\r\n");
+                        Console.Write("17.03.11.6");
+                    }
+                }
+                else if (opcion == "3")
+                {
+                    Console.Clear();
+                    Console.Write(result[0].getDiscriminante());
+                    if (result[0].hint() == true)
+                    {
+                        Console.Write("\r\n");
+                        Console.Write("17.03.11.6");
+                    }
+                }
+                else if (opcion == "4")
+                {
+                    Console.Clear();
+                    bool ans = result[0].tieneRaíces();
+                    if (ans)
+                    {
+                        Console.Write("La ecuación tiene 2 raíces");
+                    }
+                    else
+                    {
+                        Console.Write("La ecuación no tiene raíces o solo existe una");
+                    }
+                    if (result[0].hint() == true)
+                    {
+                        Console.Write("\r\n");
+                        Console.Write("17.03.11.6");
+                    }
+                }
+                else if (opcion == "5")
+                {
+                    Console.Clear();
+                    bool ans = result[0].tieneRaíz();
+                    if (ans)
+                    {
+                        Console.Write("La ecuación tiene una raíz");
+                    }
+                    else
+                    {
+                        Console.Write("La ecuación no tiene raíces o existen más de una solución");
+                    }
+                    if (result[0].hint() == true)
+                    {
+                        Console.Write("\r\n");
+                        Console.Write("17.03.11.6");
+                    }
+                }
+                else if (opcion == "6")
+                {
+
+                    Console.Clear();
+                    Console.Write(result[0].calcular());
+                    if (result[0].hint() == true)
+                    {
+                        Console.Write("\r\n");
+                        Console.Write("17.03.11.6");
+                    }
                 }
             }
-            else if (opcion == "5")
+            else
             {
-                Console.Clear();
-                bool ans = result[0].tieneRaíz();
-                if (ans)
-                {
-                    Console.Write("La ecuación tiene una raíz");
-                }
-                else
-                {
-                    Console.Write("La ecuación no tiene raíces o existen más de una solución");
-                }
-            }
-            else if (opcion == "6")
-            {
-                Console.Clear();
-                Console.Write(result[0].calcular());
+                    Console.WriteLine("¿Seguro que quiere proseguir con la operación?");
+                    Console.WriteLine("                      Y/N                     ");
+                    string op = Console.ReadLine();
+                    if (op == "y" || op == "Y")
+                    {
+                        Console.CursorVisible = false;
+                        Console.Clear();
+                        while (true)
+                        {
+                            Console.Clear();
+                            Console.WriteLine("                     ■■■■■\r\n                    ■     ■\r\n                   ■       ■\r\n                   ■   ■■■■■\r\n                 ■■■  ■     ■\r\n                ■  ■  ■     ■\r\n                ■  ■  ■     ■\r\n                ■  ■   ■■■■■\r\n                ■  ■       ■\r\n                ■  ■       ■\r\n                ■  ■       ■\r\n                 ■■■       ■■■■\r\n                 ■■■  ■■■■■    ■\r\n                ■     ■   ■■■■■\r\n                 ■■■■■");
+                            Console.Write("\r\n\r\n                ■■■■■■    ■■  ■■    ■■■■■■\r\n                ■■■■■■    ■■  ■■    ■■■■■■\r\n                ■■        ■■  ■■    ■■\r\n                ■■        ■■  ■■    ■■\r\n                ■■■■■■    ■■  ■■    ■■■■■■\r\n                ■■■■■■    ■■  ■■    ■■■■■■\r\n                    ■■    ■■  ■■        ■■\r\n                    ■■    ■■  ■■        ■■\r\n                ■■■■■■    ■■■■■■    ■■■■■■\r\n                ■■■■■■    ■■■■■■    ■■■■■■");
+                            System.Threading.Thread.Sleep(250);
+                            Console.Clear();
+                            Console.WriteLine("\r\n                     ■■■■■\r\n                    ■     ■\r\n                   ■       ■\r\n                   ■   ■■■■■\r\n                 ■■■  ■     ■\r\n                ■  ■  ■     ■\r\n                ■  ■  ■     ■\r\n                ■  ■   ■■■■■\r\n                ■  ■       ■\r\n                ■  ■       ■\r\n                ■  ■       ■\r\n                 ■■■       ■\r\n                   ■  ■■■■ ■\r\n                  ■    ■   ■\r\n                   ■■■■ ■■■■");
+                            Console.Write("\r\n\r\n                ■■■■■■    ■■  ■■    ■■■■■■\r\n                ■■■■■■    ■■  ■■    ■■■■■■\r\n                ■■        ■■  ■■    ■■\r\n                ■■        ■■  ■■    ■■\r\n                ■■■■■■    ■■  ■■    ■■■■■■\r\n                ■■■■■■    ■■  ■■    ■■■■■■\r\n                    ■■    ■■  ■■        ■■\r\n                    ■■    ■■  ■■        ■■\r\n                ■■■■■■    ■■■■■■    ■■■■■■\r\n                ■■■■■■    ■■■■■■    ■■■■■■");
+                            System.Threading.Thread.Sleep(150);
+                            Console.Clear();
+                            Console.WriteLine("                     ■■■■■\r\n                    ■     ■\r\n                   ■       ■\r\n                   ■   ■■■■■\r\n                 ■■■  ■     ■\r\n                ■  ■  ■     ■\r\n                ■  ■  ■     ■\r\n                ■  ■   ■■■■■\r\n                ■  ■       ■\r\n                ■  ■       ■\r\n                ■  ■       ■\r\n                 ■■■       ■■■■\r\n                 ■■■■■■■■      ■\r\n                ■     ■  ■■■■■■\r\n                 ■■■■■");
+                            Console.Write("\r\n\r\n                ■■■■■■    ■■  ■■    ■■■■■■\r\n                ■■■■■■    ■■  ■■    ■■■■■■\r\n                ■■        ■■  ■■    ■■\r\n                ■■        ■■  ■■    ■■\r\n                ■■■■■■    ■■  ■■    ■■■■■■\r\n                ■■■■■■    ■■  ■■    ■■■■■■\r\n                    ■■    ■■  ■■        ■■\r\n                    ■■    ■■  ■■        ■■\r\n                ■■■■■■    ■■■■■■    ■■■■■■\r\n                ■■■■■■    ■■■■■■    ■■■■■■");
+                            System.Threading.Thread.Sleep(250);
+                            Console.Clear();
+                            Console.WriteLine("\r\n                     ■■■■■\r\n                    ■     ■\r\n                   ■       ■\r\n                   ■   ■■■■■\r\n                 ■■■  ■     ■\r\n                ■  ■  ■     ■\r\n                ■  ■  ■     ■\r\n                ■  ■   ■■■■■\r\n                ■  ■       ■\r\n                ■  ■       ■\r\n                ■  ■       ■\r\n                 ■■■       ■\r\n                   ■  ■■■■ ■\r\n                   ■  ■ ■  ■\r\n                   ■  ■ ■  ■\r\n                    ■■   ■■");
+                            Console.Write("\r\n\r\n                ■■■■■■    ■■  ■■    ■■■■■■\r\n                ■■■■■■    ■■  ■■    ■■■■■■\r\n                ■■        ■■  ■■    ■■\r\n                ■■        ■■  ■■    ■■\r\n                ■■■■■■    ■■  ■■    ■■■■■■\r\n                ■■■■■■    ■■  ■■    ■■■■■■\r\n                    ■■    ■■  ■■        ■■\r\n                    ■■    ■■  ■■        ■■\r\n                ■■■■■■    ■■■■■■    ■■■■■■\r\n                ■■■■■■    ■■■■■■    ■■■■■■");
+                            System.Threading.Thread.Sleep(150);
+                        }
+                    }else if (op == "n" || op == "N")
+                    {
+                        Console.Clear();
+                    }
             }
             Console.ReadKey();
         }
