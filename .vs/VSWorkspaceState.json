@@ -1,13 +1,14 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Ejercicios Obligatorios",
     "\\Ejercicios Obligatorios\\Ej_obligatorio_01",
     "\\Ejercicios Obligatorios\\Ej_obligatorio_02",
     "\\Ejercicios Obligatorios\\Ej_obligatorio_02\\Ej_obligatorio_02",
     "\\Ejercicios Obligatorios\\Ej_obligatorio_04",
-    "\\Ejercicios Obligatorios\\Ej_obligatorio_04\\Ej_obligatorio_04"
+    "\\Ejercicios Obligatorios\\Ej_obligatorio_04\\Ej_obligatorio_04",
+    "\\Evaluacion_2do_Bim",
+    "\\Evaluacion_2do_Bim\\Evaluacion_2do_Bim"
   ],
-  "SelectedNode": "\\Ejercicios Obligatorios\\Ej_obligatorio_04\\Ej_obligatorio_04",
+  "SelectedNode": "\\Evaluacion_2do_Bim\\Evaluacion_2do_Bim\\Program.cs",
   "PreviewInSolutionExplorer": false
 }
