@@ -159,32 +159,37 @@ namespace Ej_obligatorio_08
             string clase = null;
             if (hay_profe == true)
             {
-                prof = " no faltó ";
+                prof = "no faltó";
             }
             else
             {
-                prof = " faltó ";
+                prof = "faltó";
             }
             if (hay_clase == true)
             {
-                clase = " hay ";
+                clase = "hay";
             }
             else
             {
-                clase = " no hay ";
+                clase = "no hay";
             }
-            return "En el aula N°" + identificador + " faltaron " + alumnos_faltas + " alumnos de " + max_estudiantes + " y el profe " + prof + "por lo tanto" + clase + " clases en esta aula";
+            return "En el aula N°" + identificador + " faltaron " + alumnos_faltas + " alumnos de " + max_estudiantes + ", y el profe " + prof + " por lo tanto " + clase + " clases en esta aula debio a ";
         }
     }
     class Program
     {
         static void Main(string[] args)
         {
-            
-            
 
-            
-            for (int m = 0; m < 10; m++)
+
+            string causa = null;
+            int cantidad_al = 0;
+            int cantidad_au = 0;
+            Console.Write("Ingrese la cantidad de aaulas: ");
+            cantidad_au = int.Parse(Console.ReadLine());
+            Console.Write("Ingrese la cantidad de alumnos: ");
+            cantidad_al = int.Parse(Console.ReadLine());
+            for (int m = 0; m < cantidad_au; m++)
             {
                 string[] materias = { "Matemáticas", "Filosofía", "Física" };
                 Random rnd = new Random();
@@ -225,27 +230,31 @@ namespace Ej_obligatorio_08
 
 
 
-            Aula[] aulas = new Aula[10];
-            if (contador_faltas_alumnos <= 15 && contador_falta_profesor == false)
+            Aula[] aulas = new Aula[cantidad_au];
+            if (contador_faltas_alumnos >= (cantidad_al/2) && contador_falta_profesor == false)
+            {
+                sin_clase = false;
+                    causa = "que faltó la mayoria de los alumnos";
+            } else if (contador_faltas_alumnos < (cantidad_al / 2) && contador_falta_profesor == true)
+            {
+                sin_clase = false;
+                    causa = "que no hay un docente disponible";
+            } else if (contador_faltas_alumnos >= (cantidad_al / 2) && contador_falta_profesor == true)
+            {
+                sin_clase = false;
+                    causa = "que faltó la mayoria de los alumnos y no hay un docente disponible";
+            } else if (contador_faltas_alumnos < (cantidad_al / 2) && contador_falta_profesor == false)
             {
                 sin_clase = true;
-            } else if (contador_faltas_alumnos < 15 && contador_falta_profesor == true)
-            {
-                sin_clase = false;
-            } else if (contador_faltas_alumnos > 15 && contador_falta_profesor == false)
-            {
-                sin_clase = false;
-            } else if (contador_faltas_alumnos > 15 && contador_falta_profesor == true)
-            {
-                sin_clase = false;
+                    causa = "-";
             }
 
 
             int materia = rnd.Next(0, 3);
-            aulas[m] = new Aula(m, 30, materias[materia], contador_falta_profesor, contador_faltas_alumnos, sin_clase);
+            aulas[m] = new Aula(m, cantidad_al, materias[materia], contador_falta_profesor, contador_faltas_alumnos, sin_clase);
 
 
-            Console.WriteLine(aulas[m].clase());
+            Console.WriteLine(aulas[m].clase()+causa);
                 Array.Clear(profesores, 0, profesores.Length);
                 Array.Clear(alumnos, 0, alumnos.Length);
                 System.Threading.Thread.Sleep(100);
