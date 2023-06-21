@@ -28,15 +28,22 @@ namespace Ej_obligatorio_09
     {
         int columna;
         char fila;
-
+        bool ocupado;
         public Asiento() { }
 
-        public Asiento(int columna, char fila)
+        public Asiento(int columna, char fila, bool ocupado)
         {
             this.columna = columna;
             this.fila = fila;
+            this.ocupado = ocupado;
         }
-         int Columna
+
+        public Asiento(bool ocupado)
+        {
+            this.ocupado = ocupado;
+        }
+
+        int Columna
         {
           get { return columna; }
           set { columna = value; }
@@ -46,50 +53,134 @@ namespace Ej_obligatorio_09
             get { return fila; }
             set { fila = value; }
         }
-        public string nombre()
+        bool Ocupado
         {
-            return fila + " " + columna;
-        }
-    }
-    class Prueba
-    {
-        int num1;
-        int num2;
-
-        public Prueba() { }
-
-        public Prueba(int num1, int num2)
-        {
-            this.num1 = num1;
-            this.num2 = num2;
-        }
-        int Num1
-        {
-            get { return num1; }
-            set { num1 = value; }
-        }
-        int Num2
-        {
-            get { return num2; }
-            set { num2 = value; }
+            get { return ocupado; }
+            set { ocupado = value; }
         }
         public string nombre()
         {
-            return num2 + " " + num1;
+            return fila + "" + columna + " ";
+        }
+        public bool isOcupado()
+        {
+            return ocupado;
         }
     }
+    
     class Pelicula
     {
         string titulo;
-        double duración;
-        int edadMínima;
+        double duracion;
+        int edadMinima;
         string director;
+        int precio;
+
+        public Pelicula()
+        {
+        }
+
+        public Pelicula(string titulo, double duracion, int edadMinima, string director, int precio)
+        {
+            this.titulo = titulo;
+            this.duracion = duracion;
+            this.edadMinima = edadMinima;
+            this.director = director;
+            this.precio = precio;
+        }
+        string Titulo
+        {
+            get { return titulo; }
+            set { titulo = value; }
+        }
+        double Duracion
+        {
+            get { return duracion; }
+            set { duracion = value; }
+        }
+        int EdadMinima
+        {
+            get { return edadMinima; }
+            set { edadMinima = value; }
+        }
+        string Director
+        {
+            get { return director; }
+            set { director = value; }
+        }
+        int Precio
+        {
+            get { return precio; }
+            set { precio = value; }
+        }
+        public int minimo()
+        {
+            return edadMinima;
+        }
+        public int precioEntrada()
+        {
+            return precio;
+        }
+        public string datos()
+        {
+            return titulo +", "+ director +", "+ duracion +"h, "+ edadMinima+", $"+precio;
+        }
     }
     class Espectador
     {
         string nombre;
         int edad;
         double dinero;
+        bool conLugar;
+
+        public Espectador()
+        {
+        }
+
+        public Espectador(bool conLugar)
+        {
+            this.conLugar = conLugar;
+        }
+
+        public Espectador(string nombre, int edad, double dinero, bool conLugar)
+        {
+            this.nombre = nombre;
+            this.edad = edad;
+            this.dinero = dinero;
+            this.conLugar = conLugar;
+        }
+        string Nombre
+        {
+            get { return nombre; }
+            set { nombre = value; }
+        }
+        int Edad
+        {
+            get { return edad; }
+            set { edad = value; }
+        }
+        double Dinero
+        {
+            get { return dinero; }
+            set { dinero = value; }
+        }
+        bool ConLugar
+        {
+            get { return conLugar; }
+            set { conLugar = value; }
+        }
+        public string datos()
+        {
+            return nombre +"("+ edad+") ";
+        }
+        public bool lugar()
+        {
+            return conLugar;
+        }
+        public double plata()
+        {
+            return dinero;
+        }
     }
     class Program
     {
@@ -97,7 +188,6 @@ namespace Ej_obligatorio_09
         {
             int filas = 0;
             int columnas = 0;
-            int num = 0;
             List<char> letras = new List<char>();
             Console.Write("Filas:");
             filas = int.Parse(Console.ReadLine());
@@ -111,64 +201,129 @@ namespace Ej_obligatorio_09
                 Console.ReadKey();
             }
             Sala[] sala = new Sala[1];
-
             Asiento[] asientos = new Asiento[(filas*columnas)];
-            Prueba[] test = new Prueba[(filas * columnas)];
+            Espectador[] espectadores = new Espectador[100];
+            Pelicula[] peli = new Pelicula[2];
+            int[] minimo = new int[3] {15,18,20};
+            int[] entrada = new int[3] { 500, 600, 1000 };
+            string[] titulo = new string[3] { "Tonari no Totoro", "Sen to Chihiro no Kamikakuji", "Gake no ue no Ponyo" };
+            int edadminima = random.Next(0,4);
+            int title = random.Next(0, 4);
+            int valorEntrada = random.Next(0, 4);
+            for (int i = 0; i<1;i++)
+            {
+            peli[i] = new Pelicula(titulo[title], 1.45, minimo[edadminima], "Hayao Miyasaki", entrada[valorEntrada]);
+            }
+            
+
 
             for (int i = 0; i <filas; i++)
             {
                 char ch = Convert.ToChar(i + 65);
                 letras.Add(ch);
             }
-
-            //for (int i = 0; i < filas; i++)
-            //{
-            //    for (int j = 0; j < (columnas*filas); j++)
-            //    {
-            //    asientos[j]=new Asiento(j, letras[i]);
-            //    }
-            //}
-
-                int l = 0;
-                int n = 1;
-                for (int j = 0; j < (columnas * filas); j++)
+            
+                
+            
+            int l = 0;
+            int n = 1;
+            for (int j = 0; j < (columnas * filas); j++)
+            {
+               
+                asientos[j] = new Asiento(n, letras[l], false);
+                n++;
+                if (n == filas + 1)
                 {
-                    asientos[j] = new Asiento(n, letras[l]);
-                    n++;
-                    if (n == filas+1){
-                        l++;
-                        n = 1;
-                    }
+                    l++;
+                    n = 1;
+                }
                 if (l == filas)
                 {
                     l = 0;
                 }
             }
-
-
-            //for (int i = 0; i < asientos.Count(); i++)
-            //{
-            //    if (asientos[i] != null)
-            //    {
-            //        Console.WriteLine(asientos[i].nombre());
-            //    }
-            //    else
-            //    {
-            //        Console.WriteLine("null");
-            //    }
-            //}
-            for (int i = 0; i < test.Count(); i++)
+            int a = 0;
+            while (true)
             {
-                if (asientos[i] != null)
+                Console.Clear();
+                for (int i = 0; i < 100; i++)
                 {
-                    Console.WriteLine(asientos[i].nombre()+"\n");
+                    int edad = random.Next(14, 41);
+                    int dinero = random.Next(499, 1001);
+                    espectadores[i] = new Espectador("Juan", edad, dinero, false);
                 }
-            }
-            Pelicula[] pelicula = new Pelicula[1];
-            
-            Espectador[] espectadores = new Espectador[72];
 
-            Console.ReadKey();
+                if (asientos[a].isOcupado() == false && espectadores[a].lugar() == false)
+                {
+                    asientos[a] = new Asiento(true);
+                    espectadores[a] = new Espectador(true);
+                }
+
+
+
+
+
+
+
+                //int l = 0;
+                //int n = 1;
+                //bool ocupado = false;
+                //for (int j = 0; j < (columnas * filas); j++)
+                //{
+                //    if (espectadores[j].lugar() == true && espectadores[j].plata() >= peli[0].precioEntrada())
+                //    {
+                //        ocupado = true;
+                //    }
+                //    else
+                //    {
+                //        ocupado = false;
+                //    }
+                //    asientos[j] = new Asiento(n, letras[l], ocupado);
+                //    n++;
+                //    if (n == filas + 1)
+                //    {
+                //        l++;
+                //        n = 1;
+                //    }
+                //    if (l == filas)
+                //    {
+                //        l = 0;
+                //    }
+                //}
+
+
+
+
+
+
+
+                for (int i = 0; i < asientos.Count(); i++)
+                {
+                    if (asientos[i] != null)
+                    {
+                        if (asientos[i].isOcupado() == true)
+                        {
+                            Console.ForegroundColor = ConsoleColor.Red;
+                        }
+                        else
+                        {
+                            Console.ForegroundColor = ConsoleColor.White;
+                        }
+                        Console.Write(asientos[i].nombre());
+
+                        if ((i + 1) % columnas == 0)
+                        {
+                            Console.Write("\n");
+                        }
+                        Console.ForegroundColor = ConsoleColor.White;
+                    }
+                }
+
+
+                Console.Write(peli[0].datos());
+                a++;
+                System.Threading.Thread.Sleep(500);
+            }
         }
     }
 }
