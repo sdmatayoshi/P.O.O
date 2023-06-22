@@ -1,0 +1,11 @@
+C:\xampp\htdocs\P.O.O\Ejercicos formularios\Ejer_form_01\Ejer_form_01\bin\Debug\Ejer_form_01.exe.config
+C:\xampp\htdocs\P.O.O\Ejercicos formularios\Ejer_form_01\Ejer_form_01\bin\Debug\Ejer_form_01.exe
+C:\xampp\htdocs\P.O.O\Ejercicos formularios\Ejer_form_01\Ejer_form_01\bin\Debug\Ejer_form_01.pdb
+C:\xampp\htdocs\P.O.O\Ejercicos formularios\Ejer_form_01\Ejer_form_01\obj\Debug\Ejer_form_01.csproj.AssemblyReference.cache
+C:\xampp\htdocs\P.O.O\Ejercicos formularios\Ejer_form_01\Ejer_form_01\obj\Debug\Ejer_form_01.csproj.SuggestedBindingRedirects.cache
+C:\xampp\htdocs\P.O.O\Ejercicos formularios\Ejer_form_01\Ejer_form_01\obj\Debug\Ejer_form_01.Form1.resources
+C:\xampp\htdocs\P.O.O\Ejercicos formularios\Ejer_form_01\Ejer_form_01\obj\Debug\Ejer_form_01.Properties.Resources.resources
+C:\xampp\htdocs\P.O.O\Ejercicos formularios\Ejer_form_01\Ejer_form_01\obj\Debug\Ejer_form_01.csproj.GenerateResource.cache
+C:\xampp\htdocs\P.O.O\Ejercicos formularios\Ejer_form_01\Ejer_form_01\obj\Debug\Ejer_form_01.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\P.O.O\Ejercicos formularios\Ejer_form_01\Ejer_form_01\obj\Debug\Ejer_form_01.exe
+C:\xampp\htdocs\P.O.O\Ejercicos formularios\Ejer_form_01\Ejer_form_01\obj\Debug\Ejer_form_01.pdb

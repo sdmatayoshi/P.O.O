@@ -212,7 +212,7 @@ namespace Ej_obligatorio_09
             int valorEntrada = random.Next(0, 4);
             for (int i = 0; i<1;i++)
             {
-            peli[i] = new Pelicula(titulo[title], 1.45, minimo[edadminima], "Hayao Miyasaki", entrada[valorEntrada]);
+            peli[0] = new Pelicula(titulo[title], 1.45, minimo[edadminima], "Hayao Miyasaki", entrada[valorEntrada]);
             }
             
 
@@ -243,6 +243,7 @@ namespace Ej_obligatorio_09
                 }
             }
             int a = 0;
+
             while (true)
             {
                 Console.Clear();
@@ -259,7 +260,27 @@ namespace Ej_obligatorio_09
                     espectadores[a] = new Espectador(true);
                 }
 
+                for (int i = 0; i < asientos.Count(); i++)
+                {
+                    if (asientos[i] != null)
+                    {
+                        if (asientos[i].isOcupado() == true)
+                        {
+                            Console.ForegroundColor = ConsoleColor.Red;
+                        }
+                        else
+                        {
+                            Console.ForegroundColor = ConsoleColor.White;
+                        }
+                        Console.Write(asientos[i].nombre());
 
+                        if ((i + 1) % columnas == 0)
+                        {
+                            Console.Write("\n");
+                        }
+                        Console.ForegroundColor = ConsoleColor.White;
+                    }
+                }
 
 
 
@@ -297,27 +318,7 @@ namespace Ej_obligatorio_09
 
 
 
-                for (int i = 0; i < asientos.Count(); i++)
-                {
-                    if (asientos[i] != null)
-                    {
-                        if (asientos[i].isOcupado() == true)
-                        {
-                            Console.ForegroundColor = ConsoleColor.Red;
-                        }
-                        else
-                        {
-                            Console.ForegroundColor = ConsoleColor.White;
-                        }
-                        Console.Write(asientos[i].nombre());
 
-                        if ((i + 1) % columnas == 0)
-                        {
-                            Console.Write("\n");
-                        }
-                        Console.ForegroundColor = ConsoleColor.White;
-                    }
-                }
 
 
                 Console.Write(peli[0].datos());
