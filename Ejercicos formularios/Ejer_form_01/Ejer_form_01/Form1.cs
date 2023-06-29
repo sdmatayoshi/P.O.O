@@ -159,5 +159,13 @@ namespace Ejer_form_01
                 }
             }
         }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            listBox1.Items.Clear();
+            listBox2.Items.Clear();
+            listBox3.Items.Clear();
+            listBox4.Items.Clear();
+        }
     }
 }
