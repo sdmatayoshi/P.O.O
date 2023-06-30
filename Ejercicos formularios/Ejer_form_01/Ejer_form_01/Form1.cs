@@ -167,5 +167,22 @@ namespace Ejer_form_01
             listBox3.Items.Clear();
             listBox4.Items.Clear();
         }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            if (listBox1.SelectedItem != null)
+            {
+                listBox1.Items.Remove(listBox1.SelectedItem);
+            }
+            if (listBox2.SelectedItem != null)
+            {
+                listBox2.Items.Remove(listBox2.SelectedItem);
+            }
+            if (listBox1.SelectedItem != null && listBox2.SelectedItem != null)
+            {
+                listBox1.Items.Remove(listBox1.SelectedItem);
+                listBox2.Items.Remove(listBox2.SelectedItem);
+            }
+        }
     }
 }
