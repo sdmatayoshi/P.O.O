@@ -93,7 +93,7 @@
             // abrirToolStripMenuItem
             // 
             this.abrirToolStripMenuItem.Name = "abrirToolStripMenuItem";
-            this.abrirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.abrirToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
             this.abrirToolStripMenuItem.Text = "Abrir";
             this.abrirToolStripMenuItem.Click += new System.EventHandler(this.abrirToolStripMenuItem_Click);
             // 
@@ -101,21 +101,21 @@
             // 
             this.guardar.Name = "guardar";
             this.guardar.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.guardar.Size = new System.Drawing.Size(180, 22);
+            this.guardar.Size = new System.Drawing.Size(156, 22);
             this.guardar.Text = "Guardar";
             this.guardar.Click += new System.EventHandler(this.guardar_Click);
             // 
             // itemCerrar
             // 
             this.itemCerrar.Name = "itemCerrar";
-            this.itemCerrar.Size = new System.Drawing.Size(180, 22);
+            this.itemCerrar.Size = new System.Drawing.Size(156, 22);
             this.itemCerrar.Text = "Cerrar";
             this.itemCerrar.Click += new System.EventHandler(this.itemCerrar_Click);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(177, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(153, 6);
             // 
             // imprimirToolStripMenuItem
             // 
@@ -124,7 +124,7 @@
             this.toolStripMenuItem5,
             this.toolStripMenuItem6});
             this.imprimirToolStripMenuItem.Name = "imprimirToolStripMenuItem";
-            this.imprimirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.imprimirToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
             this.imprimirToolStripMenuItem.Text = "Imprimir";
             // 
             // toolStripMenuItem4
@@ -148,13 +148,13 @@
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(177, 6);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(153, 6);
             // 
             // itemSalir
             // 
             this.itemSalir.Name = "itemSalir";
             this.itemSalir.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.E)));
-            this.itemSalir.Size = new System.Drawing.Size(180, 22);
+            this.itemSalir.Size = new System.Drawing.Size(156, 22);
             this.itemSalir.Text = "Salir";
             this.itemSalir.Click += new System.EventHandler(this.itemSalir_Click);
             // 
@@ -312,7 +312,7 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
-            this.Text = "Ejercicio file show";
+            this.Text = "Ejercicio visualizador de imágenes";
             this.Activated += new System.EventHandler(this.Form1_Activated);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

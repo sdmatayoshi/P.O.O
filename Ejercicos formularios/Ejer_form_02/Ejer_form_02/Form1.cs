@@ -32,7 +32,7 @@ namespace Ejer_form_02
         {
             DialogResult dialog;
             openFileDialog1.Multiselect = true;
-            openFileDialog1.Filter = "imagenes JPG|*.jpg|archivos PDF|*.pdf";
+            openFileDialog1.Filter = "imagenes JPG|*.jpg|archivos PNG|*.png|archivos GIF|*.gif";
             dialog = openFileDialog1.ShowDialog();
             if (dialog == DialogResult.OK)
             {
