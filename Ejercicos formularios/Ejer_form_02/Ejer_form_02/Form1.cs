@@ -32,7 +32,7 @@ namespace Ejer_form_02
         {
             DialogResult dialog;
             openFileDialog1.Multiselect = true;
-            openFileDialog1.Filter = "imagenes JPG|*.jpg|archivos PNG|*.png|archivos GIF|*.gif";
+            openFileDialog1.Filter = "Todos los archivos|*|archivos JPG|*.jpg|archivos PNG|*.png|archivos GIF|*.gif";
             dialog = openFileDialog1.ShowDialog();
             if (dialog == DialogResult.OK)
             {
@@ -52,7 +52,7 @@ namespace Ejer_form_02
         {
             if (pictureBox1.Image != null)
             {
-                using (SaveFileDialog saveFileDialog = new SaveFileDialog() { Filter = @"PNG|*.png" })
+                using (SaveFileDialog saveFileDialog = new SaveFileDialog() { Filter = @"JPG|*.jpg" })
             
                 if (saveFileDialog.ShowDialog() == DialogResult.OK)
                 {
