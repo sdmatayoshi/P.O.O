@@ -244,7 +244,7 @@ namespace Ejer_form_02
 
         private void toolStripButton6_Click(object sender, EventArgs e)
         {
-            if (pictureBox1.Image != null)
+            if (pictureBox1.Image != null && trackBar1.Value < trackBar1.Maximum)
             {
                 trackBar1.Value = trackBar1.Value + 1;
                 pictureBox1.Image = ZoomPicture(org.Image, new Size((trackBar1.Value), (trackBar1.Value)));
@@ -253,7 +253,7 @@ namespace Ejer_form_02
 
         private void toolStripButton7_Click(object sender, EventArgs e)
         {
-            if (pictureBox1.Image != null && trackBar1.Value>1)
+            if (pictureBox1.Image != null && trackBar1.Value> trackBar1.Minimum)
             {
                 trackBar1.Value = trackBar1.Value - 1;
                 pictureBox1.Image = ZoomPicture(org.Image, new Size((trackBar1.Value), (trackBar1.Value)));
