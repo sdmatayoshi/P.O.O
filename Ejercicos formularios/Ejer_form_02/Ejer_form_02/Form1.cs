@@ -70,6 +70,7 @@ namespace Ejer_form_02
         //Bitmap bmp;
         private void Form1_Load(object sender, EventArgs e)
         {
+            trackBar1.Width = flowLayoutPanel1.Width;
             try
             {
                 trackBar1.Minimum = 1;
@@ -230,6 +231,14 @@ namespace Ejer_form_02
             {
                 pictureBox1.Image = null;
             }
+        }
+
+        private void Form1_Resize(object sender, EventArgs e)
+        {
+            pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            pictureBox1.Width = flowLayoutPanel1.Width;
+            pictureBox1.Height = flowLayoutPanel1.Height;
+            trackBar1.Width = flowLayoutPanel1.Width;
         }
     }
 }
