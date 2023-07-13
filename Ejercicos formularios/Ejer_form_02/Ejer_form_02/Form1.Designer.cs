@@ -257,24 +257,24 @@
             // toolStripButton6
             // 
             this.toolStripButton6.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton6.Enabled = false;
             this.toolStripButton6.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton6.Image")));
             this.toolStripButton6.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton6.Name = "toolStripButton6";
             this.toolStripButton6.Size = new System.Drawing.Size(23, 22);
             this.toolStripButton6.Text = "toolStripButton6";
             this.toolStripButton6.ToolTipText = "Zoom In (Disabled)";
+            this.toolStripButton6.Click += new System.EventHandler(this.toolStripButton6_Click);
             // 
             // toolStripButton7
             // 
             this.toolStripButton7.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton7.Enabled = false;
             this.toolStripButton7.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton7.Image")));
             this.toolStripButton7.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton7.Name = "toolStripButton7";
             this.toolStripButton7.Size = new System.Drawing.Size(23, 22);
             this.toolStripButton7.Text = "toolStripButton7";
             this.toolStripButton7.ToolTipText = "Zoom Out (Disabled)";
+            this.toolStripButton7.Click += new System.EventHandler(this.toolStripButton7_Click);
             // 
             // toolStripButton8
             // 
@@ -379,9 +379,10 @@
             // 
             // trackBar1
             // 
+            this.trackBar1.Enabled = false;
             this.trackBar1.Location = new System.Drawing.Point(3, 3);
             this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(391, 45);
+            this.trackBar1.Size = new System.Drawing.Size(682, 45);
             this.trackBar1.TabIndex = 4;
             this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
             // 
