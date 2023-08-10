@@ -1,0 +1,16 @@
+C:\xampp\htdocs\P.O.O\Ejercicos formularios\Ejer_form_03\Ejer_form_03\bin\Debug\Ejer_form_03.exe.config
+C:\xampp\htdocs\P.O.O\Ejercicos formularios\Ejer_form_03\Ejer_form_03\bin\Debug\Ejer_form_03.exe
+C:\xampp\htdocs\P.O.O\Ejercicos formularios\Ejer_form_03\Ejer_form_03\bin\Debug\Ejer_form_03.pdb
+C:\xampp\htdocs\P.O.O\Ejercicos formularios\Ejer_form_03\Ejer_form_03\bin\Debug\Interop.WMPLib.dll
+C:\xampp\htdocs\P.O.O\Ejercicos formularios\Ejer_form_03\Ejer_form_03\bin\Debug\AxInterop.WMPLib.dll
+C:\xampp\htdocs\P.O.O\Ejercicos formularios\Ejer_form_03\Ejer_form_03\obj\Debug\Ejer_form_03.csproj.AssemblyReference.cache
+C:\xampp\htdocs\P.O.O\Ejercicos formularios\Ejer_form_03\Ejer_form_03\obj\Debug\Ejer_form_03.csproj.SuggestedBindingRedirects.cache
+C:\xampp\htdocs\P.O.O\Ejercicos formularios\Ejer_form_03\Ejer_form_03\obj\Debug\Interop.WMPLib.dll
+C:\xampp\htdocs\P.O.O\Ejercicos formularios\Ejer_form_03\Ejer_form_03\obj\Debug\AxInterop.WMPLib.dll
+C:\xampp\htdocs\P.O.O\Ejercicos formularios\Ejer_form_03\Ejer_form_03\obj\Debug\Ejer_form_03.csproj.ResolveComReference.cache
+C:\xampp\htdocs\P.O.O\Ejercicos formularios\Ejer_form_03\Ejer_form_03\obj\Debug\Ejer_form_03.Form1.resources
+C:\xampp\htdocs\P.O.O\Ejercicos formularios\Ejer_form_03\Ejer_form_03\obj\Debug\Ejer_form_03.Properties.Resources.resources
+C:\xampp\htdocs\P.O.O\Ejercicos formularios\Ejer_form_03\Ejer_form_03\obj\Debug\Ejer_form_03.csproj.GenerateResource.cache
+C:\xampp\htdocs\P.O.O\Ejercicos formularios\Ejer_form_03\Ejer_form_03\obj\Debug\Ejer_form_03.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\P.O.O\Ejercicos formularios\Ejer_form_03\Ejer_form_03\obj\Debug\Ejer_form_03.exe
+C:\xampp\htdocs\P.O.O\Ejercicos formularios\Ejer_form_03\Ejer_form_03\obj\Debug\Ejer_form_03.pdb
