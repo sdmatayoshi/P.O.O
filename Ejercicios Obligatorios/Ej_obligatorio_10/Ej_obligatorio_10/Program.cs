@@ -34,14 +34,15 @@ namespace Ej_obligatorio_10
             return palo + numero.ToString();
         }
     }
-    class Program
+
+class Program
     {
         static void Main(string[] args)
         {
             List<Carta> baraja = new List<Carta>();
             int a = 1;
             string palo = null;
-            for (int i = 0; i < 12; i++)
+            for (int i = 1; i < 13; i++)
             {
                 if (a == 1)
                 {
@@ -73,9 +74,12 @@ namespace Ej_obligatorio_10
                     }
                 }
             }
-            for (int i = 0; i<baraja.Count();i++)
+            Random rand = new Random();
+            baraja = baraja.OrderBy(_ => rand.Next(0, baraja.Count())).ToList();
+
+            for (int i = 0; i < baraja.Count(); i++)
             {
-                baraja[i].mostrar();
+                Console.WriteLine(baraja[i].mostrar());
             }
             Console.ReadKey();
         }
