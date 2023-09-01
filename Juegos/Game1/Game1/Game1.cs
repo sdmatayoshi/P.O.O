@@ -78,16 +78,22 @@ namespace Project1
         int _score = 0; int n = 2; int natk = 1; bool atk = false; int _hp = 100;
         int _slimehp = 100; bool enemy_appear = false; bool def = false; bool potion = false;
         int look = 0;
+        int cont = 0;
         protected override void Update(GameTime gameTime)
         {
-
+            cont++;
             // Se utiliza para poder recibir el estado del teclado.
             KeyboardState keyboardState = Keyboard.GetState();
             // Se ejecuta cuando la variable _manzanaTocada es "false".
             if (keyboardState.IsKeyDown(Keys.A))
             {
                 look = 1;
+                if (cont == 16)
+                {
                 _monoTexture = Content.Load<Texture2D>("img/monol"+n);
+                    cont = 0;
+                }
+                
                 if (!keyboardState.IsKeyDown(Keys.LeftControl) && !def)
                 {
                     _monoPosition.X -= 2;

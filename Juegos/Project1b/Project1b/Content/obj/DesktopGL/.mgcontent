@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Profile>Reach</Profile>
+  <Platform>DesktopGL</Platform>
+  <Config />
+  <SourceFiles>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Project1b/Project1b/Content/resources/img/attack/atkb1.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Project1b/Project1b/Content/resources/img/attack/atkb2.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Project1b/Project1b/Content/resources/img/attack/atkb3.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Project1b/Project1b/Content/resources/img/attack/atkb4.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Project1b/Project1b/Content/resources/img/attack/atkb5.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Project1b/Project1b/Content/resources/img/attack/atkl1.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Project1b/Project1b/Content/resources/img/attack/atkl2.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Project1b/Project1b/Content/resources/img/attack/atkl3.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Project1b/Project1b/Content/resources/img/attack/atkl4.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Project1b/Project1b/Content/resources/img/attack/atkl5.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Project1b/Project1b/Content/resources/img/attack/atkr1.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Project1b/Project1b/Content/resources/img/attack/atkr2.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Project1b/Project1b/Content/resources/img/attack/atkr3.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Project1b/Project1b/Content/resources/img/attack/atkr4.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Project1b/Project1b/Content/resources/img/attack/atkr5.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Project1b/Project1b/Content/resources/img/attack/atku1.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Project1b/Project1b/Content/resources/img/attack/atku2.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Project1b/Project1b/Content/resources/img/attack/atku3.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Project1b/Project1b/Content/resources/img/attack/atku4.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Project1b/Project1b/Content/resources/img/attack/atku5.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Project1b/Project1b/Content/resources/img/dragon1.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Project1b/Project1b/Content/resources/img/dragon2.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Project1b/Project1b/Content/resources/img/File.spritefont</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Project1b/Project1b/Content/resources/img/heal.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Project1b/Project1b/Content/resources/img/mono/mono1.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Project1b/Project1b/Content/resources/img/mono/mono2.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Project1b/Project1b/Content/resources/img/mono/mono3.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Project1b/Project1b/Content/resources/img/mono/mono4.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Project1b/Project1b/Content/resources/img/mono/monob1.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Project1b/Project1b/Content/resources/img/mono/monob2.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Project1b/Project1b/Content/resources/img/mono/monob3.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Project1b/Project1b/Content/resources/img/mono/monob4.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Project1b/Project1b/Content/resources/img/mono/monocoffin.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Project1b/Project1b/Content/resources/img/mono/monodeath.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Project1b/Project1b/Content/resources/img/mono/monohitbox.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Project1b/Project1b/Content/resources/img/mono/monol1.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Project1b/Project1b/Content/resources/img/mono/monol2.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Project1b/Project1b/Content/resources/img/mono/monol3.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Project1b/Project1b/Content/resources/img/mono/monol4.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Project1b/Project1b/Content/resources/img/mono/monor1.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Project1b/Project1b/Content/resources/img/mono/monor2.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Project1b/Project1b/Content/resources/img/mono/monor3.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Project1b/Project1b/Content/resources/img/mono/monor4.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Project1b/Project1b/Content/resources/img/plant.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Project1b/Project1b/Content/resources/img/rimuru.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Project1b/Project1b/Content/resources/img/Score.spritefont</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Project1b/Project1b/Content/resources/img/shield/shieldb.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Project1b/Project1b/Content/resources/img/shield/shieldl.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Project1b/Project1b/Content/resources/img/shield/shieldn.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Project1b/Project1b/Content/resources/img/shield/shieldr.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Project1b/Project1b/Content/resources/img/shield/shieldu.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Project1b/Project1b/Content/resources/img/slime/slime1.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Project1b/Project1b/Content/resources/img/slime/slime2.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Project1b/Project1b/Content/resources/img/slime/slime3.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Project1b/Project1b/Content/resources/img/slime/slime4.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Project1b/Project1b/Content/resources/img/slime/slime5.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Project1b/Project1b/Content/resources/img/slime/slime6.png</File>
+  </SourceFiles>
+  <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+  </DestFiles>
+</SourceFileCollection>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <SourceFile>C:/xampp/htdocs/P.O.O/Juegos/Game1/Game1/Content/img/heal.png</SourceFile>
-  <SourceTime>2023-09-01T11:24:11.6298972-03:00</SourceTime>
+  <SourceTime>2023-09-01T13:03:34.9375115-03:00</SourceTime>
   <DestFile>C:/xampp/htdocs/P.O.O/Juegos/Game1/Game1/Content/bin/DesktopGL/Content/img/heal.xnb</DestFile>
-  <DestTime>2023-09-01T11:26:17.9316472-03:00</DestTime>
+  <DestTime>2023-09-01T13:31:12.0394486-03:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2022-07-26T08:44:56-03:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

@@ -1,0 +1,3 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"C:/xampp/htdocs/P.O.O/Juegos/Project1b/Project1b/Content/resources/img/dragon1.png","C:/xampp/htdocs/P.O.O/Juegos/Project1b/Project1b/Content/bin/DesktopGL/resources/img/dragon1.xnb","TextureProcessor","Texture2DContent",810,10253,0,1030425
+"C:/xampp/htdocs/P.O.O/Juegos/Project1b/Project1b/Content/resources/img/dragon2.png","C:/xampp/htdocs/P.O.O/Juegos/Project1b/Project1b/Content/bin/DesktopGL/resources/img/dragon2.xnb","TextureProcessor","Texture2DContent",801,10253,0,0015663

@@ -4,26 +4,6 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/xampp/htdocs/P.O.O/Juegos/Game1/Game1/Content/../../../../../../../Users/Alumno/Desktop/atk/atkb1.png</File>
-    <File>C:/xampp/htdocs/P.O.O/Juegos/Game1/Game1/Content/../../../../../../../Users/Alumno/Desktop/atk/atkb2.png</File>
-    <File>C:/xampp/htdocs/P.O.O/Juegos/Game1/Game1/Content/../../../../../../../Users/Alumno/Desktop/atk/atkb3.png</File>
-    <File>C:/xampp/htdocs/P.O.O/Juegos/Game1/Game1/Content/../../../../../../../Users/Alumno/Desktop/atk/atkb4.png</File>
-    <File>C:/xampp/htdocs/P.O.O/Juegos/Game1/Game1/Content/../../../../../../../Users/Alumno/Desktop/atk/atkb5.png</File>
-    <File>C:/xampp/htdocs/P.O.O/Juegos/Game1/Game1/Content/../../../../../../../Users/Alumno/Desktop/atk/atkl1.png</File>
-    <File>C:/xampp/htdocs/P.O.O/Juegos/Game1/Game1/Content/../../../../../../../Users/Alumno/Desktop/atk/atkl2.png</File>
-    <File>C:/xampp/htdocs/P.O.O/Juegos/Game1/Game1/Content/../../../../../../../Users/Alumno/Desktop/atk/atkl3.png</File>
-    <File>C:/xampp/htdocs/P.O.O/Juegos/Game1/Game1/Content/../../../../../../../Users/Alumno/Desktop/atk/atkl4.png</File>
-    <File>C:/xampp/htdocs/P.O.O/Juegos/Game1/Game1/Content/../../../../../../../Users/Alumno/Desktop/atk/atkl5.png</File>
-    <File>C:/xampp/htdocs/P.O.O/Juegos/Game1/Game1/Content/../../../../../../../Users/Alumno/Desktop/atk/atkr1.png</File>
-    <File>C:/xampp/htdocs/P.O.O/Juegos/Game1/Game1/Content/../../../../../../../Users/Alumno/Desktop/atk/atkr2.png</File>
-    <File>C:/xampp/htdocs/P.O.O/Juegos/Game1/Game1/Content/../../../../../../../Users/Alumno/Desktop/atk/atkr3.png</File>
-    <File>C:/xampp/htdocs/P.O.O/Juegos/Game1/Game1/Content/../../../../../../../Users/Alumno/Desktop/atk/atkr4.png</File>
-    <File>C:/xampp/htdocs/P.O.O/Juegos/Game1/Game1/Content/../../../../../../../Users/Alumno/Desktop/atk/atkr5.png</File>
-    <File>C:/xampp/htdocs/P.O.O/Juegos/Game1/Game1/Content/../../../../../../../Users/Alumno/Desktop/atk/atku1.png</File>
-    <File>C:/xampp/htdocs/P.O.O/Juegos/Game1/Game1/Content/../../../../../../../Users/Alumno/Desktop/atk/atku2.png</File>
-    <File>C:/xampp/htdocs/P.O.O/Juegos/Game1/Game1/Content/../../../../../../../Users/Alumno/Desktop/atk/atku3.png</File>
-    <File>C:/xampp/htdocs/P.O.O/Juegos/Game1/Game1/Content/../../../../../../../Users/Alumno/Desktop/atk/atku4.png</File>
-    <File>C:/xampp/htdocs/P.O.O/Juegos/Game1/Game1/Content/../../../../../../../Users/Alumno/Desktop/atk/atku5.png</File>
     <File>C:/xampp/htdocs/P.O.O/Juegos/Game1/Game1/Content/../../../../../../../Users/Alumno/Desktop/mono/mono1.png</File>
     <File>C:/xampp/htdocs/P.O.O/Juegos/Game1/Game1/Content/../../../../../../../Users/Alumno/Desktop/mono/mono2.png</File>
     <File>C:/xampp/htdocs/P.O.O/Juegos/Game1/Game1/Content/../../../../../../../Users/Alumno/Desktop/mono/mono3.png</File>
@@ -40,43 +20,8 @@
     <File>C:/xampp/htdocs/P.O.O/Juegos/Game1/Game1/Content/../../../../../../../Users/Alumno/Desktop/mono/monor2.png</File>
     <File>C:/xampp/htdocs/P.O.O/Juegos/Game1/Game1/Content/../../../../../../../Users/Alumno/Desktop/mono/monor3.png</File>
     <File>C:/xampp/htdocs/P.O.O/Juegos/Game1/Game1/Content/../../../../../../../Users/Alumno/Desktop/mono/monor4.png</File>
-    <File>C:/xampp/htdocs/P.O.O/Juegos/Game1/Game1/Content/img/heal.png</File>
-    <File>C:/xampp/htdocs/P.O.O/Juegos/Game1/Game1/Content/img/plant.png</File>
-    <File>C:/xampp/htdocs/P.O.O/Juegos/Game1/Game1/Content/img/rimuru.png</File>
-    <File>C:/xampp/htdocs/P.O.O/Juegos/Game1/Game1/Content/img/Score.spritefont</File>
-    <File>C:/xampp/htdocs/P.O.O/Juegos/Game1/Game1/Content/img/shieldb.png</File>
-    <File>C:/xampp/htdocs/P.O.O/Juegos/Game1/Game1/Content/img/shieldl.png</File>
-    <File>C:/xampp/htdocs/P.O.O/Juegos/Game1/Game1/Content/img/shieldn.png</File>
-    <File>C:/xampp/htdocs/P.O.O/Juegos/Game1/Game1/Content/img/shieldr.png</File>
-    <File>C:/xampp/htdocs/P.O.O/Juegos/Game1/Game1/Content/img/shieldu.png</File>
-    <File>C:/xampp/htdocs/P.O.O/Juegos/Game1/Game1/Content/img/slime1.png</File>
-    <File>C:/xampp/htdocs/P.O.O/Juegos/Game1/Game1/Content/img/slime2.png</File>
-    <File>C:/xampp/htdocs/P.O.O/Juegos/Game1/Game1/Content/img/slime3.png</File>
-    <File>C:/xampp/htdocs/P.O.O/Juegos/Game1/Game1/Content/img/slime4.png</File>
-    <File>C:/xampp/htdocs/P.O.O/Juegos/Game1/Game1/Content/img/slime5.png</File>
-    <File>C:/xampp/htdocs/P.O.O/Juegos/Game1/Game1/Content/img/slime6.png</File>
   </SourceFiles>
   <DestFiles>
-    <File>img/atkb1.png</File>
-    <File>img/atkb2.png</File>
-    <File>img/atkb3.png</File>
-    <File>img/atkb4.png</File>
-    <File>img/atkb5.png</File>
-    <File>img/atkl1.png</File>
-    <File>img/atkl2.png</File>
-    <File>img/atkl3.png</File>
-    <File>img/atkl4.png</File>
-    <File>img/atkl5.png</File>
-    <File>img/atkr1.png</File>
-    <File>img/atkr2.png</File>
-    <File>img/atkr3.png</File>
-    <File>img/atkr4.png</File>
-    <File>img/atkr5.png</File>
-    <File>img/atku1.png</File>
-    <File>img/atku2.png</File>
-    <File>img/atku3.png</File>
-    <File>img/atku4.png</File>
-    <File>img/atku5.png</File>
     <File>img/mono1.png</File>
     <File>img/mono2.png</File>
     <File>img/mono3.png</File>
@@ -93,20 +38,5 @@
     <File>img/monor2.png</File>
     <File>img/monor3.png</File>
     <File>img/monor4.png</File>
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
   </DestFiles>
 </SourceFileCollection>
