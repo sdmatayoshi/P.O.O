@@ -86,7 +86,7 @@ namespace Project1
         }
         int _score = 0;int n = 2;int natk = 1;bool atk = false;int _hp = 10;int _slimehp = 5;bool enemy_appear = false;bool def = false;bool potion = false;
         bool death = false;int look = 0;int cont = 0;int contslime = 0;bool getpotion = false;int contglob=0;int time = 0;int cantgrass = 1;int contatk=0;
-        int contdamage = 0;int contenemy = 0;int conttick = 0;int dragonhp = 30;int contdr = 0;bool dragon_appear = false;
+        int contdamage = 0;int contenemy = 0;int conttick = 0;int dragonhp = 30;int contdr = 0;bool dragon_appear = false;int dratk = 0;
         protected override void Update(GameTime gameTime)
         {
             
@@ -597,7 +597,7 @@ contatk = 0;
             }
             if (dragonRectangle.Intersects(monoRectangle) && !def && dragon_appear)
             {
-                if (contdr > 20)
+                if (dratk > 20)
                 {
                     _hp = _hp - 2;
                     Random rn = new Random();
@@ -607,9 +607,9 @@ contatk = 0;
                         _hp++;
                     }
                 }
-                if (contdr > 20)
+                if (dratk > 20)
                 {
-                    contdr = 0;
+                    dratk = 0;
                 }
             }
 
@@ -699,6 +699,7 @@ contatk = 0;
             contdamage++;
             contenemy++;
             contdr++;
+            dratk++;
             base.Update(gameTime);
         }
 
@@ -711,11 +712,11 @@ contatk = 0;
             _spriteBatch.DrawString(_font, "Hp: " + _hp, new Vector2(10, 10), Color.Black);
             _spriteBatch.DrawString(_font, "Time: " + time, new Vector2(200, 10), Color.Black);
 
-            _spriteBatch.DrawString(_font, "contslime: " + contslime, new Vector2(10, 110), Color.Black);
+            //_spriteBatch.DrawString(_font, "contslime: " + contslime, new Vector2(10, 110), Color.Black);
             _spriteBatch.DrawString(_font, "contatk: " + contatk, new Vector2(10, 120), Color.Black);
-            _spriteBatch.DrawString(_font, "contdamage: " + contdamage, new Vector2(10, 130), Color.Black);
-            _spriteBatch.DrawString(_font, "contenemy: " + contenemy, new Vector2(10, 140), Color.Black);
-            _spriteBatch.DrawString(_font, "contdr: " + contdr, new Vector2(10, 150), Color.Black);
+            //_spriteBatch.DrawString(_font, "contdamage: " + contdamage, new Vector2(10, 130), Color.Black);
+            //_spriteBatch.DrawString(_font, "contenemy: " + contenemy, new Vector2(10, 140), Color.Black);
+            //_spriteBatch.DrawString(_font, "contdr: " + contdr, new Vector2(10, 150), Color.Black);
 
             _spriteBatch.Draw(_monoTexture, _monoPosition, Color.White);
             if (enemy_appear)

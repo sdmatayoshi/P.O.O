@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <SourceFile>C:/xampp/htdocs/P.O.O/Juegos/Project1b/Project1b/Content/resources/img/attack/atkr3.png</SourceFile>
-  <SourceTime>2023-09-01T14:19:42.2339053-03:00</SourceTime>
+  <SourceTime>2023-09-07T13:45:41.9523491-03:00</SourceTime>
   <DestFile>C:/xampp/htdocs/P.O.O/Juegos/Project1b/Project1b/Content/bin/DesktopGL/Content/resources/img/attack/atkr3.xnb</DestFile>
-  <DestTime>2023-09-01T14:24:30.4125606-03:00</DestTime>
+  <DestTime>2023-09-07T13:49:37.1712685-03:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2022-07-26T08:44:56-03:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
