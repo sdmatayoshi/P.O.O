@@ -36,3 +36,10 @@ C:\xampp\htdocs\P.O.O\Juegos\Ningyou geki\Ningyou geki\bin\Debug\net6.0\Content\
 C:\xampp\htdocs\P.O.O\Juegos\Ningyou geki\Ningyou geki\bin\Debug\net6.0\Content\resources\char-right-turn.xnb
 C:\xampp\htdocs\P.O.O\Juegos\Ningyou geki\Ningyou geki\bin\Debug\net6.0\Content\resources\char-jump-left.xnb
 C:\xampp\htdocs\P.O.O\Juegos\Ningyou geki\Ningyou geki\bin\Debug\net6.0\Content\resources\char-jump-right.xnb
+C:\xampp\htdocs\P.O.O\Juegos\Ningyou geki\Ningyou geki\bin\Debug\net6.0\Content\resources\slash-l.xnb
+C:\xampp\htdocs\P.O.O\Juegos\Ningyou geki\Ningyou geki\bin\Debug\net6.0\Content\resources\slash-n.xnb
+C:\xampp\htdocs\P.O.O\Juegos\Ningyou geki\Ningyou geki\bin\Debug\net6.0\Content\resources\slash-r.xnb
+C:\xampp\htdocs\P.O.O\Juegos\Ningyou geki\Ningyou geki\bin\Debug\net6.0\Content\resources\char-attack-left.xnb
+C:\xampp\htdocs\P.O.O\Juegos\Ningyou geki\Ningyou geki\bin\Debug\net6.0\Content\resources\char-attack-right.xnb
+C:\xampp\htdocs\P.O.O\Juegos\Ningyou geki\Ningyou geki\bin\Debug\net6.0\Content\resources\char-jump-attack-left.xnb
+C:\xampp\htdocs\P.O.O\Juegos\Ningyou geki\Ningyou geki\bin\Debug\net6.0\Content\resources\char-jump-attack-right.xnb
