@@ -61,30 +61,54 @@ Crear una estructura con:
 
         private void ボタン２_Click(object sender, EventArgs e)
         {
-            // int a = 0;
-            //foreach (var item in リスト１.Items) 
-            // {
-            //     リスト１.SelectedItem = a;
-
-            //     if (リスト１.SelectedItem.ToString().Length <= 5)
-            //     {
-
-            //     }
-            //     a++;
-            // }
-            for (int i=0;i< リスト１.Items.Count-1;i++)
+            for (int i= リスト１.Items.Count - 1; i>0 ;i--)
             {
-                リスト１.SelectedItem = a;
-                if (リスト１.SelectedItem.ToString().Length <= 5)
+                if (リスト１.Items[i].ToString().Length <= 5)
                 {
-
+                    リスト１.Items.RemoveAt(i);
                 }
-                リスト１.Items.Add(i);
+            }
+            for (int i = リスト２.Items.Count - 1; i > 0; i--)
+            {
+                if (リスト２.Items[i].ToString().Length <= 5)
+                {
+                    リスト２.Items.RemoveAt(i);
+                }
             }
         }
 
         private void ボタン３_Click(object sender, EventArgs e)
         {
+            for (int i = リスト１.Items.Count - 1; i > 0; i--)
+            {
+                if (リスト１.Items[i].ToString().Length <= 5)
+                {
+                    リスト３.Items.Add(リスト１.Items[i]);
+                    リスト１.Items.RemoveAt(i);
+                }
+            }
+            for (int i = リスト２.Items.Count - 1; i > 0; i--)
+            {
+                if (リスト２.Items[i].ToString().Length <= 5)
+                {
+                    リスト４.Items.Add(リスト２.Items[i]);
+                    リスト２.Items.RemoveAt(i);
+                }
+            }
+
+
+            for (int i = リスト３.Items.Count-1; i > 0; i--)
+            {
+                    リスト２.Items.Add(リスト３.Items[i]);
+            }
+            
+            for (int i = リスト４.Items.Count-1; i > 0; i--)
+            {
+                リスト１.Items.Add(リスト４.Items[i]);
+            }
+            リスト３.Items.Clear();
+            リスト４.Items.Clear();
+
 
         }
 

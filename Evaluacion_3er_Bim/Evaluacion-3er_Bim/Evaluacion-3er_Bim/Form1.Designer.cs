@@ -103,6 +103,7 @@
             this.リスト３.Name = "リスト３";
             this.リスト３.Size = new System.Drawing.Size(40, 17);
             this.リスト３.TabIndex = 6;
+            this.リスト３.Visible = false;
             // 
             // リスト４
             // 
@@ -111,6 +112,7 @@
             this.リスト４.Name = "リスト４";
             this.リスト４.Size = new System.Drawing.Size(41, 17);
             this.リスト４.TabIndex = 7;
+            this.リスト４.Visible = false;
             // 
             // リスト５
             // 
@@ -119,6 +121,7 @@
             this.リスト５.Name = "リスト５";
             this.リスト５.Size = new System.Drawing.Size(40, 17);
             this.リスト５.TabIndex = 8;
+            this.リスト５.Visible = false;
             // 
             // リスト６
             // 
@@ -127,12 +130,13 @@
             this.リスト６.Name = "リスト６";
             this.リスト６.Size = new System.Drawing.Size(41, 17);
             this.リスト６.TabIndex = 9;
+            this.リスト６.Visible = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(626, 354);
+            this.ClientSize = new System.Drawing.Size(272, 354);
             this.Controls.Add(this.リスト６);
             this.Controls.Add(this.リスト５);
             this.Controls.Add(this.リスト４);
