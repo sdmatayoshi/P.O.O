@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <SourceFile>C:/xampp/htdocs/P.O.O/Juegos/Ningyou geki/Ningyou geki/Content/resources/char-jump-attack-left.png</SourceFile>
-  <SourceTime>2023-09-22T15:52:33.8224186-03:00</SourceTime>
+  <SourceTime>2023-10-05T14:23:07.377651-03:00</SourceTime>
   <DestFile>C:/xampp/htdocs/P.O.O/Juegos/Ningyou geki/Ningyou geki/Content/bin/DesktopGL/Content/resources/char-jump-attack-left.xnb</DestFile>
-  <DestTime>2023-09-22T15:52:40.125381-03:00</DestTime>
+  <DestTime>2023-10-05T14:26:48.0507913-03:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2022-07-26T08:44:56-03:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

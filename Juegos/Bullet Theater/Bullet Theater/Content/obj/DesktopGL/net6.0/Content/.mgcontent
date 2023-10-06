@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Profile>Reach</Profile>
+  <Platform>DesktopGL</Platform>
+  <Config />
+  <SourceFiles>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Bullet Theater/Bullet Theater/Content/img/bullets/bullet1.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Bullet Theater/Bullet Theater/Content/img/bullets/bullet2.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Bullet Theater/Bullet Theater/Content/img/bullets/bullet21.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Bullet Theater/Bullet Theater/Content/img/bullets/bullet22.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Bullet Theater/Bullet Theater/Content/img/bullets/bullet23.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Bullet Theater/Bullet Theater/Content/img/bullets/bullet3.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Bullet Theater/Bullet Theater/Content/img/characters/enemy1-template.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Bullet Theater/Bullet Theater/Content/img/characters/player-template.png</File>
+  </SourceFiles>
+  <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+  </DestFiles>
+</SourceFileCollection>
