@@ -1,0 +1,7 @@
+C:\xampp\htdocs\P.O.O\Juegos\ejercicio-medina\ejercicio-medina\bin\Debug\ejercicio-medina.exe.config
+C:\xampp\htdocs\P.O.O\Juegos\ejercicio-medina\ejercicio-medina\bin\Debug\ejercicio-medina.exe
+C:\xampp\htdocs\P.O.O\Juegos\ejercicio-medina\ejercicio-medina\bin\Debug\ejercicio-medina.pdb
+C:\xampp\htdocs\P.O.O\Juegos\ejercicio-medina\ejercicio-medina\obj\Debug\ejercicio-medina.csproj.AssemblyReference.cache
+C:\xampp\htdocs\P.O.O\Juegos\ejercicio-medina\ejercicio-medina\obj\Debug\ejercicio-medina.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\P.O.O\Juegos\ejercicio-medina\ejercicio-medina\obj\Debug\ejercicio-medina.exe
+C:\xampp\htdocs\P.O.O\Juegos\ejercicio-medina\ejercicio-medina\obj\Debug\ejercicio-medina.pdb

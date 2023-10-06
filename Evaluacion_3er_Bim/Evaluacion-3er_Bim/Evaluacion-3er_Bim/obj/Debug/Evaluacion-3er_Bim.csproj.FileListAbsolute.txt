@@ -1,0 +1,10 @@
+C:\xampp\htdocs\P.O.O\Evaluacion_3er_Bim\Evaluacion-3er_Bim\Evaluacion-3er_Bim\obj\Debug\Evaluacion-3er_Bim.csproj.AssemblyReference.cache
+C:\xampp\htdocs\P.O.O\Evaluacion_3er_Bim\Evaluacion-3er_Bim\Evaluacion-3er_Bim\obj\Debug\Evaluacion_3er_Bim.Form1.resources
+C:\xampp\htdocs\P.O.O\Evaluacion_3er_Bim\Evaluacion-3er_Bim\Evaluacion-3er_Bim\obj\Debug\Evaluacion_3er_Bim.Properties.Resources.resources
+C:\xampp\htdocs\P.O.O\Evaluacion_3er_Bim\Evaluacion-3er_Bim\Evaluacion-3er_Bim\obj\Debug\Evaluacion-3er_Bim.csproj.GenerateResource.cache
+C:\xampp\htdocs\P.O.O\Evaluacion_3er_Bim\Evaluacion-3er_Bim\Evaluacion-3er_Bim\obj\Debug\Evaluacion-3er_Bim.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\P.O.O\Evaluacion_3er_Bim\Evaluacion-3er_Bim\Evaluacion-3er_Bim\bin\Debug\Evaluacion-3er_Bim.exe.config
+C:\xampp\htdocs\P.O.O\Evaluacion_3er_Bim\Evaluacion-3er_Bim\Evaluacion-3er_Bim\bin\Debug\Evaluacion-3er_Bim.exe
+C:\xampp\htdocs\P.O.O\Evaluacion_3er_Bim\Evaluacion-3er_Bim\Evaluacion-3er_Bim\bin\Debug\Evaluacion-3er_Bim.pdb
+C:\xampp\htdocs\P.O.O\Evaluacion_3er_Bim\Evaluacion-3er_Bim\Evaluacion-3er_Bim\obj\Debug\Evaluacion-3er_Bim.exe
+C:\xampp\htdocs\P.O.O\Evaluacion_3er_Bim\Evaluacion-3er_Bim\Evaluacion-3er_Bim\obj\Debug\Evaluacion-3er_Bim.pdb

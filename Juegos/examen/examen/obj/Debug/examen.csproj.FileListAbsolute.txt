@@ -1,0 +1,7 @@
+C:\xampp\htdocs\P.O.O\Juegos\examen\examen\bin\Debug\examen.exe.config
+C:\xampp\htdocs\P.O.O\Juegos\examen\examen\bin\Debug\examen.exe
+C:\xampp\htdocs\P.O.O\Juegos\examen\examen\bin\Debug\examen.pdb
+C:\xampp\htdocs\P.O.O\Juegos\examen\examen\obj\Debug\examen.csproj.AssemblyReference.cache
+C:\xampp\htdocs\P.O.O\Juegos\examen\examen\obj\Debug\examen.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\P.O.O\Juegos\examen\examen\obj\Debug\examen.exe
+C:\xampp\htdocs\P.O.O\Juegos\examen\examen\obj\Debug\examen.pdb

@@ -52,21 +52,23 @@ namespace Ningyou_geki
             charhitboxTexture = Content.Load<Texture2D>("resources/char-hitbox");
             charhitboxPosition = charPosition;
             stickTexture = Content.Load<Texture2D>("resources/stick");
-            stickPosition = new Vector2(charPosition.X + 13, charPosition.Y+30);
+            stickPosition = new Vector2(charPosition.X + 13, charPosition.Y + 30);
             floorTexture = Content.Load<Texture2D>("resources/floor-temp");
             floorPosition = new Vector2(100, 300);
             floorTexture2 = Content.Load<Texture2D>("resources/floor-temp");
             floorPosition2 = new Vector2(300, 250);
             slashTexture = Content.Load<Texture2D>("resources/slash-n");
-            slashPosition = new Vector2(charPosition.X+20, charPosition.Y + 20);
+            slashPosition = new Vector2(charPosition.X + 20, charPosition.Y + 20);
             debug_font = Content.Load<SpriteFont>("resources/debug");
         }
-        bool ground = true;bool jump = false;int gravity = 1;int contgrav = 0;int swip = 0;
+        bool ground = true; bool jump = false; int gravity = 1; int contgrav = 0; int swip = 0;
         int contjmp = 0; int air = 0;
-        int look = 1;int airtime = 0; bool attack = false;
+        int look = 1; int airtime = 0; bool attack = false;
         int attacktime = 0; int pdmgtime = 0;
         bool game_over = false;
-        int enemyhp = 0;int enemydmg = 0;
+        int enemyhp = 0; int enemydmg = 0;
+        int enemymove = 0;
+        int enPos = 0;
         protected override void Update(GameTime gameTime)
         {
             Rectangle charRectangle = new Rectangle((int)charhitboxPosition.X, (int)charhitboxPosition.Y, charhitboxTexture.Width, charhitboxTexture.Height);
@@ -93,7 +95,27 @@ namespace Ningyou_geki
                 slashPosition = new Vector2(charPosition.X + 20, charPosition.Y);
                 charhitboxPosition = charPosition;
             }
-            
+
+            if (enemymove>10)
+            {
+                enPos++;
+                if (enPos<10)
+                {
+                    
+                    enemyPosition.X += 2;
+                }
+                else if (enPos > 10)
+                {
+                    enemyPosition.X -= 2;
+                } 
+                if (enPos >= 20)
+                {
+                    enPos=0;
+                }
+                
+                
+                enemymove =0;
+            }
             
             if (slashRectangle.Intersects(enemyRectangle) &&pdmgtime>20&&attack)
             {
@@ -106,6 +128,17 @@ namespace Ningyou_geki
                 ground = false;
             }
 
+            if (charRectangle.Intersects(enemyRectangle) && charPosition.X < enemyPosition.X)
+            {
+
+                charPosition.X -= 10;
+            }
+            else if (charRectangle.Intersects(enemyRectangle) && charPosition.X > enemyPosition.X)
+            { 
+
+                charPosition.X += 10;
+
+            }
 
             if (charRectangle.Intersects(floorRectangle) || charRectangle.Intersects(floorRectangle2))
             {
@@ -245,6 +278,7 @@ namespace Ningyou_geki
                 charPosition.Y = 650;
                 attacktime = 0;
             }
+            enemymove++;
             pdmgtime++;
             contjmp++;
             contgrav++;
@@ -276,7 +310,7 @@ namespace Ningyou_geki
             _spriteBatch.DrawString(debug_font, "jump: " + jump, new Vector2(150, 10), Color.Black);
             _spriteBatch.DrawString(debug_font, "dmgtime: " + pdmgtime, new Vector2(300, 10), Color.Black);
             _spriteBatch.DrawString(debug_font, "attack: " + attack, new Vector2(450, 10), Color.Black);
-            _spriteBatch.DrawString(debug_font, "atktime: " + attacktime, new Vector2(600, 10), Color.Black);
+            _spriteBatch.DrawString(debug_font, "enPos: " + enPos, new Vector2(600, 10), Color.Black);
             _spriteBatch.DrawString(debug_font, "X: " + charPosition.X, new Vector2(0, 20), Color.Black);
             _spriteBatch.DrawString(debug_font, "Y: " + charPosition.Y, new Vector2(150, 20), Color.Black);
             _spriteBatch.DrawString(debug_font, "DMG: " + enemyhp, new Vector2(enemyPosition.X-5, enemyPosition.Y-20), Color.Black);
