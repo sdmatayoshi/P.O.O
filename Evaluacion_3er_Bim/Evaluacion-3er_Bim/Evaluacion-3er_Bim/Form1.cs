@@ -23,8 +23,8 @@ Crear una estructura con:
 2 listas con 10 nombres en cada una (Ya tienen que estar ingresados en el diseño) ✔
 
 1. Cuando se presiona en el primer boton ordenar los listados ✔
-2. Con el segundo boton borran todos los nombres que tengan hasta 5 letras
-3. Con el tercer boton intercambiar los nombres que tengan hasta 5 letras
+2. Con el segundo boton borran todos los nombres que tengan hasta 5 letras ✔
+3. Con el tercer boton intercambiar los nombres que tengan hasta 5 letras ❗
 4. Intercambiar el primer y ultimo elemento de ambas listas. Tienen que quedar en el primer lugar y en el ultimo ✔
 */
 
