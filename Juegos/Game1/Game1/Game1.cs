@@ -4,42 +4,37 @@ using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 using System.Collections.Generic;
 using System;
+using System.Collections;
+using System.Security;
+using System.Text.RegularExpressions;
 
 namespace Project1
 {
     public class Game1 : Game
     {
-        private GraphicsDeviceManager _graphics;
-        // Encarga de dibujar las texturas en pantalla.
-        private SpriteBatch _spriteBatch;
-        // Crea la variable de textura 2D "pruebas".
-        private Texture2D _monoTexture;
-        private Texture2D _slimeTexture;
-        private Texture2D _slashTexture;
-        private Texture2D _shieldTexture;
-        private Texture2D _potionTexture;
-        // Crea la variable de posición de "pruebas"
-        private Vector2 _monoPosition;
-        private Vector2 _slimePosition;
-        private Vector2 _slashPosition;
-        private Vector2 _shieldPosition;
-        private Vector2 _potionPosition;
-        // Crea la variable de la velocidad en la que se moverá el sprite.
-        private Vector2 _monoSpeed = new Vector2(3, 3);
+        private GraphicsDeviceManager graphics;
+        private SpriteBatch spriteBatch;
+        private Texture2D pointerTexture;
+        private Vector2 pointerPosition;
 
-        private Texture2D _plantTexture;
-        private Vector2 _plantPosition;
+        private Texture2D health1Texture;
+        private Vector2 health1Position;
+        private Texture2D health2Texture;
+        private Vector2 health2Position;
+        private Texture2D health3Texture;
+        private Vector2 health3Position;
 
-        private Song _backgroundMusic;
+        private Texture2D pointerhitboxTexture;
+        private Vector2 pointerhitboxPosition;
+        private Texture2D enemyTexture;
+        private Vector2 enemyPosition;
+        private Texture2D explosionTexture;
+        private Vector2 explosionPosition;
 
-        private bool _plantTocada = false; // Bandera para controlar si se tocó la manzana
-        
-        private SpriteFont _font;
-        private int score = 0;
-
+        private SpriteFont debug_font;
         public Game1()
         {
-            _graphics = new GraphicsDeviceManager(this);
+            graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
         }
 
@@ -47,483 +42,145 @@ namespace Project1
         {
             base.Initialize();
         }
-
+        bool shoot = false; bool isalive1 = true; int en1px = 200; int en1py = 200; int en1tw = 23; int en1th = 13;bool hit = false;int life = 3; int hptw = 25; int hpth = 25;
+        bool revive1 = false; int revive1time = 10; bool revive1reset = false;
         protected override void LoadContent()
         {
-            // Permite calcular los graficos(?)
-            _spriteBatch = new SpriteBatch(GraphicsDevice);
-            // Carga la textura "pruebas" en la variable.
-            _monoTexture = Content.Load<Texture2D>("img/mono2");
-            _slimeTexture = Content.Load<Texture2D>("img/slime1");
-            _slashTexture = Content.Load<Texture2D>("img/atkr5");
-            _shieldTexture = Content.Load<Texture2D>("img/shieldn");
-            _potionTexture = Content.Load<Texture2D>("img/heal");
-            // Define la posición de inicio del sprite "pruebas".
-            _monoPosition = new Vector2(100, 100);
-            _slashPosition = _monoPosition;
-            _shieldPosition = _monoPosition;
-            _potionPosition = new(GraphicsDevice.Viewport.Width / 2 - _potionTexture.Width / 2, GraphicsDevice.Viewport.Height / 2 - _potionTexture.Height / 2);
-            _slimePosition = new(GraphicsDevice.Viewport.Width / 2 - _slimeTexture.Width / 2, GraphicsDevice.Viewport.Height / 2 - _slimeTexture.Height / 2);
-            // Carga las textura "manzana" en la variable.
-            _plantTexture = Content.Load<Texture2D>("img/plant");
-            _potionTexture = Content.Load<Texture2D>("img/heal");
-            // (?)
-            _plantPosition = new Vector2(GraphicsDevice.Viewport.Width / 2 - _plantTexture.Width / 2, GraphicsDevice.Viewport.Height / 2 - _plantTexture.Height / 2);
-            _font = Content.Load<SpriteFont>("img/Score");
-            //_backgroundMusic = Content.Load<Song>("background_music");
-            //MediaPlayer.Play(_backgroundMusic);
-            //MediaPlayer.IsRepeating = true;
-            
+            spriteBatch = new SpriteBatch(GraphicsDevice);
+            pointerTexture = Content.Load<Texture2D>("resources/img/cross-pointer");
+            pointerPosition = new Vector2(GraphicsDevice.Viewport.Width / 2 - pointerTexture.Width / 2, GraphicsDevice.Viewport.Height / 2 - pointerTexture.Height / 2);
+
+            health1Texture = Content.Load<Texture2D>("resources/img/health");
+            health1Position = new Vector2(0, 0);
+            health2Texture = Content.Load<Texture2D>("resources/img/health");
+            health2Position = new Vector2(50, 0);
+            health3Texture = Content.Load<Texture2D>("resources/img/health");
+            health3Position = new Vector2(100, 0);
+
+
+            pointerhitboxTexture = Content.Load<Texture2D>("resources/img/point-hitbox");
+            pointerhitboxPosition = new Vector2(GraphicsDevice.Viewport.Width / 2 - pointerTexture.Width / 2, GraphicsDevice.Viewport.Height / 2 - pointerTexture.Height / 2);
+            enemyTexture = Content.Load<Texture2D>("resources/img/enemy1");
+            enemyPosition = new Vector2(en1px, en1py);
+            //GraphicsDevice.Viewport.Width / 2 - pointerTexture.Width / 2, GraphicsDevice.Viewport.Height / 2 - pointerTexture.Height / 2
+            explosionTexture = Content.Load<Texture2D>("resources/img/explosion");
+            explosionPosition = new Vector2(en1px, en1py);
+
+            debug_font = Content.Load<SpriteFont>("resources/debug");
         }
-        int _score = 0; int n = 2; int natk = 1; bool atk = false; int _hp = 100;
-        int _slimehp = 100; bool enemy_appear = false; bool def = false; bool potion = false;
-        int look = 0;
-        int cont = 0;
+        
         protected override void Update(GameTime gameTime)
         {
-            cont++;
-            // Se utiliza para poder recibir el estado del teclado.
-            KeyboardState keyboardState = Keyboard.GetState();
-            // Se ejecuta cuando la variable _manzanaTocada es "false".
-            if (keyboardState.IsKeyDown(Keys.A))
+/*----------------------------------------------------------------------------------Hitboxes---------------------------------------------------------------------------------*/
+            Rectangle pointerRectangle = new Rectangle((int)pointerPosition.X+20, (int)pointerPosition.Y+20, pointerTexture.Width-40, pointerTexture.Height-40);
+            Rectangle enemyRectangle = new Rectangle((int)en1px, (int)en1py, en1tw, en1th);
+/*--------------------------------------------------------------------------------Hitboxes-End-------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------Player-Moves-------------------------------------------------------------------------------*/
+            if (Keyboard.GetState().IsKeyDown(Keys.W)){pointerPosition.Y -= 10;}if (Keyboard.GetState().IsKeyDown(Keys.S)){pointerPosition.Y += 10;}
+            if (Keyboard.GetState().IsKeyDown(Keys.A)){pointerPosition.X -= 10;}if (Keyboard.GetState().IsKeyDown(Keys.D)){pointerPosition.X += 10;}
+/*------------------------------------------------------------------------------Player-Moves-End------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------Player-Attack--------------------------------------------------------------------------------*/
+            if (Keyboard.GetState().IsKeyDown(Keys.Space) && pointerRectangle.Intersects(enemyRectangle)){shoot = true;}else{shoot = false;}
+/*------------------------------------------------------------------------------Player-Attack-End-----------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------Enemy-Moves---------------------------------------------------------------------------------*/
+            if (en1px >= (GraphicsDevice.Viewport.Width / 2) && isalive1)
+            {en1px += 2;en1tw += 1;en1th += 1;
+            enemyRectangle.X += en1px;enemyRectangle.Width += en1tw;enemyRectangle.Height += en1th;
+            explosionPosition = new Vector2(enemyPosition.X, enemyPosition.Y);}
+
+            if (en1px < (GraphicsDevice.Viewport.Width / 2) && isalive1)
+            {en1px -= 2;en1tw += 1;en1th += 1;
+            enemyRectangle.X += en1px;enemyRectangle.Width += en1tw;enemyRectangle.Height += en1th;
+            explosionPosition = new Vector2(enemyPosition.X, enemyPosition.Y);}
+            if (en1py >= (GraphicsDevice.Viewport.Height / 2) && isalive1)
+            {en1py += 2;en1tw += 1;en1th += 1;
+            enemyRectangle.Y += en1py;enemyRectangle.Width += en1tw;enemyRectangle.Height += en1th;
+            explosionPosition = new Vector2(enemyPosition.X, enemyPosition.Y);}
+            if (en1py < (GraphicsDevice.Viewport.Height / 2) && isalive1)
+            {en1py -= 2;en1tw += 1;en1th += 1;
+            enemyRectangle.Y += en1py;enemyRectangle.Width += en1tw;enemyRectangle.Height += en1th;
+            explosionPosition = new Vector2(enemyPosition.X, enemyPosition.Y);}
+/*------------------------------------------------------------------------------Enemy-Moves-End-------------------------------------------------------------------------------*/
+            if (shoot)
             {
-                look = 1;
-                if (cont == 16)
+                if (isalive1)
                 {
-                _monoTexture = Content.Load<Texture2D>("img/monol"+n);
-                    cont = 0;
+                    explosionTexture = Content.Load<Texture2D>("resources/img/explosion");
                 }
-                
-                if (!keyboardState.IsKeyDown(Keys.LeftControl) && !def)
-                {
-                    _monoPosition.X -= 2;
-                    _slashPosition = _monoPosition;
-                    _shieldPosition = _monoPosition;
-                }
-                else
-                if (keyboardState.IsKeyDown(Keys.LeftControl)&& !def)
-                {
-                    _monoPosition.X -= 3;
-                    _slashPosition = _monoPosition;
-                    _shieldPosition = _monoPosition;
-                }else if (!keyboardState.IsKeyDown(Keys.LeftControl) && def)
-                {
-                    _monoPosition.X -= 1;
-                    _slashPosition = _monoPosition;
-                    _shieldPosition = _monoPosition;
-                }
-                else if (keyboardState.IsKeyDown(Keys.LeftControl) && def)
-                {
-                    _monoPosition.X -= 2;
-                    _slashPosition = _monoPosition;
-                    _shieldPosition = _monoPosition;
-                }
-                if (_monoPosition.X <= 0)
-                {
-                    _monoPosition.X = GraphicsDevice.Viewport.Width;
-                }
-                if (n == 4)
-                {
-                    n = 0;
-                }
-                n++;
+              
+                enemyTexture = Content.Load<Texture2D>("resources/img/void");
+                isalive1 = false;
+                revive1time = 0;
             }
-            if (keyboardState.IsKeyDown(Keys.D))
+            else
             {
-                look = 2;
-                _monoTexture = Content.Load<Texture2D>("img/monor" + n);
-                if (!keyboardState.IsKeyDown(Keys.LeftControl) && !def)
-                {
-                    _monoPosition.X += 2;
-                    _slashPosition = _monoPosition;
-                    _shieldPosition = _monoPosition;
-                }
-                else
-                if (keyboardState.IsKeyDown(Keys.LeftControl))
-                {
-                    _monoPosition.X += 3;
-                    _slashPosition = _monoPosition;
-                    _shieldPosition = _monoPosition;
-                }
-                else if (!keyboardState.IsKeyDown(Keys.LeftControl) && def)
-                {
-                    _monoPosition.X += 1;
-                    _slashPosition = _monoPosition;
-                    _shieldPosition = _monoPosition;
-                }
-                else if (keyboardState.IsKeyDown(Keys.LeftControl) && def)
-                {
-                    _monoPosition.X += 2;
-                    _slashPosition = _monoPosition;
-                    _shieldPosition = _monoPosition;
-                }
-                if (_monoPosition.X >= GraphicsDevice.Viewport.Width)
-                {
-                    _monoPosition.X = 0;
-                }
-                if (n == 4)
-                {
-                    n = 0;
-                }
-                n++;
+                explosionTexture = Content.Load<Texture2D>("resources/img/void");
             }
-            if (keyboardState.IsKeyDown(Keys.W))
+
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+            if (en1tw > 233 && en1tw > 223)
             {
-                look = 3;
-                _monoTexture = Content.Load<Texture2D>("img/monob"+n);
-
-                if (!keyboardState.IsKeyDown(Keys.LeftControl) && !def)
-                {
-                    _monoPosition.Y -= 2;
-                    _slashPosition = _monoPosition;
-                    _shieldPosition = _monoPosition;
-                }
-                else if (keyboardState.IsKeyDown(Keys.LeftControl))
-                {
-                    _monoPosition.Y -= 3;
-                    _slashPosition = _monoPosition;
-                    _shieldPosition = _monoPosition;
-                }
-                else if (!keyboardState.IsKeyDown(Keys.LeftControl) && def)
-                {
-                    _monoPosition.Y -= 1;
-                    _slashPosition = _monoPosition;
-                    _shieldPosition = _monoPosition;
-                }
-                else if (keyboardState.IsKeyDown(Keys.LeftControl) && def)
-                {
-                    _monoPosition.Y -= 2;
-                    _slashPosition = _monoPosition;
-                    _shieldPosition = _monoPosition;
-                }
-                if (_monoPosition.Y <= 0)
-                {
-                    _monoPosition.Y = GraphicsDevice.Viewport.Height;
-                }
-                if (n == 4)
-                {
-                    n = 0;
-                }
-                n++;
-
+                isalive1 = false;
+                en1tw = 0;
+                en1th = 0;
+                life--;
+                revive1time = 0;
             }
-            if (keyboardState.IsKeyDown(Keys.S))
+            if (revive1time==20)
             {
-                look = 0;
-                _monoTexture = Content.Load<Texture2D>("img/mono"+n);
-                
-                if (!keyboardState.IsKeyDown(Keys.LeftControl) && !def)
-                {
-                _monoPosition.Y += 2;
-                _slashPosition = _monoPosition;
-                _shieldPosition = _monoPosition;
-                }
-                else if (keyboardState.IsKeyDown(Keys.LeftControl))
-                {
-                    _monoPosition.Y += 3;
-                    _slashPosition = _monoPosition;
-                    _shieldPosition = _monoPosition;
-                }
-                else if (!keyboardState.IsKeyDown(Keys.LeftControl) && def)
-                {
-                    _monoPosition.Y += 1;
-                    _slashPosition = _monoPosition;
-                    _shieldPosition = _monoPosition;
-                }
-                else if (keyboardState.IsKeyDown(Keys.LeftControl) && def)
-                {
-                    _monoPosition.Y += 2;
-                    _slashPosition = _monoPosition;
-                    _shieldPosition = _monoPosition;
-                }
-                if (_monoPosition.Y >= GraphicsDevice.Viewport.Height)
-                {
-                    _monoPosition.Y = 0;
-                }
-                if (n == 4)
-                {
-                    n = 0;
-                }
-                n++;
+                revive1 = true;
             }
-
-
-
-            if (look == 1 && keyboardState.IsKeyDown(Keys.Space))
+            if (revive1)
             {
-                atk = true;
-                def = false;
-                _slashTexture = Content.Load<Texture2D>("img/atkl3");
-                _shieldTexture = Content.Load<Texture2D>("img/shieldn");
-
+                var rand = new Random();
+                int posx = rand.Next(200, 500);
+                int posy = rand.Next(100, 300);
+                en1tw = 23;
+                en1th = 13;
+                en1px = posx;
+                en1py = posy;
+                enemyTexture = Content.Load<Texture2D>("resources/img/enemy1");
+                isalive1 = true;
+                revive1 = false;
             }
-            else if (look == 1 && !keyboardState.IsKeyDown(Keys.Space))
-            {
-                atk = false;
-                _slashTexture = Content.Load<Texture2D>("img/atkl5");
-            }
+            
 
-            if (look == 2 && keyboardState.IsKeyDown(Keys.Space))
-            {
-                atk = true;
-                def = false;
-                _slashTexture = Content.Load<Texture2D>("img/atkr3");
-                _shieldTexture = Content.Load<Texture2D>("img/shieldn");
-
-            }
-            else if (look == 2 && !keyboardState.IsKeyDown(Keys.Space))
-            {
-                atk = false;
-                _slashTexture = Content.Load<Texture2D>("img/atkr5");
-            }
-
-            if (look == 3 && keyboardState.IsKeyDown(Keys.Space))
-            {
-                atk = true;
-                def = false;
-                _slashTexture = Content.Load<Texture2D>("img/atku3");
-                _shieldTexture = Content.Load<Texture2D>("img/shieldn");
-
-            }
-            else if (look == 3 && !keyboardState.IsKeyDown(Keys.Space))
-            {
-                atk = false;
-                _slashTexture = Content.Load<Texture2D>("img/atku5");
-            }
-
-            if (look == 0 && keyboardState.IsKeyDown(Keys.Space))
-            {
-                atk = true;
-                def = false;
-                _slashTexture = Content.Load<Texture2D>("img/atkb3");
-                _shieldTexture = Content.Load<Texture2D>("img/shieldn");
-
-            }
-            else if (look == 0 && !keyboardState.IsKeyDown(Keys.Space))
-            {
-                atk = false;
-                _slashTexture = Content.Load<Texture2D>("img/atkb5");
-            }
-
-            if (look == 1 && keyboardState.IsKeyDown(Keys.Space))
-            {
-                atk = true;
-                def = false;
-                _slashTexture = Content.Load<Texture2D>("img/atkl3");
-                _shieldTexture = Content.Load<Texture2D>("img/shieldn");
-
-            }
-            else if (look == 1 && !keyboardState.IsKeyDown(Keys.Space))
-            {
-                atk = false;
-                _slashTexture = Content.Load<Texture2D>("img/atkl5");
-            }
-
-            if (look == 2 && keyboardState.IsKeyDown(Keys.Space))
-            {
-                atk = true;
-                def = false;
-                _slashTexture = Content.Load<Texture2D>("img/atkr3");
-                _shieldTexture = Content.Load<Texture2D>("img/shieldn");
-
-            }
-            else if (look == 2 && !keyboardState.IsKeyDown(Keys.Space))
-            {
-                atk = false;
-                _slashTexture = Content.Load<Texture2D>("img/atkr5");
-            }
-
-
-
-
-
-
-
-            if (look == 3 && keyboardState.IsKeyDown(Keys.LeftShift) && !atk)
-            {
-                def = true;
-                _shieldTexture = Content.Load<Texture2D>("img/shieldu");
-
-            }
-            else if (look == 3 && (!keyboardState.IsKeyDown(Keys.LeftShift) && atk)||(!keyboardState.IsKeyDown(Keys.LeftShift)))
-            {
-                def = false;
-                _shieldTexture = Content.Load<Texture2D>("img/shieldn");
-            }
-
-            if (look == 0 && keyboardState.IsKeyDown(Keys.LeftShift) && !atk)
-            {
-                def = true;
-                _shieldTexture = Content.Load<Texture2D>("img/shieldb");
-
-            }
-            else if (look == 0 && (!keyboardState.IsKeyDown(Keys.LeftShift) && atk) || (!keyboardState.IsKeyDown(Keys.LeftShift)))
-            {
-                def = false;
-                _shieldTexture = Content.Load<Texture2D>("img/shieldn");
-            }
-
-            if (look == 1 && keyboardState.IsKeyDown(Keys.LeftShift) && !atk)
-            {
-                def = true;
-                _shieldTexture = Content.Load<Texture2D>("img/shieldl");
-
-            }
-            else if (look == 1 && (!keyboardState.IsKeyDown(Keys.LeftShift) && atk) || (!keyboardState.IsKeyDown(Keys.LeftShift)))
-            {
-                def = false;
-                _shieldTexture = Content.Load<Texture2D>("img/shieldn");
-            }
-            if (look == 2 && keyboardState.IsKeyDown(Keys.LeftShift) && !atk)
-            {
-                def = true;
-                _shieldTexture = Content.Load<Texture2D>("img/shieldr");
-
-            }
-            else if (look == 2 && (!keyboardState.IsKeyDown(Keys.LeftShift) && atk) || (!keyboardState.IsKeyDown(Keys.LeftShift)))
-            {
-                def = false;
-                _shieldTexture = Content.Load<Texture2D>("img/shieldn");
-            }
-
-
-
-            if ((keyboardState.IsKeyDown(Keys.A)|| keyboardState.IsKeyDown(Keys.S)|| keyboardState.IsKeyDown(Keys.D)|| keyboardState.IsKeyDown(Keys.W)) && enemy_appear==true)
-            {
-               
-                    Random rn = new Random();
-                    int pos = rn.Next(1, 4);
-                    if (pos == 1)
-                    {
-                        _slimePosition.X -= 3;
-                    if (_slimePosition.X <= 0)
-                    {
-                        _slimePosition.X = GraphicsDevice.Viewport.Width;
-                    }
-                }
-                    else if (pos == 2)
-                    {
-                        _slimePosition.X += 3;
-                    if (_slimePosition.X >= GraphicsDevice.Viewport.Width)
-                    {
-                        _slimePosition.X = 0;
-                    }
-                }
-                    else if (pos == 3)
-                    {
-                        _slimePosition.Y += 3;
-                    if (_slimePosition.Y >= GraphicsDevice.Viewport.Height)
-                    {
-                        _slimePosition.Y = 0;
-                    }
-                }
-                    else
-                    {
-                        _slimePosition.Y -= 3;
-                    if (_slimePosition.Y <= 0)
-                    {
-                        _slimePosition.Y = GraphicsDevice.Viewport.Height;
-                    }
-                }
-            }
-
-
-            // Verificar colisión con la manzana
-            Rectangle monoRectangle = new Rectangle((int)_monoPosition.X, (int)_monoPosition.Y, _monoTexture.Width, _monoTexture.Height);
-            Rectangle atkRectangle = new Rectangle((int)_slashPosition.X, (int)_slashPosition.Y, _slashTexture.Width, _slashTexture.Height);
-            // Es la caja de coliciones de "pruebas" y se basa en el tamaño de la imgane.
-
-            Rectangle plantRectangle = new Rectangle((int)_plantPosition.X, (int)_plantPosition.Y, _plantTexture.Width, _plantTexture.Height);
-            Rectangle slimeRectangle = new Rectangle((int)_slimePosition.X, (int)_slimePosition.Y, _slimeTexture.Width, _slimeTexture.Height);
-            Rectangle potionRectangle = new Rectangle((int)_potionPosition.X, (int)_potionPosition.Y, _potionTexture.Width, _potionTexture.Height);
-            // Es la caja de coliciones de "manzana" y se basa en el tamaño de la imgane.
-
-            if (atkRectangle.Intersects(plantRectangle) && atk)
-                {
-                    _plantTocada = true;
-            }
-            if (monoRectangle.Intersects(potionRectangle) && !atk && !def && potion && _hp<100)
-            {
-                potion = false;
-                _hp = _hp + 30;
-                if (_hp>100)
-                {
-                    _hp = 100;
-                }
-            }
-            if (slimeRectangle.Intersects(monoRectangle)&& !def && enemy_appear)
-            {
-                _hp --;
-                Random rn = new Random();
-                int dda = rn.Next(1, 3);
-                if (dda==2||dda==3)
-                {
-                    _hp++;
-                }
-            }
-            if (_plantTocada)
-            {
-                Random rn = new Random();
-                int posx = rn.Next(1,GraphicsDevice.Viewport.Width);
-                int posy = rn.Next(1, GraphicsDevice.Viewport.Height);
-                _plantPosition = new Vector2(posx,posy);
-                _score ++;
-                int r = rn.Next(1, 4);
-                if (r == 2 && !potion)
-                {
-                    potion = true;
-                }
-                else if (r == 3 && !enemy_appear)
-                {
-                    enemy_appear = true;
-                }
-                _plantTocada = false;
-            }
-            if (atkRectangle.Intersects(slimeRectangle) && atk)
-            {
-                _slimehp--;
-            }
-            if (_slimehp <= 0)
-            {
-                enemy_appear = false;
-                Random rn = new Random();
-                int r = rn.Next(1, 4);
-                if (r == 2 && potion ==false)
-                {
-                    potion = true;
-                }
-                _slimehp = 100;
-                score = score + 5;
-            }
-
+            revive1time++;
             base.Update(gameTime);
         }
 
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.CornflowerBlue);
+                GraphicsDevice.Clear(Color.Black);
 
-            _spriteBatch.Begin();
-            _spriteBatch.DrawString(_font, "Score: "+ _score, new Vector2(100, 10), Color.Black);
-            _spriteBatch.DrawString(_font, "Hp: " + _hp, new Vector2(10, 10), Color.Black);
+            spriteBatch.Begin();
+            if (isalive1)
+            {
+                spriteBatch.Draw(enemyTexture, new Rectangle(en1px, en1py, en1tw, en1th), Color.White);
+            }
             
-            _spriteBatch.Draw(_monoTexture, _monoPosition, Color.White);
-            if (enemy_appear)
+            spriteBatch.Draw(explosionTexture, new Rectangle(en1px, en1py, en1tw, en1th), Color.White);
+            if (life == 3)
             {
-                _spriteBatch.DrawString(_font, "Slime: " + _slimehp, new (_slimePosition.X, _slimePosition.Y+30), Color.Black);
-                _spriteBatch.Draw(_slimeTexture, _slimePosition, Color.White);
+            spriteBatch.Draw(health3Texture, new Rectangle(65, 5, hptw, hpth), Color.White);
+            spriteBatch.Draw(health2Texture, new Rectangle(35, 5, hptw, hpth), Color.White);
+            spriteBatch.Draw(health1Texture, new Rectangle(5, 5, hptw, hpth), Color.White);
             }
-            if (potion)
+            else if (life == 2)
             {
-                
-                _spriteBatch.Draw(_potionTexture, _potionPosition, Color.White);
+            spriteBatch.Draw(health2Texture, new Rectangle(35, 5, hptw, hpth), Color.White);
+            spriteBatch.Draw(health1Texture, new Rectangle(5, 5, hptw, hpth), Color.White);
             }
-
-            _spriteBatch.Draw(_slashTexture, _slashPosition, Color.White);
-            _spriteBatch.Draw(_shieldTexture, _shieldPosition, Color.White);
-            if (!_plantTocada)
-                _spriteBatch.Draw(_plantTexture, _plantPosition, Color.White);
-            _spriteBatch.End();
+            else if (life == 1)
+            {
+            spriteBatch.Draw(health1Texture, new Rectangle(5, 5, hptw, hpth), Color.White);
+            }
+            spriteBatch.DrawString(debug_font, "revive1time: " + revive1time, new Vector2(0, 10), Color.White);
+            spriteBatch.DrawString(debug_font, "hp: " + life, new Vector2(0, 20), Color.White);
+            spriteBatch.Draw(pointerTexture, pointerPosition, Color.White);
+            spriteBatch.End();
 
             base.Draw(gameTime);
         }

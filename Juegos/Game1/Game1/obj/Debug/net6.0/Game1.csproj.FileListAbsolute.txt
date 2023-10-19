@@ -74,3 +74,14 @@ C:\xampp\htdocs\P.O.O\Juegos\Game1\Game1\bin\Debug\net6.0\Content\img\shieldn.xn
 C:\xampp\htdocs\P.O.O\Juegos\Game1\Game1\bin\Debug\net6.0\Content\img\shieldr.xnb
 C:\xampp\htdocs\P.O.O\Juegos\Game1\Game1\bin\Debug\net6.0\Content\img\shieldu.xnb
 C:\xampp\htdocs\P.O.O\Juegos\Game1\Game1\bin\Debug\net6.0\Content\img\heal.xnb
+C:\xampp\htdocs\P.O.O\Juegos\Game1\Game1\bin\Debug\net6.0\Content\img\File.xnb
+C:\xampp\htdocs\P.O.O\Juegos\Game1\Game1\bin\Debug\net6.0\Content\resources\img\cross-pointer.xnb
+C:\xampp\htdocs\P.O.O\Juegos\Game1\Game1\bin\Debug\net6.0\Content\resources\img\enemy1.xnb
+C:\xampp\htdocs\P.O.O\Juegos\Game1\Game1\bin\Debug\net6.0\Content\resources\img\explosion.xnb
+C:\xampp\htdocs\P.O.O\Juegos\Game1\Game1\bin\Debug\net6.0\Content\resources\img\void.xnb
+C:\xampp\htdocs\P.O.O\Juegos\Game1\Game1\bin\Debug\net6.0\Content\resources\img\point-hitbox.xnb
+C:\xampp\htdocs\P.O.O\Juegos\Game1\Game1\bin\Debug\net6.0\Content\resources\img\health-gold.xnb
+C:\xampp\htdocs\P.O.O\Juegos\Game1\Game1\bin\Debug\net6.0\Content\resources\img\health-metal.xnb
+C:\xampp\htdocs\P.O.O\Juegos\Game1\Game1\bin\Debug\net6.0\Content\resources\img\health.xnb
+C:\xampp\htdocs\P.O.O\Juegos\Game1\Game1\bin\Debug\net6.0\Content\resources\img\upgrade-cross.xnb
+C:\xampp\htdocs\P.O.O\Juegos\Game1\Game1\bin\Debug\net6.0\Content\resources\debug.xnb

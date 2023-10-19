@@ -91,11 +91,7 @@ namespace Bullet_Theater.objects
             var bullet = Bullet.Clone() as Bullet;
             bullet.direction = this.direction;
             bullet.position = this.position;
-            
-            if (!isRemoved)
-            {
-                bullet.position = new Vector2(bullet.position.X, bullet.position.Y+10);
-            }
+            bullet.linearVelocity = this.linearVelocity * 2;
             bullet.LifeSpan = 2f;
             bullet.Parent = this;
             sprites.Add(bullet);

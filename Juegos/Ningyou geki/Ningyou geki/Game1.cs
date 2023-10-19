@@ -130,14 +130,14 @@ namespace Ningyou_geki
 
             if (charRectangle.Intersects(enemyRectangle) && charPosition.X < enemyPosition.X)
             {
-
+                
                 charPosition.X -= 10;
+                
             }
             else if (charRectangle.Intersects(enemyRectangle) && charPosition.X > enemyPosition.X)
-            { 
-
+            {
+                float cpx = charPosition.X;
                 charPosition.X += 10;
-
             }
 
             if (charRectangle.Intersects(floorRectangle) || charRectangle.Intersects(floorRectangle2))

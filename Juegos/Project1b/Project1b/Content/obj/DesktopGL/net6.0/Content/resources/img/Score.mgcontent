@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <SourceFile>C:/xampp/htdocs/P.O.O/Juegos/Project1b/Project1b/Content/resources/img/Score.spritefont</SourceFile>
-  <SourceTime>2023-09-22T12:55:10.4030923-03:00</SourceTime>
+  <SourceTime>2023-10-05T14:23:07.8577599-03:00</SourceTime>
   <DestFile>C:/xampp/htdocs/P.O.O/Juegos/Project1b/Project1b/Content/bin/DesktopGL/Content/resources/img/Score.xnb</DestFile>
-  <DestTime>2023-09-22T15:00:50.8546307-03:00</DestTime>
+  <DestTime>2023-10-19T13:48:22.5942486-03:00</DestTime>
   <Importer>FontDescriptionImporter</Importer>
   <ImporterTime>2022-07-26T08:44:56-03:00</ImporterTime>
   <Processor>FontDescriptionProcessor</Processor>
