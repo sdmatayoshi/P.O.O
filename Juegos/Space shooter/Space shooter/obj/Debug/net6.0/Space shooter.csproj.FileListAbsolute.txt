@@ -1,0 +1,48 @@
+C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\bin\Debug\net6.0\Content\resources\img\cross-pointer.xnb
+C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\bin\Debug\net6.0\Content\resources\img\explosion.xnb
+C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\bin\Debug\net6.0\Content\resources\img\health-gold.xnb
+C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\bin\Debug\net6.0\Content\resources\img\health-metal.xnb
+C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\bin\Debug\net6.0\Content\resources\img\health.xnb
+C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\bin\Debug\net6.0\Content\resources\img\point-hitbox.xnb
+C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\bin\Debug\net6.0\Content\resources\img\upgrade-cross.xnb
+C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\bin\Debug\net6.0\Content\resources\img\void.xnb
+C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\bin\Debug\net6.0\Space shooter.exe
+C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\bin\Debug\net6.0\Space shooter.deps.json
+C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\bin\Debug\net6.0\Space shooter.runtimeconfig.json
+C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\bin\Debug\net6.0\Space shooter.dll
+C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\bin\Debug\net6.0\Space shooter.pdb
+C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\bin\Debug\net6.0\MonoGame.Framework.dll
+C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\bin\Debug\net6.0\runtimes\linux-x64\native\libSDL2-2.0.so.0
+C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\bin\Debug\net6.0\runtimes\linux-x64\native\libopenal.so.1
+C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\bin\Debug\net6.0\runtimes\osx\native\libSDL2.dylib
+C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\bin\Debug\net6.0\runtimes\osx\native\libopenal.1.dylib
+C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\bin\Debug\net6.0\runtimes\win-x64\native\SDL2.dll
+C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\bin\Debug\net6.0\runtimes\win-x64\native\soft_oal.dll
+C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\bin\Debug\net6.0\runtimes\win-x86\native\SDL2.dll
+C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\bin\Debug\net6.0\runtimes\win-x86\native\soft_oal.dll
+C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\obj\Debug\net6.0\Space shooter.csproj.AssemblyReference.cache
+C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\obj\Debug\net6.0\Space shooter.GeneratedMSBuildEditorConfig.editorconfig
+C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\obj\Debug\net6.0\Space shooter.AssemblyInfoInputs.cache
+C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\obj\Debug\net6.0\Space shooter.AssemblyInfo.cs
+C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\obj\Debug\net6.0\Space shooter.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\obj\Debug\net6.0\Space shooter.csproj.CopyComplete
+C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\obj\Debug\net6.0\Space shooter.dll
+C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\obj\Debug\net6.0\refint\Space shooter.dll
+C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\obj\Debug\net6.0\Space shooter.pdb
+C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\obj\Debug\net6.0\Space shooter.genruntimeconfig.cache
+C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\obj\Debug\net6.0\ref\Space shooter.dll
+C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\bin\Debug\net6.0\Content\resources\debug.xnb
+C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\bin\Debug\net6.0\Content\resources\img\enemy11.xnb
+C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\bin\Debug\net6.0\Content\resources\img\enemy12.png.xnb
+C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\bin\Debug\net6.0\Content\resources\img\enemy21.xnb
+C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\bin\Debug\net6.0\Content\resources\img\enemy22.xnb
+C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\bin\Debug\net6.0\Content\resources\img\enemy12.xnb
+C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\bin\Debug\net6.0\Content\resources\img\enemy31.xnb
+C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\bin\Debug\net6.0\Content\resources\img\enemy32.png.xnb
+C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\bin\Debug\net6.0\Content\resources\img\enemy32.xnb
+C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\bin\Debug\net6.0\Content\resources\img\enemy41.xnb
+C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\bin\Debug\net6.0\Content\resources\img\enemy42.xnb
+C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\bin\Debug\net6.0\Content\resources\img\explosion2.xnb
+C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\bin\Debug\net6.0\Content\resources\img\life-box.xnb
+C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\bin\Debug\net6.0\Content\resources\img\mega-box.xnb
+C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\bin\Debug\net6.0\Content\resources\img\shiled-box.xnb

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Profile>Reach</Profile>
+  <Platform>DesktopGL</Platform>
+  <Config />
+  <SourceFiles>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Space shooter/Space shooter/Content/resources/debug.spritefont</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Space shooter/Space shooter/Content/resources/img/cross-pointer.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Space shooter/Space shooter/Content/resources/img/enemy11.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Space shooter/Space shooter/Content/resources/img/enemy12.png.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Space shooter/Space shooter/Content/resources/img/enemy21.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Space shooter/Space shooter/Content/resources/img/enemy22.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Space shooter/Space shooter/Content/resources/img/enemy31.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Space shooter/Space shooter/Content/resources/img/enemy32.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Space shooter/Space shooter/Content/resources/img/enemy41.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Space shooter/Space shooter/Content/resources/img/enemy42.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Space shooter/Space shooter/Content/resources/img/explosion.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Space shooter/Space shooter/Content/resources/img/explosion2.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Space shooter/Space shooter/Content/resources/img/health-gold.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Space shooter/Space shooter/Content/resources/img/health-metal.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Space shooter/Space shooter/Content/resources/img/health.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Space shooter/Space shooter/Content/resources/img/life-box.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Space shooter/Space shooter/Content/resources/img/mega-box.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Space shooter/Space shooter/Content/resources/img/point-hitbox.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Space shooter/Space shooter/Content/resources/img/shiled-box.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Space shooter/Space shooter/Content/resources/img/upgrade-cross.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Space shooter/Space shooter/Content/resources/img/void.png</File>
+  </SourceFiles>
+  <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File>resources/img/enemy12.png</File>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+  </DestFiles>
+</SourceFileCollection>
