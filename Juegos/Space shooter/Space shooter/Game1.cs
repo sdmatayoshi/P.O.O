@@ -474,15 +474,15 @@ namespace Space_shooter
                 explosion4Texture = Content.Load<Texture2D>("resources/img/void");
             }
 
-            if (lootshow)
-            {
+            //if (lootshow)
+            //{
                 
-                lootboxTexture = Content.Load<Texture2D>("resources/img/life-box");
-            }
-            else
-            {
-                lootboxTexture = Content.Load<Texture2D>("resources/img/void");
-            }
+            //    lootboxTexture = Content.Load<Texture2D>("resources/img/life-box");
+            //}
+            //else
+            //{
+            //    lootboxTexture = Content.Load<Texture2D>("resources/img/void");
+            //}
             /*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
             if (en1tw > 200 && en1tw > 190)
             {
