@@ -58,7 +58,7 @@ namespace Space_shooter
             base.Initialize();
         }
         bool shoot1 = false; bool shoot2 = false; bool shoot3 = false; bool shoot4 = false; bool shootboss = false; int life = 3; int cooldown1 = 0; bool debug = false; int debugdelay = 0;int score = 0;int difficulty = 1; bool upgraded = false; int upgradedtime = 5;
-        bool level1 = true; bool level2 = true; bool level3 = false; bool level4 = true; bool level5 = false;
+        bool level1 = true; bool level2 = false; bool level3 = false; bool level4 = false; bool level5 = false;
         bool isalive1 = true; int en1px = 200; int en1py = 200; int en1tw = 23; int en1th = 13; bool revive1 = false; int revive1time = 10; int endelay1 = 0; string en1texture = "enemy11";
         bool isalive2 = true; int en2px = 270; int en2py = 270; int en2tw = 23; int en2th = 13; bool revive2 = false; int revive2time = 10; int endelay2 = 0; int endelay22 = 0; string en2texture = "enemy21"; string altitude = "up";
         bool isalive3 = true; int en3px = 320; int en3py = 340; int en3tw = 23; int en3th = 13; bool revive3 = false; int revive3time = 10; int endelay3 = 0; string en3texture = "enemy31";
