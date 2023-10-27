@@ -46,3 +46,7 @@ C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\bin\Debug\net6.0\Conten
 C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\bin\Debug\net6.0\Content\resources\img\life-box.xnb
 C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\bin\Debug\net6.0\Content\resources\img\mega-box.xnb
 C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\bin\Debug\net6.0\Content\resources\img\shiled-box.xnb
+C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\bin\Debug\net6.0\Content\resources\img\boss1.xnb
+C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\bin\Debug\net6.0\Content\resources\img\boss1b.xnb
+C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\bin\Debug\net6.0\Content\resources\img\boss1bdamage.xnb
+C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\bin\Debug\net6.0\Content\resources\img\boss1damage.xnb

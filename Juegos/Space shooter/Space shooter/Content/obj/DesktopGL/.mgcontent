@@ -5,6 +5,10 @@
   <Config />
   <SourceFiles>
     <File>C:/xampp/htdocs/P.O.O/Juegos/Space shooter/Space shooter/Content/resources/debug.spritefont</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Space shooter/Space shooter/Content/resources/img/boss1.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Space shooter/Space shooter/Content/resources/img/boss1b.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Space shooter/Space shooter/Content/resources/img/boss1bdamage.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Space shooter/Space shooter/Content/resources/img/boss1damage.png</File>
     <File>C:/xampp/htdocs/P.O.O/Juegos/Space shooter/Space shooter/Content/resources/img/cross-pointer.png</File>
     <File>C:/xampp/htdocs/P.O.O/Juegos/Space shooter/Space shooter/Content/resources/img/enemy11.png</File>
     <File>C:/xampp/htdocs/P.O.O/Juegos/Space shooter/Space shooter/Content/resources/img/enemy12.png.png</File>
@@ -27,6 +31,10 @@
     <File>C:/xampp/htdocs/P.O.O/Juegos/Space shooter/Space shooter/Content/resources/img/void.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

@@ -46,19 +46,26 @@ namespace Space_shooter
         private Texture2D explosion4Texture;
         private Vector2 explosion4Position;
 
+        private Texture2D lootboxTexture;
+        private Vector2 lootboxPosition;
+        private Texture2D gunboxTexture;
+        private Vector2 gunboxPosition;
+
         private SpriteFont debug_font;
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
+            graphics.IsFullScreen = true;
         }
 
         protected override void Initialize()
         {
             base.Initialize();
+
         }
         bool shoot1 = false; bool shoot2 = false; bool shoot3 = false; bool shoot4 = false; bool shootboss = false; int life = 3; int cooldown1 = 0; bool debug = false; int debugdelay = 0;int score = 0;int difficulty = 1; bool upgraded = false; int upgradedtime = 5;
-        bool level1 = true; bool level2 = false; bool level3 = false; bool level4 = false; bool level5 = false;
+        bool level1 = true; bool level2 = false; bool level3 = false; bool level4 = false; bool level5 = false; bool loot = false; bool lootshow = false; int lootx; int looty; int lootw; int looth;
         bool isalive1 = true; int en1px = 200; int en1py = 200; int en1tw = 23; int en1th = 13; bool revive1 = false; int revive1time = 10; int endelay1 = 0; string en1texture = "enemy11";
         bool isalive2 = true; int en2px = 270; int en2py = 270; int en2tw = 23; int en2th = 13; bool revive2 = false; int revive2time = 10; int endelay2 = 0; int endelay22 = 0; string en2texture = "enemy21"; string altitude = "up";
         bool isalive3 = true; int en3px = 320; int en3py = 340; int en3tw = 23; int en3th = 13; bool revive3 = false; int revive3time = 10; int endelay3 = 0; string en3texture = "enemy31";
@@ -102,7 +109,13 @@ namespace Space_shooter
             explosion4Texture = Content.Load<Texture2D>("resources/img/explosion");
             explosion4Position = new Vector2(0, 0);
 
+            lootboxTexture = Content.Load<Texture2D>("resources/img/life-box");
+            lootboxPosition = new Vector2(0, 0);
+            gunboxTexture = Content.Load<Texture2D>("resources/img/mega-box");
+            gunboxPosition = new Vector2(0, 0);
+
             debug_font = Content.Load<SpriteFont>("resources/debug");
+            
         }
 
         protected override void Update(GameTime gameTime)
@@ -119,6 +132,7 @@ namespace Space_shooter
             if (Keyboard.GetState().IsKeyDown(Keys.S)) { pointerPosition.Y += 10; }
             if (Keyboard.GetState().IsKeyDown(Keys.A)) { pointerPosition.X -= 10; }
             if (Keyboard.GetState().IsKeyDown(Keys.D)) { pointerPosition.X += 10; }
+            if (Keyboard.GetState().IsKeyDown(Keys.Escape)) { Exit(); }
             /*------------------------------------------------------------------------------Player-Moves-End------------------------------------------------------------------------------*/
             /*-------------------------------------------------------------------------------Player-Attack--------------------------------------------------------------------------------*/
             if (Keyboard.GetState().IsKeyDown(Keys.Space) && pointerRectangle.Intersects(enemyRectangle) && cooldown1>50 && isalive1 && !upgraded) { shoot1 = true; cooldown1 = 0; } else { shoot1 = false; }
@@ -333,6 +347,8 @@ namespace Space_shooter
             }
 
 
+            
+
             if (shoot3)
             {
                 if (isalive3)
@@ -350,6 +366,9 @@ namespace Space_shooter
                 explosion3Texture = Content.Load<Texture2D>("resources/img/void");
             }
 
+            
+
+
 
             if (shoot4)
             {
@@ -362,12 +381,33 @@ namespace Space_shooter
                 isalive4 = false;
                 revive4time = 0;
                 score += 5;
+                var rand = new Random();
+                int lootrnd = rand.Next(1, 4);
+                if (lootrnd==3)
+                {
+                    loot = true;
+                }
+                else
+                {
+                    loot = false;
+                }
             }
             else
             {
                 explosion4Texture = Content.Load<Texture2D>("resources/img/void");
             }
 
+            //if (lootshow)
+            //{
+            //    loot = true;
+            //    lootboxTexture = Content.Load<Texture2D>("resources/img/life-box");
+            //    lootx = en4px;
+            //    looty = en4py;
+            //    lootw = en4tw;
+            //    looth = en4th+(en4th/2);
+            //    lootshow = false;
+            //}
+            
             /*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
             if (en1tw > 200 && en1tw > 190)
             {
@@ -544,6 +584,10 @@ namespace Space_shooter
                 spriteBatch.Draw(Content.Load<Texture2D>("resources/img/" + en4texture), new Rectangle(en4px, en4py, en4tw, en4th), Color.White);
             }
 
+            if (loot)
+            {
+                spriteBatch.Draw(lootboxTexture, new Rectangle(en3px, en3py, en3tw, en3th), Color.White);
+            }
             spriteBatch.Draw(explosionTexture, new Rectangle(en1px, en1py, en1tw, en1th), Color.White);
             spriteBatch.Draw(explosion2Texture, new Rectangle(en2px, en2py, en2tw, en2th), Color.White);
             spriteBatch.Draw(explosion3Texture, new Rectangle(en3px, en3py, en3tw, en3th), Color.White);
@@ -578,7 +622,7 @@ spriteBatch.DrawString(debug_font, "Level: "+difficulty, new Vector2(500, 10), C
                 //spriteBatch.DrawString(debug_font, "revive1time: " + revive1time, new Vector2(0, 10), Color.White);
                 //spriteBatch.DrawString(debug_font, "move delay enemy 1: " + endelay1, new Vector2(50, 10), Color.White);
                 spriteBatch.DrawString(debug_font, "Enemy: ", new Vector2(10, 150), Color.White);
-                spriteBatch.DrawString(debug_font, "enpx4: " + en4px, new Vector2(10, 170), Color.White);
+                spriteBatch.DrawString(debug_font, "loot: " + loot, new Vector2(10, 170), Color.White);
                 spriteBatch.DrawString(debug_font, "alive2: " + altitude, new Vector2(10, 190), Color.White);
                 spriteBatch.DrawString(debug_font, "alive3: " + side, new Vector2(10, 210), Color.White);
                 spriteBatch.DrawString(debug_font, "Level1: " + en4th, new Vector2(10, 230), Color.White);
