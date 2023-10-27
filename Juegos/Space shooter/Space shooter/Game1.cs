@@ -51,12 +51,27 @@ namespace Space_shooter
         private Texture2D gunboxTexture;
         private Vector2 gunboxPosition;
 
+        private Texture2D keyboardTexture;
+        private Vector2 keyboardPosition;
+        private Texture2D akeyTexture;
+        private Vector2 akeyPosition;
+        private Texture2D skeyTexture;
+        private Vector2 skeyPosition;
+        private Texture2D dkeyTexture;
+        private Vector2 dkeyPosition;
+        private Texture2D wkeyTexture;
+        private Vector2 wkeyPosition;
+        private Texture2D keyboardspcTexture;
+        private Vector2 keyboardspcPosition;
+        private Texture2D spacekeyTexture;
+        private Vector2 spacekeyPosition;
+
         private SpriteFont debug_font;
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
-            graphics.IsFullScreen = true;
+            //graphics.IsFullScreen = true;
         }
 
         protected override void Initialize()
@@ -64,8 +79,9 @@ namespace Space_shooter
             base.Initialize();
 
         }
+        bool space = false; bool a = false; bool s = false; bool d = false; bool w = false;
         bool shoot1 = false; bool shoot2 = false; bool shoot3 = false; bool shoot4 = false; bool shootboss = false; int life = 3; int cooldown1 = 0; bool debug = false; int debugdelay = 0;int score = 0;int difficulty = 1; bool upgraded = false; int upgradedtime = 5;
-        bool level1 = true; bool level2 = false; bool level3 = false; bool level4 = false; bool level5 = false; bool loot = false; bool lootshow = false; int lootx; int looty; int lootw; int looth;
+        bool level1 = true; bool level2 = false; bool level3 = false; bool level4 = true; bool level5 = false; bool loot = false; bool lootshow = false; int lootx; int looty; int lootw; int looth; int lootcont = 0;
         bool isalive1 = true; int en1px = 200; int en1py = 200; int en1tw = 23; int en1th = 13; bool revive1 = false; int revive1time = 10; int endelay1 = 0; string en1texture = "enemy11";
         bool isalive2 = true; int en2px = 270; int en2py = 270; int en2tw = 23; int en2th = 13; bool revive2 = false; int revive2time = 10; int endelay2 = 0; int endelay22 = 0; string en2texture = "enemy21"; string altitude = "up";
         bool isalive3 = true; int en3px = 320; int en3py = 340; int en3tw = 23; int en3th = 13; bool revive3 = false; int revive3time = 10; int endelay3 = 0; string en3texture = "enemy31";
@@ -115,8 +131,25 @@ namespace Space_shooter
             gunboxPosition = new Vector2(0, 0);
 
             debug_font = Content.Load<SpriteFont>("resources/debug");
-            
-        }
+
+
+
+            keyboardTexture = Content.Load<Texture2D>("resources/img/wasd");
+            keyboardPosition = new Vector2(GraphicsDevice.Viewport.Width -150, GraphicsDevice.Viewport.Height-150);
+            akeyTexture = Content.Load<Texture2D>("resources/img/a");
+            akeyPosition = new Vector2(GraphicsDevice.Viewport.Width - 150, GraphicsDevice.Viewport.Height - 150);
+            skeyTexture = Content.Load<Texture2D>("resources/img/s");
+            skeyPosition = new Vector2(GraphicsDevice.Viewport.Width - 150, GraphicsDevice.Viewport.Height - 150);
+            dkeyTexture = Content.Load<Texture2D>("resources/img/d");
+            dkeyPosition = new Vector2(GraphicsDevice.Viewport.Width - 150, GraphicsDevice.Viewport.Height - 150);
+            wkeyTexture = Content.Load<Texture2D>("resources/img/w");
+            wkeyPosition = new Vector2(GraphicsDevice.Viewport.Width - 150, GraphicsDevice.Viewport.Height - 150);
+            keyboardspcTexture = Content.Load<Texture2D>("resources/img/space");
+            keyboardspcPosition = new Vector2(GraphicsDevice.Viewport.Width - 150, GraphicsDevice.Viewport.Height - 100);
+            spacekeyTexture = Content.Load<Texture2D>("resources/img/spacepress");
+            spacekeyPosition = new Vector2(GraphicsDevice.Viewport.Width - 150, GraphicsDevice.Viewport.Height - 100);
+
+    }
 
         protected override void Update(GameTime gameTime)
         {
@@ -126,6 +159,47 @@ namespace Space_shooter
             Rectangle enemy2Rectangle = new Rectangle((int)en2px, (int)en2py, en2tw, en2th);
             Rectangle enemy3Rectangle = new Rectangle((int)en3px, (int)en3py, en3tw, en3th);
             Rectangle enemy4Rectangle = new Rectangle((int)en4px, (int)en4py, en4tw, en4th);
+            Rectangle lootRectangle = new Rectangle((int)lootboxPosition.X, (int)lootboxPosition.Y, lootboxTexture.Width, lootboxTexture.Height);
+            if (a)
+            {
+                akeyTexture = Content.Load<Texture2D>("resources/img/a");
+            }
+            else
+            {
+                akeyTexture = Content.Load<Texture2D>("resources/img/void");
+            }
+            if (s) 
+            {
+                skeyTexture = Content.Load<Texture2D>("resources/img/s");
+            }
+            else
+            {
+                skeyTexture = Content.Load<Texture2D>("resources/img/void");
+            }
+            if (d)
+            {
+                dkeyTexture = Content.Load<Texture2D>("resources/img/d");
+            }
+            else
+            {
+                dkeyTexture = Content.Load<Texture2D>("resources/img/void");
+            }
+            if (w)
+            {
+                wkeyTexture = Content.Load<Texture2D>("resources/img/w");
+            }
+            else
+            {
+                wkeyTexture = Content.Load<Texture2D>("resources/img/void");
+            }
+            if (space)
+            {
+                spacekeyTexture = Content.Load<Texture2D>("resources/img/spacepress");
+            }
+            else
+            {
+                spacekeyTexture = Content.Load<Texture2D>("resources/img/void");
+            }
             /*--------------------------------------------------------------------------------Hitboxes-End-------------------------------------------------------------------------------*/
             /*--------------------------------------------------------------------------------Player-Moves-------------------------------------------------------------------------------*/
             if (Keyboard.GetState().IsKeyDown(Keys.W)) { pointerPosition.Y -= 10; }
@@ -139,6 +213,7 @@ namespace Space_shooter
             if (Keyboard.GetState().IsKeyDown(Keys.Space) && pointerRectangle.Intersects(enemy2Rectangle) && cooldown1 > 50 && isalive2 && !upgraded) { shoot2 = true; cooldown1 = 0; } else { shoot2 = false; }
             if (Keyboard.GetState().IsKeyDown(Keys.Space) && pointerRectangle.Intersects(enemy3Rectangle) && cooldown1 > 50 && isalive3 && !upgraded) { shoot3 = true; cooldown1 = 0; } else { shoot3 = false; }
             if (Keyboard.GetState().IsKeyDown(Keys.Space) && pointerRectangle.Intersects(enemy4Rectangle) && cooldown1 > 50 && isalive4 && !upgraded) { shoot4 = true; cooldown1 = 0; } else { shoot4 = false; }
+            if (Keyboard.GetState().IsKeyDown(Keys.Space) && pointerRectangle.Intersects(lootRectangle) && cooldown1 > 50 && !upgraded && life<3&&life>0 && lootshow) { lootshow = false; cooldown1 = 0;  life++; }
             if (upgraded)
             {
                 if (Keyboard.GetState().IsKeyDown(Keys.Space) && pointerRectangle.Intersects(enemyRectangle) && isalive1)  { shoot1 = true; cooldown1 = 0; upgradedtime--; } else { shoot1 = false; upgradedtime--; }
@@ -148,6 +223,11 @@ namespace Space_shooter
             }
             
             if (Keyboard.GetState().IsKeyDown(Keys.F3)&&!debug && debugdelay>7 ) { debug = true; debugdelay = 0; } else if (Keyboard.GetState().IsKeyDown(Keys.F3)&& debug && debugdelay > 7) { debug = false; debugdelay = 0; }
+            if (Keyboard.GetState().IsKeyDown(Keys.Space)) { space=true; } else {  space=false; }
+            if (Keyboard.GetState().IsKeyDown(Keys.A)) { a = true; } else { a = false; }
+            if (Keyboard.GetState().IsKeyDown(Keys.S)) { s = true; } else { s = false; }
+            if (Keyboard.GetState().IsKeyDown(Keys.D)) { d = true; } else { d = false; }
+            if (Keyboard.GetState().IsKeyDown(Keys.W)) { w = true; } else { w = false; }
             /*------------------------------------------------------------------------------Player-Attack-End-----------------------------------------------------------------------------*/
             /*--------------------------------------------------------------------------------Enemy-Moves---------------------------------------------------------------------------------*/
             //Enemy1------------------------
@@ -385,11 +465,8 @@ namespace Space_shooter
                 int lootrnd = rand.Next(1, 4);
                 if (lootrnd==3)
                 {
-                    loot = true;
-                }
-                else
-                {
-                    loot = false;
+                    
+                    lootshow = true;
                 }
             }
             else
@@ -397,17 +474,15 @@ namespace Space_shooter
                 explosion4Texture = Content.Load<Texture2D>("resources/img/void");
             }
 
-            //if (lootshow)
-            //{
-            //    loot = true;
-            //    lootboxTexture = Content.Load<Texture2D>("resources/img/life-box");
-            //    lootx = en4px;
-            //    looty = en4py;
-            //    lootw = en4tw;
-            //    looth = en4th+(en4th/2);
-            //    lootshow = false;
-            //}
-            
+            if (lootshow)
+            {
+                
+                lootboxTexture = Content.Load<Texture2D>("resources/img/life-box");
+            }
+            else
+            {
+                lootboxTexture = Content.Load<Texture2D>("resources/img/void");
+            }
             /*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
             if (en1tw > 200 && en1tw > 190)
             {
@@ -556,14 +631,22 @@ namespace Space_shooter
             revive4time++; endelay4++; endelay42++;
             cooldown1++;
             debugdelay++;
+            //lootcont++;
             base.Update(gameTime);
         }
 
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.Black);
-
+            
             spriteBatch.Begin();
+            spriteBatch.Draw(keyboardTexture, keyboardPosition, Color.White);
+            spriteBatch.Draw(akeyTexture, akeyPosition, Color.White);
+            spriteBatch.Draw(skeyTexture, skeyPosition, Color.White);
+            spriteBatch.Draw(dkeyTexture, dkeyPosition, Color.White);
+            spriteBatch.Draw(wkeyTexture, wkeyPosition, Color.White);
+            spriteBatch.Draw(keyboardspcTexture, keyboardspcPosition, Color.White);
+            spriteBatch.Draw(spacekeyTexture, spacekeyPosition, Color.White);
             if (isalive1 && level1 && !level5)
             {
                 spriteBatch.Draw(enemyTexture, new Rectangle(en1px, en1py, en1tw, en1th), Color.White);
@@ -584,9 +667,9 @@ namespace Space_shooter
                 spriteBatch.Draw(Content.Load<Texture2D>("resources/img/" + en4texture), new Rectangle(en4px, en4py, en4tw, en4th), Color.White);
             }
 
-            if (loot)
+            if (lootshow)
             {
-                spriteBatch.Draw(lootboxTexture, new Rectangle(en3px, en3py, en3tw, en3th), Color.White);
+                spriteBatch.Draw(lootboxTexture, new Rectangle(GraphicsDevice.Viewport.Width/2, GraphicsDevice.Viewport.Height/2, lootboxTexture.Width, lootboxTexture.Height), Color.White);
             }
             spriteBatch.Draw(explosionTexture, new Rectangle(en1px, en1py, en1tw, en1th), Color.White);
             spriteBatch.Draw(explosion2Texture, new Rectangle(en2px, en2py, en2tw, en2th), Color.White);
@@ -608,7 +691,7 @@ namespace Space_shooter
             }
             spriteBatch.DrawString(debug_font, "Score: "+score, new Vector2(100, 10), Color.White);
            
-spriteBatch.DrawString(debug_font, "Level: "+difficulty, new Vector2(500, 10), Color.White);
+spriteBatch.DrawString(debug_font, "Level: "+difficulty, new Vector2(GraphicsDevice.Viewport.Width - 100, 10), Color.White);
             
             
             if (debug)
@@ -622,8 +705,8 @@ spriteBatch.DrawString(debug_font, "Level: "+difficulty, new Vector2(500, 10), C
                 //spriteBatch.DrawString(debug_font, "revive1time: " + revive1time, new Vector2(0, 10), Color.White);
                 //spriteBatch.DrawString(debug_font, "move delay enemy 1: " + endelay1, new Vector2(50, 10), Color.White);
                 spriteBatch.DrawString(debug_font, "Enemy: ", new Vector2(10, 150), Color.White);
-                spriteBatch.DrawString(debug_font, "loot: " + loot, new Vector2(10, 170), Color.White);
-                spriteBatch.DrawString(debug_font, "alive2: " + altitude, new Vector2(10, 190), Color.White);
+                spriteBatch.DrawString(debug_font, "lootshow: " + lootshow, new Vector2(10, 170), Color.White);
+                spriteBatch.DrawString(debug_font, "lootcont: " + lootcont, new Vector2(10, 190), Color.White);
                 spriteBatch.DrawString(debug_font, "alive3: " + side, new Vector2(10, 210), Color.White);
                 spriteBatch.DrawString(debug_font, "Level1: " + en4th, new Vector2(10, 230), Color.White);
                 spriteBatch.DrawString(debug_font, "level2: " + en4tw, new Vector2(10, 250), Color.White);

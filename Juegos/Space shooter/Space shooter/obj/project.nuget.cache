@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "47xkg6cS9omsF8EsBNxIaR+eGUxLdmlhyNlLOsINVqvPzkM9R/i0P5AIt6gzZ88tYfbEibpq1g8efiCxWcuT9g==",
+  "dgSpecHash": "ZpKk4SQZ03I5mHZKMa9hw5EkcS2Y/dhREiKdhat1HPB4DzHDIJiJcKpAaSd2SyDBWiQK5wnTxWFS4NSlZETyeA==",
   "success": true,
-  "projectFilePath": "C:\\xampp\\htdocs\\P.O.O\\Juegos\\Space shooter\\Space shooter\\Space shooter.csproj",
+  "projectFilePath": "C:\\xampp\\htdocs\\P.O.O\\Juegos\\Space Shooter\\Space shooter\\Space shooter.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Alumno\\.nuget\\packages\\monogame.content.builder.task\\3.8.1.303\\monogame.content.builder.task.3.8.1.303.nupkg.sha512",
     "C:\\Users\\Alumno\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.1.303\\monogame.framework.desktopgl.3.8.1.303.nupkg.sha512"
