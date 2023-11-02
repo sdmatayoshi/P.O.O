@@ -57,3 +57,5 @@ C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\bin\Debug\net6.0\Conten
 C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\bin\Debug\net6.0\Content\resources\img\spacepress.xnb
 C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\bin\Debug\net6.0\Content\resources\img\w.xnb
 C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\bin\Debug\net6.0\Content\resources\img\wasd.xnb
+C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\bin\Debug\net6.0\Content\resources\img\shooteffect.xnb
+C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\bin\Debug\net6.0\Content\resources\img\shooteffect2.xnb

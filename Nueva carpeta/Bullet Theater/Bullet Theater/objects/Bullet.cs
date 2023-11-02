@@ -10,22 +10,33 @@ namespace Bullet_Theater.objects
 {
     public class Bullet : Sprite
     {
-        private float timer;
-
+        //private float timer;
+        public float speed =4f;
         public Bullet(Texture2D texture)
             :base(texture)
         {
         }
         public override void Update(GameTime gameTime, List<Sprite> sprites)
         {
-            timer += (float)gameTime.ElapsedGameTime.TotalSeconds;
+            //timer += (float)gameTime.ElapsedGameTime.TotalSeconds;
 
-            if (timer > LifeSpan)
+            //if (timer > LifeSpan)
+            //{
+            //    isRemoved = true;
+
+            //    position += direction * linearVelocity;
+            //}
+            
+            
+            if (position.Y > 0)
+            {
+                position.Y -= speed;
+            }
+            if (position.Y <= 0)
             {
                 isRemoved = true;
-
-                position += direction * linearVelocity;
             }
-        }
+            
+    }
     }
 }

@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\xampp\\htdocs\\P.O.O\\Juegos\\Space Shooter\\Space shooter\\Space shooter.csproj": {}
+    "C:\\xampp\\htdocs\\P.O.O\\Juegos\\Space shooter\\Space shooter\\Space shooter.csproj": {}
   },
   "projects": {
-    "C:\\xampp\\htdocs\\P.O.O\\Juegos\\Space Shooter\\Space shooter\\Space shooter.csproj": {
+    "C:\\xampp\\htdocs\\P.O.O\\Juegos\\Space shooter\\Space shooter\\Space shooter.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\xampp\\htdocs\\P.O.O\\Juegos\\Space Shooter\\Space shooter\\Space shooter.csproj",
+        "projectUniqueName": "C:\\xampp\\htdocs\\P.O.O\\Juegos\\Space shooter\\Space shooter\\Space shooter.csproj",
         "projectName": "Space shooter",
-        "projectPath": "C:\\xampp\\htdocs\\P.O.O\\Juegos\\Space Shooter\\Space shooter\\Space shooter.csproj",
+        "projectPath": "C:\\xampp\\htdocs\\P.O.O\\Juegos\\Space shooter\\Space shooter\\Space shooter.csproj",
         "packagesPath": "C:\\Users\\Alumno\\.nuget\\packages\\",
         "outputPath": "C:\\xampp\\htdocs\\P.O.O\\Juegos\\Space shooter\\Space shooter\\obj\\",
         "projectStyle": "PackageReference",
@@ -69,7 +69,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     }

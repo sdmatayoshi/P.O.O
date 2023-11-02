@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\xampp\\htdocs\\P.O.O\\Juegos\\Bullet Theater\\Bullet Theater\\Bullet Theater.csproj": {}
+    "C:\\xampp\\htdocs\\P.O.O\\Nueva carpeta\\Bullet Theater\\Bullet Theater\\Bullet Theater.csproj": {}
   },
   "projects": {
-    "C:\\xampp\\htdocs\\P.O.O\\Juegos\\Bullet Theater\\Bullet Theater\\Bullet Theater.csproj": {
+    "C:\\xampp\\htdocs\\P.O.O\\Nueva carpeta\\Bullet Theater\\Bullet Theater\\Bullet Theater.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\xampp\\htdocs\\P.O.O\\Juegos\\Bullet Theater\\Bullet Theater\\Bullet Theater.csproj",
+        "projectUniqueName": "C:\\xampp\\htdocs\\P.O.O\\Nueva carpeta\\Bullet Theater\\Bullet Theater\\Bullet Theater.csproj",
         "projectName": "Bullet Theater",
-        "projectPath": "C:\\xampp\\htdocs\\P.O.O\\Juegos\\Bullet Theater\\Bullet Theater\\Bullet Theater.csproj",
+        "projectPath": "C:\\xampp\\htdocs\\P.O.O\\Nueva carpeta\\Bullet Theater\\Bullet Theater\\Bullet Theater.csproj",
         "packagesPath": "C:\\Users\\Alumno\\.nuget\\packages\\",
-        "outputPath": "C:\\xampp\\htdocs\\P.O.O\\Juegos\\Bullet Theater\\Bullet Theater\\obj\\",
+        "outputPath": "C:\\xampp\\htdocs\\P.O.O\\Nueva carpeta\\Bullet Theater\\Bullet Theater\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

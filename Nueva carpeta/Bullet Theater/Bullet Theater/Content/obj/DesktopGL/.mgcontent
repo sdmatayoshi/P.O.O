@@ -4,16 +4,20 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/xampp/htdocs/P.O.O/Juegos/Bullet Theater/Bullet Theater/Content/img/bullets/bullet1.png</File>
-    <File>C:/xampp/htdocs/P.O.O/Juegos/Bullet Theater/Bullet Theater/Content/img/bullets/bullet2.png</File>
-    <File>C:/xampp/htdocs/P.O.O/Juegos/Bullet Theater/Bullet Theater/Content/img/bullets/bullet21.png</File>
-    <File>C:/xampp/htdocs/P.O.O/Juegos/Bullet Theater/Bullet Theater/Content/img/bullets/bullet22.png</File>
-    <File>C:/xampp/htdocs/P.O.O/Juegos/Bullet Theater/Bullet Theater/Content/img/bullets/bullet23.png</File>
-    <File>C:/xampp/htdocs/P.O.O/Juegos/Bullet Theater/Bullet Theater/Content/img/bullets/bullet3.png</File>
-    <File>C:/xampp/htdocs/P.O.O/Juegos/Bullet Theater/Bullet Theater/Content/img/characters/enemy1-template.png</File>
-    <File>C:/xampp/htdocs/P.O.O/Juegos/Bullet Theater/Bullet Theater/Content/img/characters/player-template.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Nueva carpeta/Bullet Theater/Bullet Theater/Content/Debug.spritefont</File>
+    <File>C:/xampp/htdocs/P.O.O/Nueva carpeta/Bullet Theater/Bullet Theater/Content/img/bullets/bullet1.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Nueva carpeta/Bullet Theater/Bullet Theater/Content/img/bullets/bullet2.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Nueva carpeta/Bullet Theater/Bullet Theater/Content/img/bullets/bullet21.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Nueva carpeta/Bullet Theater/Bullet Theater/Content/img/bullets/bullet22.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Nueva carpeta/Bullet Theater/Bullet Theater/Content/img/bullets/bullet23.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Nueva carpeta/Bullet Theater/Bullet Theater/Content/img/bullets/bullet3.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Nueva carpeta/Bullet Theater/Bullet Theater/Content/img/characters/enemy1-template.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Nueva carpeta/Bullet Theater/Bullet Theater/Content/img/characters/player-template.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Nueva carpeta/Bullet Theater/Bullet Theater/Content/img/shooteffect.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

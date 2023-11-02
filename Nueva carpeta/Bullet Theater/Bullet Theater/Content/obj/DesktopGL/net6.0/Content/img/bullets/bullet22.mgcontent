@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>C:/xampp/htdocs/P.O.O/Juegos/Bullet Theater/Bullet Theater/Content/img/bullets/bullet22.png</SourceFile>
-  <SourceTime>2023-10-05T14:52:00.7651748-03:00</SourceTime>
-  <DestFile>C:/xampp/htdocs/P.O.O/Juegos/Bullet Theater/Bullet Theater/Content/bin/DesktopGL/Content/img/bullets/bullet22.xnb</DestFile>
-  <DestTime>2023-10-05T14:55:09.2988456-03:00</DestTime>
+  <SourceFile>C:/xampp/htdocs/P.O.O/Nueva carpeta/Bullet Theater/Bullet Theater/Content/img/bullets/bullet22.png</SourceFile>
+  <SourceTime>2023-11-01T09:23:13.8415226-03:00</SourceTime>
+  <DestFile>C:/xampp/htdocs/P.O.O/Nueva carpeta/Bullet Theater/Bullet Theater/Content/bin/DesktopGL/Content/img/bullets/bullet22.xnb</DestFile>
+  <DestTime>2023-11-02T14:00:06.6083886-03:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2022-07-26T08:44:56-03:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
