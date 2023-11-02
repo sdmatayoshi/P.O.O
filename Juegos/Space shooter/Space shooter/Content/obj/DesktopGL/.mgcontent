@@ -20,6 +20,8 @@
     <File>C:/xampp/htdocs/P.O.O/Juegos/Space shooter/Space shooter/Content/resources/img/enemy32.png</File>
     <File>C:/xampp/htdocs/P.O.O/Juegos/Space shooter/Space shooter/Content/resources/img/enemy41.png</File>
     <File>C:/xampp/htdocs/P.O.O/Juegos/Space shooter/Space shooter/Content/resources/img/enemy42.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Space shooter/Space shooter/Content/resources/img/exit.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Space shooter/Space shooter/Content/resources/img/exitb.png</File>
     <File>C:/xampp/htdocs/P.O.O/Juegos/Space shooter/Space shooter/Content/resources/img/explosion.png</File>
     <File>C:/xampp/htdocs/P.O.O/Juegos/Space shooter/Space shooter/Content/resources/img/explosion2.png</File>
     <File>C:/xampp/htdocs/P.O.O/Juegos/Space shooter/Space shooter/Content/resources/img/health-gold.png</File>
@@ -28,6 +30,8 @@
     <File>C:/xampp/htdocs/P.O.O/Juegos/Space shooter/Space shooter/Content/resources/img/life-box.png</File>
     <File>C:/xampp/htdocs/P.O.O/Juegos/Space shooter/Space shooter/Content/resources/img/mega-box.png</File>
     <File>C:/xampp/htdocs/P.O.O/Juegos/Space shooter/Space shooter/Content/resources/img/point-hitbox.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Space shooter/Space shooter/Content/resources/img/resume.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Space shooter/Space shooter/Content/resources/img/resumeb.png</File>
     <File>C:/xampp/htdocs/P.O.O/Juegos/Space shooter/Space shooter/Content/resources/img/s.png</File>
     <File>C:/xampp/htdocs/P.O.O/Juegos/Space shooter/Space shooter/Content/resources/img/shiled-box.png</File>
     <File>C:/xampp/htdocs/P.O.O/Juegos/Space shooter/Space shooter/Content/resources/img/shooteffect.png</File>
@@ -40,6 +44,10 @@
     <File>C:/xampp/htdocs/P.O.O/Juegos/Space shooter/Space shooter/Content/resources/img/wasd.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
