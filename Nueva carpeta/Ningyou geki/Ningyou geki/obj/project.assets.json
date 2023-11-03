@@ -108,11 +108,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\xampp\\htdocs\\P.O.O\\Juegos\\Ningyou geki\\Ningyou geki\\Ningyou geki.csproj",
+      "projectUniqueName": "C:\\xampp\\htdocs\\P.O.O\\Nueva carpeta\\Ningyou geki\\Ningyou geki\\Ningyou geki.csproj",
       "projectName": "Ningyou geki",
-      "projectPath": "C:\\xampp\\htdocs\\P.O.O\\Juegos\\Ningyou geki\\Ningyou geki\\Ningyou geki.csproj",
+      "projectPath": "C:\\xampp\\htdocs\\P.O.O\\Nueva carpeta\\Ningyou geki\\Ningyou geki\\Ningyou geki.csproj",
       "packagesPath": "C:\\Users\\Alumno\\.nuget\\packages\\",
-      "outputPath": "C:\\xampp\\htdocs\\P.O.O\\Juegos\\Ningyou geki\\Ningyou geki\\obj\\",
+      "outputPath": "C:\\xampp\\htdocs\\P.O.O\\Nueva carpeta\\Ningyou geki\\Ningyou geki\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

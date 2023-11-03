@@ -43,3 +43,48 @@ C:\xampp\htdocs\P.O.O\Juegos\Ningyou geki\Ningyou geki\bin\Debug\net6.0\Content\
 C:\xampp\htdocs\P.O.O\Juegos\Ningyou geki\Ningyou geki\bin\Debug\net6.0\Content\resources\char-attack-right.xnb
 C:\xampp\htdocs\P.O.O\Juegos\Ningyou geki\Ningyou geki\bin\Debug\net6.0\Content\resources\char-jump-attack-left.xnb
 C:\xampp\htdocs\P.O.O\Juegos\Ningyou geki\Ningyou geki\bin\Debug\net6.0\Content\resources\char-jump-attack-right.xnb
+C:\xampp\htdocs\P.O.O\Nueva carpeta\Ningyou geki\Ningyou geki\bin\Debug\net6.0\Content\resources\char-attack-left.xnb
+C:\xampp\htdocs\P.O.O\Nueva carpeta\Ningyou geki\Ningyou geki\bin\Debug\net6.0\Content\resources\char-attack-right.xnb
+C:\xampp\htdocs\P.O.O\Nueva carpeta\Ningyou geki\Ningyou geki\bin\Debug\net6.0\Content\resources\char-down.xnb
+C:\xampp\htdocs\P.O.O\Nueva carpeta\Ningyou geki\Ningyou geki\bin\Debug\net6.0\Content\resources\char-hitbox.xnb
+C:\xampp\htdocs\P.O.O\Nueva carpeta\Ningyou geki\Ningyou geki\bin\Debug\net6.0\Content\resources\char-jump-attack-left.xnb
+C:\xampp\htdocs\P.O.O\Nueva carpeta\Ningyou geki\Ningyou geki\bin\Debug\net6.0\Content\resources\char-jump-attack-right.xnb
+C:\xampp\htdocs\P.O.O\Nueva carpeta\Ningyou geki\Ningyou geki\bin\Debug\net6.0\Content\resources\char-jump-left.xnb
+C:\xampp\htdocs\P.O.O\Nueva carpeta\Ningyou geki\Ningyou geki\bin\Debug\net6.0\Content\resources\char-jump-right.xnb
+C:\xampp\htdocs\P.O.O\Nueva carpeta\Ningyou geki\Ningyou geki\bin\Debug\net6.0\Content\resources\char-left-turn.xnb
+C:\xampp\htdocs\P.O.O\Nueva carpeta\Ningyou geki\Ningyou geki\bin\Debug\net6.0\Content\resources\char-left.xnb
+C:\xampp\htdocs\P.O.O\Nueva carpeta\Ningyou geki\Ningyou geki\bin\Debug\net6.0\Content\resources\char-middle-turn.xnb
+C:\xampp\htdocs\P.O.O\Nueva carpeta\Ningyou geki\Ningyou geki\bin\Debug\net6.0\Content\resources\char-right-turn.xnb
+C:\xampp\htdocs\P.O.O\Nueva carpeta\Ningyou geki\Ningyou geki\bin\Debug\net6.0\Content\resources\char-right.xnb
+C:\xampp\htdocs\P.O.O\Nueva carpeta\Ningyou geki\Ningyou geki\bin\Debug\net6.0\Content\resources\char-up.xnb
+C:\xampp\htdocs\P.O.O\Nueva carpeta\Ningyou geki\Ningyou geki\bin\Debug\net6.0\Content\resources\debug.xnb
+C:\xampp\htdocs\P.O.O\Nueva carpeta\Ningyou geki\Ningyou geki\bin\Debug\net6.0\Content\resources\floor-temp.xnb
+C:\xampp\htdocs\P.O.O\Nueva carpeta\Ningyou geki\Ningyou geki\bin\Debug\net6.0\Content\resources\slash-l.xnb
+C:\xampp\htdocs\P.O.O\Nueva carpeta\Ningyou geki\Ningyou geki\bin\Debug\net6.0\Content\resources\slash-n.xnb
+C:\xampp\htdocs\P.O.O\Nueva carpeta\Ningyou geki\Ningyou geki\bin\Debug\net6.0\Content\resources\slash-r.xnb
+C:\xampp\htdocs\P.O.O\Nueva carpeta\Ningyou geki\Ningyou geki\bin\Debug\net6.0\Content\resources\stick.xnb
+C:\xampp\htdocs\P.O.O\Nueva carpeta\Ningyou geki\Ningyou geki\bin\Debug\net6.0\Ningyou geki.exe
+C:\xampp\htdocs\P.O.O\Nueva carpeta\Ningyou geki\Ningyou geki\bin\Debug\net6.0\Ningyou geki.deps.json
+C:\xampp\htdocs\P.O.O\Nueva carpeta\Ningyou geki\Ningyou geki\bin\Debug\net6.0\Ningyou geki.runtimeconfig.json
+C:\xampp\htdocs\P.O.O\Nueva carpeta\Ningyou geki\Ningyou geki\bin\Debug\net6.0\Ningyou geki.dll
+C:\xampp\htdocs\P.O.O\Nueva carpeta\Ningyou geki\Ningyou geki\bin\Debug\net6.0\Ningyou geki.pdb
+C:\xampp\htdocs\P.O.O\Nueva carpeta\Ningyou geki\Ningyou geki\bin\Debug\net6.0\MonoGame.Framework.dll
+C:\xampp\htdocs\P.O.O\Nueva carpeta\Ningyou geki\Ningyou geki\bin\Debug\net6.0\runtimes\linux-x64\native\libSDL2-2.0.so.0
+C:\xampp\htdocs\P.O.O\Nueva carpeta\Ningyou geki\Ningyou geki\bin\Debug\net6.0\runtimes\linux-x64\native\libopenal.so.1
+C:\xampp\htdocs\P.O.O\Nueva carpeta\Ningyou geki\Ningyou geki\bin\Debug\net6.0\runtimes\osx\native\libSDL2.dylib
+C:\xampp\htdocs\P.O.O\Nueva carpeta\Ningyou geki\Ningyou geki\bin\Debug\net6.0\runtimes\osx\native\libopenal.1.dylib
+C:\xampp\htdocs\P.O.O\Nueva carpeta\Ningyou geki\Ningyou geki\bin\Debug\net6.0\runtimes\win-x64\native\SDL2.dll
+C:\xampp\htdocs\P.O.O\Nueva carpeta\Ningyou geki\Ningyou geki\bin\Debug\net6.0\runtimes\win-x64\native\soft_oal.dll
+C:\xampp\htdocs\P.O.O\Nueva carpeta\Ningyou geki\Ningyou geki\bin\Debug\net6.0\runtimes\win-x86\native\SDL2.dll
+C:\xampp\htdocs\P.O.O\Nueva carpeta\Ningyou geki\Ningyou geki\bin\Debug\net6.0\runtimes\win-x86\native\soft_oal.dll
+C:\xampp\htdocs\P.O.O\Nueva carpeta\Ningyou geki\Ningyou geki\obj\Debug\net6.0\Ningyou geki.csproj.AssemblyReference.cache
+C:\xampp\htdocs\P.O.O\Nueva carpeta\Ningyou geki\Ningyou geki\obj\Debug\net6.0\Ningyou geki.GeneratedMSBuildEditorConfig.editorconfig
+C:\xampp\htdocs\P.O.O\Nueva carpeta\Ningyou geki\Ningyou geki\obj\Debug\net6.0\Ningyou geki.AssemblyInfoInputs.cache
+C:\xampp\htdocs\P.O.O\Nueva carpeta\Ningyou geki\Ningyou geki\obj\Debug\net6.0\Ningyou geki.AssemblyInfo.cs
+C:\xampp\htdocs\P.O.O\Nueva carpeta\Ningyou geki\Ningyou geki\obj\Debug\net6.0\Ningyou geki.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\P.O.O\Nueva carpeta\Ningyou geki\Ningyou geki\obj\Debug\net6.0\Ningyou geki.csproj.CopyComplete
+C:\xampp\htdocs\P.O.O\Nueva carpeta\Ningyou geki\Ningyou geki\obj\Debug\net6.0\Ningyou geki.dll
+C:\xampp\htdocs\P.O.O\Nueva carpeta\Ningyou geki\Ningyou geki\obj\Debug\net6.0\refint\Ningyou geki.dll
+C:\xampp\htdocs\P.O.O\Nueva carpeta\Ningyou geki\Ningyou geki\obj\Debug\net6.0\Ningyou geki.pdb
+C:\xampp\htdocs\P.O.O\Nueva carpeta\Ningyou geki\Ningyou geki\obj\Debug\net6.0\Ningyou geki.genruntimeconfig.cache
+C:\xampp\htdocs\P.O.O\Nueva carpeta\Ningyou geki\Ningyou geki\obj\Debug\net6.0\ref\Ningyou geki.dll

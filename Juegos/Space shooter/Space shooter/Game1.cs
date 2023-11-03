@@ -80,7 +80,7 @@ namespace Space_shooter
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
-            //graphics.IsFullScreen = true;
+            graphics.IsFullScreen = true;
         }
 
         protected override void Initialize()
@@ -823,8 +823,6 @@ spriteBatch.DrawString(debug_font, "Level: "+difficulty, new Vector2(GraphicsDev
                 spriteBatch.Draw(wkeyTexture, wkeyPosition, Color.White);
                 spriteBatch.Draw(keyboardspcTexture, keyboardspcPosition, Color.White);
                 spriteBatch.Draw(spacekeyTexture, spacekeyPosition, Color.White);
-
-
             }
 
             spriteBatch.Draw(pointerTexture, pointerPosition, Color.White);

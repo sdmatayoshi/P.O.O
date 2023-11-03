@@ -59,3 +59,12 @@ C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\bin\Debug\net6.0\Conten
 C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\bin\Debug\net6.0\Content\resources\img\wasd.xnb
 C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\bin\Debug\net6.0\Content\resources\img\shooteffect.xnb
 C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\bin\Debug\net6.0\Content\resources\img\shooteffect2.xnb
+C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\bin\Debug\net6.0\Content\resources\img\exit.xnb
+C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\bin\Debug\net6.0\Content\resources\img\exitb.xnb
+C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\bin\Debug\net6.0\Content\resources\img\resume.xnb
+C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\bin\Debug\net6.0\Content\resources\img\resumeb.xnb
+C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\bin\Debug\net6.0\Content\resources\img\menu.xnb
+C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\bin\Debug\net6.0\Content\resources\img\menub.xnb
+C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\bin\Debug\net6.0\Content\resources\img\pause.xnb
+C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\bin\Debug\net6.0\Content\resources\img\play.xnb
+C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\bin\Debug\net6.0\Content\resources\img\playb.xnb

@@ -4,26 +4,26 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/xampp/htdocs/P.O.O/Juegos/Ningyou geki/Ningyou geki/Content/resources/char-attack-left.png</File>
-    <File>C:/xampp/htdocs/P.O.O/Juegos/Ningyou geki/Ningyou geki/Content/resources/char-attack-right.png</File>
-    <File>C:/xampp/htdocs/P.O.O/Juegos/Ningyou geki/Ningyou geki/Content/resources/char-down.png</File>
-    <File>C:/xampp/htdocs/P.O.O/Juegos/Ningyou geki/Ningyou geki/Content/resources/char-hitbox.png</File>
-    <File>C:/xampp/htdocs/P.O.O/Juegos/Ningyou geki/Ningyou geki/Content/resources/char-jump-attack-left.png</File>
-    <File>C:/xampp/htdocs/P.O.O/Juegos/Ningyou geki/Ningyou geki/Content/resources/char-jump-attack-right.png</File>
-    <File>C:/xampp/htdocs/P.O.O/Juegos/Ningyou geki/Ningyou geki/Content/resources/char-jump-left.png</File>
-    <File>C:/xampp/htdocs/P.O.O/Juegos/Ningyou geki/Ningyou geki/Content/resources/char-jump-right.png</File>
-    <File>C:/xampp/htdocs/P.O.O/Juegos/Ningyou geki/Ningyou geki/Content/resources/char-left-turn.png</File>
-    <File>C:/xampp/htdocs/P.O.O/Juegos/Ningyou geki/Ningyou geki/Content/resources/char-left.png</File>
-    <File>C:/xampp/htdocs/P.O.O/Juegos/Ningyou geki/Ningyou geki/Content/resources/char-middle-turn.png</File>
-    <File>C:/xampp/htdocs/P.O.O/Juegos/Ningyou geki/Ningyou geki/Content/resources/char-right-turn.png</File>
-    <File>C:/xampp/htdocs/P.O.O/Juegos/Ningyou geki/Ningyou geki/Content/resources/char-right.png</File>
-    <File>C:/xampp/htdocs/P.O.O/Juegos/Ningyou geki/Ningyou geki/Content/resources/char-up.png</File>
-    <File>C:/xampp/htdocs/P.O.O/Juegos/Ningyou geki/Ningyou geki/Content/resources/debug.spritefont</File>
-    <File>C:/xampp/htdocs/P.O.O/Juegos/Ningyou geki/Ningyou geki/Content/resources/floor-temp.png</File>
-    <File>C:/xampp/htdocs/P.O.O/Juegos/Ningyou geki/Ningyou geki/Content/resources/slash-l.png</File>
-    <File>C:/xampp/htdocs/P.O.O/Juegos/Ningyou geki/Ningyou geki/Content/resources/slash-n.png</File>
-    <File>C:/xampp/htdocs/P.O.O/Juegos/Ningyou geki/Ningyou geki/Content/resources/slash-r.png</File>
-    <File>C:/xampp/htdocs/P.O.O/Juegos/Ningyou geki/Ningyou geki/Content/resources/stick.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Nueva carpeta/Ningyou geki/Ningyou geki/Content/resources/char-attack-left.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Nueva carpeta/Ningyou geki/Ningyou geki/Content/resources/char-attack-right.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Nueva carpeta/Ningyou geki/Ningyou geki/Content/resources/char-down.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Nueva carpeta/Ningyou geki/Ningyou geki/Content/resources/char-hitbox.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Nueva carpeta/Ningyou geki/Ningyou geki/Content/resources/char-jump-attack-left.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Nueva carpeta/Ningyou geki/Ningyou geki/Content/resources/char-jump-attack-right.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Nueva carpeta/Ningyou geki/Ningyou geki/Content/resources/char-jump-left.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Nueva carpeta/Ningyou geki/Ningyou geki/Content/resources/char-jump-right.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Nueva carpeta/Ningyou geki/Ningyou geki/Content/resources/char-left-turn.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Nueva carpeta/Ningyou geki/Ningyou geki/Content/resources/char-left.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Nueva carpeta/Ningyou geki/Ningyou geki/Content/resources/char-middle-turn.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Nueva carpeta/Ningyou geki/Ningyou geki/Content/resources/char-right-turn.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Nueva carpeta/Ningyou geki/Ningyou geki/Content/resources/char-right.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Nueva carpeta/Ningyou geki/Ningyou geki/Content/resources/char-up.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Nueva carpeta/Ningyou geki/Ningyou geki/Content/resources/debug.spritefont</File>
+    <File>C:/xampp/htdocs/P.O.O/Nueva carpeta/Ningyou geki/Ningyou geki/Content/resources/floor-temp.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Nueva carpeta/Ningyou geki/Ningyou geki/Content/resources/slash-l.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Nueva carpeta/Ningyou geki/Ningyou geki/Content/resources/slash-n.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Nueva carpeta/Ningyou geki/Ningyou geki/Content/resources/slash-r.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Nueva carpeta/Ningyou geki/Ningyou geki/Content/resources/stick.png</File>
   </SourceFiles>
   <DestFiles>
     <File xsi:nil="true" />
