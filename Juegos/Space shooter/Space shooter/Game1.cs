@@ -65,6 +65,13 @@ namespace Space_shooter
         private Vector2 keyboardspcPosition;
         private Texture2D spacekeyTexture;
         private Vector2 spacekeyPosition;
+
+        private Texture2D resumebtnTexture;
+        private Vector2 resumebtnPosition;
+
+
+
+
         private Texture2D shootefTexture;
         private Vector2 shootefPosition;
         private Texture2D shootef2Texture;
@@ -86,7 +93,6 @@ namespace Space_shooter
         protected override void Initialize()
         {
             base.Initialize();
-
         }
         bool space = false; bool a = false; bool s = false; bool d = false; bool w = false; bool bossanim = false;
         bool failed = false;bool shoot1 = false; bool shoot2 = false; bool shoot3 = false; bool shoot4 = false; bool shootboss = false; int life = 3; int cooldown1 = 0; bool debug = false; int debugdelay = 0;int score = 0;int difficulty = 1; bool upgraded = false; int upgradedtime = 5;
