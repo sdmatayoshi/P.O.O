@@ -68,3 +68,6 @@ C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\bin\Debug\net6.0\Conten
 C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\bin\Debug\net6.0\Content\resources\img\pause.xnb
 C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\bin\Debug\net6.0\Content\resources\img\play.xnb
 C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\bin\Debug\net6.0\Content\resources\img\playb.xnb
+C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\bin\Debug\net6.0\Content\resources\img\barbg.xnb
+C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\bin\Debug\net6.0\Content\resources\img\barin.xnb
+C:\xampp\htdocs\P.O.O\Juegos\Space shooter\Space shooter\bin\Debug\net6.0\Content\resources\img\portrait.xnb

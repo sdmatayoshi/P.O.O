@@ -6,6 +6,8 @@
   <SourceFiles>
     <File>C:/xampp/htdocs/P.O.O/Juegos/Space shooter/Space shooter/Content/resources/debug.spritefont</File>
     <File>C:/xampp/htdocs/P.O.O/Juegos/Space shooter/Space shooter/Content/resources/img/a.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Space shooter/Space shooter/Content/resources/img/barbg.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Space shooter/Space shooter/Content/resources/img/barin.png</File>
     <File>C:/xampp/htdocs/P.O.O/Juegos/Space shooter/Space shooter/Content/resources/img/boss1.png</File>
     <File>C:/xampp/htdocs/P.O.O/Juegos/Space shooter/Space shooter/Content/resources/img/boss1b.png</File>
     <File>C:/xampp/htdocs/P.O.O/Juegos/Space shooter/Space shooter/Content/resources/img/boss1bdamage.png</File>
@@ -35,6 +37,7 @@
     <File>C:/xampp/htdocs/P.O.O/Juegos/Space shooter/Space shooter/Content/resources/img/play.png</File>
     <File>C:/xampp/htdocs/P.O.O/Juegos/Space shooter/Space shooter/Content/resources/img/playb.png</File>
     <File>C:/xampp/htdocs/P.O.O/Juegos/Space shooter/Space shooter/Content/resources/img/point-hitbox.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Space shooter/Space shooter/Content/resources/img/portrait.png</File>
     <File>C:/xampp/htdocs/P.O.O/Juegos/Space shooter/Space shooter/Content/resources/img/resume.png</File>
     <File>C:/xampp/htdocs/P.O.O/Juegos/Space shooter/Space shooter/Content/resources/img/resumeb.png</File>
     <File>C:/xampp/htdocs/P.O.O/Juegos/Space shooter/Space shooter/Content/resources/img/s.png</File>
@@ -49,6 +52,9 @@
     <File>C:/xampp/htdocs/P.O.O/Juegos/Space shooter/Space shooter/Content/resources/img/wasd.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

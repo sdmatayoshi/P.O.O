@@ -16,6 +16,8 @@ namespace Space_shooter
         private SpriteBatch spriteBatch;
         private Texture2D pointerTexture;
         private Vector2 pointerPosition;
+        private Texture2D portraitTexture;
+        private Vector2 portraitPosition;
 
         private Texture2D health1Texture;
         private Vector2 health1Position;
@@ -68,6 +70,12 @@ namespace Space_shooter
 
         private Texture2D resumebtnTexture;
         private Vector2 resumebtnPosition;
+        private Texture2D menubtnTexture;
+        private Vector2 menubtnPosition;
+        private Texture2D exitbtnTexture;
+        private Vector2 exitbtnPosition;
+        private Texture2D playbtnTexture;
+        private Vector2 playbtnPosition;
 
 
 
@@ -94,7 +102,7 @@ namespace Space_shooter
         {
             base.Initialize();
         }
-        bool space = false; bool a = false; bool s = false; bool d = false; bool w = false; bool bossanim = false;
+        bool space = false; bool a = false; bool s = false; bool d = false; bool w = false; bool bossanim = false; bool pause = false; bool menu=true; int del = 0;int pw = 300; int ph = 300;
         bool failed = false;bool shoot1 = false; bool shoot2 = false; bool shoot3 = false; bool shoot4 = false; bool shootboss = false; int life = 3; int cooldown1 = 0; bool debug = false; int debugdelay = 0;int score = 0;int difficulty = 1; bool upgraded = false; int upgradedtime = 5;
         bool level1 = true; bool level2 = false; bool level3 = false; bool level4 = false; bool level5 = false; bool loot = false; bool lootshow = false; int lootx; int looty; int lootw; int looth; int lootcont = 0;
         bool isalive1 = true; int en1px = 200; int en1py = 200; int en1tw = 23; int en1th = 13; bool revive1 = false; int revive1time = 10; int endelay1 = 0; string en1texture = "enemy11"; int en1spd = 1; int en1hp = 1;int hptext1x = 200; int hptext1y = 200;
@@ -177,7 +185,20 @@ namespace Space_shooter
             keyboardspcTexture = Content.Load<Texture2D>("resources/img/space");
             
             spacekeyTexture = Content.Load<Texture2D>("resources/img/spacepress");
-            
+
+            resumebtnTexture = Content.Load<Texture2D>("resources/img/resume");
+            resumebtnPosition = new Vector2(GraphicsDevice.Viewport.Width /2 - resumebtnTexture.Width / 2, GraphicsDevice.Viewport.Height - 200);
+            menubtnTexture = Content.Load<Texture2D>("resources/img/menu");
+            menubtnPosition = new Vector2(GraphicsDevice.Viewport.Width / 2 - menubtnTexture.Width / 2, GraphicsDevice.Viewport.Height - 150);
+            playbtnTexture = Content.Load<Texture2D>("resources/img/play");
+            playbtnPosition = new Vector2(GraphicsDevice.Viewport.Width / 2 - playbtnTexture.Width / 2, GraphicsDevice.Viewport.Height - 100);
+            exitbtnTexture = Content.Load<Texture2D>("resources/img/menu");
+            exitbtnPosition = new Vector2(GraphicsDevice.Viewport.Width / 2 - exitbtnTexture.Width / 2, GraphicsDevice.Viewport.Height - 50);
+
+            portraitTexture = Content.Load<Texture2D>("resources/img/portrait");
+            portraitPosition = new Vector2(GraphicsDevice.Viewport.Width- portraitTexture.Width, GraphicsDevice.Viewport.Height);
+
+
             if (!graphics.IsFullScreen == true)
             {
                 keyboardPosition = new Vector2(GraphicsDevice.Viewport.Width - 150, GraphicsDevice.Viewport.Height - 150);
@@ -204,8 +225,28 @@ namespace Space_shooter
 
         protected override void Update(GameTime gameTime)
         {
-            /*----------------------------------------------------------------------------------Hitboxes---------------------------------------------------------------------------------*/
+            Rectangle resumebtnRectangle = new Rectangle((int)resumebtnPosition.X, (int)resumebtnPosition.Y, resumebtnTexture.Width, resumebtnTexture.Height);
+            Rectangle menubtnRectangle = new Rectangle((int)menubtnPosition.X, (int)menubtnPosition.Y, menubtnTexture.Width, menubtnTexture.Height);
+            Rectangle playbtnRectangle = new Rectangle((int)playbtnPosition.X, (int)playbtnPosition.Y, playbtnTexture.Width, playbtnTexture.Height);
+            Rectangle exitbtnRectangle = new Rectangle((int)exitbtnPosition.X, (int)exitbtnPosition.Y, exitbtnTexture.Width, exitbtnTexture.Height);
+            /*--------------------------------------------------------------------------------Player------------------------------------------------------------------------------------*/
             Rectangle pointerRectangle = new Rectangle((int)pointerPosition.X + 20, (int)pointerPosition.Y + 20, pointerTexture.Width - 40, pointerTexture.Height - 40);
+            if (Keyboard.GetState().IsKeyDown(Keys.W) && pointerPosition.Y > 0) { pointerPosition.Y -= 10; }
+            if (Keyboard.GetState().IsKeyDown(Keys.S) && pointerPosition.Y < GraphicsDevice.Viewport.Height - 48) { pointerPosition.Y += 10; }
+            if (Keyboard.GetState().IsKeyDown(Keys.A) && pointerPosition.X > 0) { pointerPosition.X -= 10; }
+            if (Keyboard.GetState().IsKeyDown(Keys.D) && pointerPosition.X < GraphicsDevice.Viewport.Width - 48) { pointerPosition.X += 10; }
+
+            if (pointerRectangle.Intersects(playbtnRectangle) && menu) { playbtnTexture = Content.Load<Texture2D>("resources/img/playb"); if (Keyboard.GetState().IsKeyDown(Keys.Space)) { menu = false; pause = false; } } else { playbtnTexture = Content.Load<Texture2D>("resources/img/play"); }
+            if (pointerRectangle.Intersects(exitbtnRectangle) && menu) { exitbtnTexture = Content.Load<Texture2D>("resources/img/exitb"); if (Keyboard.GetState().IsKeyDown(Keys.Space)) { Exit(); } } else { exitbtnTexture = Content.Load<Texture2D>("resources/img/exit"); }
+            
+            if (Keyboard.GetState().IsKeyDown(Keys.Escape) && !pause) { pause = true; }
+            if (pointerRectangle.Intersects(resumebtnRectangle) && pause) { resumebtnTexture = Content.Load<Texture2D>("resources/img/resumeb"); if (Keyboard.GetState().IsKeyDown(Keys.Space)) { pause = false; } } else { resumebtnTexture = Content.Load<Texture2D>("resources/img/resume"); }
+            if (pointerRectangle.Intersects(menubtnRectangle) && pause) { menubtnTexture = Content.Load<Texture2D>("resources/img/menub"); if (Keyboard.GetState().IsKeyDown(Keys.Space)) { menu = true; del = 0; } } else { menubtnTexture = Content.Load<Texture2D>("resources/img/menu"); }
+            /*------------------------------------------------------------------------------Player---------------------------------------------------------------------------------------*/
+            if (!pause && !menu)
+            {
+            /*----------------------------------------------------------------------------------Hitboxes---------------------------------------------------------------------------------*/
+            
             Rectangle enemyRectangle = new Rectangle((int)en1px, (int)en1py, en1tw, en1th);
             Rectangle enemy2Rectangle = new Rectangle((int)en2px, (int)en2py, en2tw, en2th);
             Rectangle enemy3Rectangle = new Rectangle((int)en3px, (int)en3py, en3tw, en3th);
@@ -253,13 +294,7 @@ namespace Space_shooter
                 spacekeyTexture = Content.Load<Texture2D>("resources/img/void");
             }
             /*--------------------------------------------------------------------------------Hitboxes-End-------------------------------------------------------------------------------*/
-            /*--------------------------------------------------------------------------------Player-Moves-------------------------------------------------------------------------------*/
-            if (Keyboard.GetState().IsKeyDown(Keys.W)) { pointerPosition.Y -= 10; }
-            if (Keyboard.GetState().IsKeyDown(Keys.S)) { pointerPosition.Y += 10; }
-            if (Keyboard.GetState().IsKeyDown(Keys.A)) { pointerPosition.X -= 10; }
-            if (Keyboard.GetState().IsKeyDown(Keys.D)) { pointerPosition.X += 10; }
-            if (Keyboard.GetState().IsKeyDown(Keys.Escape)) { Exit(); }
-            /*------------------------------------------------------------------------------Player-Moves-End------------------------------------------------------------------------------*/
+           
             /*-------------------------------------------------------------------------------Player-Attack--------------------------------------------------------------------------------*/
             if (Keyboard.GetState().IsKeyDown(Keys.Space) && pointerRectangle.Intersects(enemyRectangle) && cooldown1 > 30 && isalive1 && en1texture != "void") { shoot1 = true; cooldown1 = 0; } else { shoot1 = false;}
             if (Keyboard.GetState().IsKeyDown(Keys.Space) && pointerRectangle.Intersects(enemy2Rectangle) && cooldown1 > 30 && isalive2 && level2) { shoot2 = true; cooldown1 = 0; } else { shoot2 = false;}
@@ -573,7 +608,7 @@ namespace Space_shooter
                 }
             }
             /*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-            if (en1tw > 200 && en1tw > 190)
+            if (en1tw > 200 && en1tw > 190 && en1px<GraphicsDevice.Viewport.Width - 50 &&en1px >0)
             {
                 isalive1 = false;
                 en1tw = 0;
@@ -601,7 +636,7 @@ namespace Space_shooter
 
 
 
-            if (en2tw > 200 && en2tw > 190)
+            if (en2tw > 200 && en2tw > 190 && en2px < GraphicsDevice.Viewport.Width - 50 && en2px > 0)
             {
                 isalive2 = false;
                 en2tw = 0;
@@ -628,7 +663,7 @@ namespace Space_shooter
             }
 
 
-            if (en3tw > 200 && en3tw > 190)
+            if (en3tw > 200 && en3tw > 190 && en3px < GraphicsDevice.Viewport.Width - 50 && en3px > 0)
             {
                 isalive3 = false;
                 en3tw = 0;
@@ -735,8 +770,10 @@ namespace Space_shooter
             cooldown1++;
             b1animdel++;
             debugdelay++;
+                del++;
             //lootcont++;
             base.Update(gameTime);
+            }
         }
 
         protected override void Draw(GameTime gameTime)
@@ -744,58 +781,24 @@ namespace Space_shooter
             GraphicsDevice.Clear(Color.Black);
             
             spriteBatch.Begin();
-            
-            if (isalive1 && level1 && !level5)
+            if (!menu)
             {
-                spriteBatch.Draw(enemyTexture, new Rectangle(en1px, en1py, en1tw, en1th), Color.White);
-            }
-
-            if (isalive2 && level2 && !level5)
-            {
-                spriteBatch.Draw(enemy2Texture, new Rectangle(en2px, en2py, en2tw, en2th), Color.White);
-            }
-
-            if (isalive3 && level3 && !level5)
-            {
-                spriteBatch.Draw(enemy3Texture, new Rectangle(en3px, en3py, en3tw, en3th), Color.White);
-            }
-
-            if (isalive4 && level4 && !level5)
-            {
-                spriteBatch.Draw(Content.Load<Texture2D>("resources/img/" + en4texture), new Rectangle(en4px, en4py, en4tw, en4th), Color.White);
-            }
-
-            if (lootshow)
-            {
-                spriteBatch.Draw(lootboxTexture, new Rectangle(GraphicsDevice.Viewport.Width/2, GraphicsDevice.Viewport.Height/2, lootboxTexture.Width, lootboxTexture.Height), Color.White);
-            }
+            if (isalive1 && level1 && !level5){spriteBatch.Draw(enemyTexture, new Rectangle(en1px, en1py, en1tw, en1th), Color.White);}
+            if (isalive2 && level2 && !level5){spriteBatch.Draw(enemy2Texture, new Rectangle(en2px, en2py, en2tw, en2th), Color.White);}
+            if (isalive3 && level3 && !level5){spriteBatch.Draw(enemy3Texture, new Rectangle(en3px, en3py, en3tw, en3th), Color.White);}
+            if (isalive4 && level4 && !level5){spriteBatch.Draw(Content.Load<Texture2D>("resources/img/" + en4texture), new Rectangle(en4px, en4py, en4tw, en4th), Color.White);}
+            if (lootshow){spriteBatch.Draw(lootboxTexture, new Rectangle(GraphicsDevice.Viewport.Width/2, GraphicsDevice.Viewport.Height/2, lootboxTexture.Width, lootboxTexture.Height), Color.White);}
             spriteBatch.Draw(explosionTexture, new Rectangle(en1px, en1py, en1tw, en1th), Color.White);
             spriteBatch.Draw(explosion2Texture, new Rectangle(en2px, en2py, en2tw, en2th), Color.White);
             spriteBatch.Draw(explosion3Texture, new Rectangle(en3px, en3py, en3tw, en3th), Color.White);
-            if (life == 3)
-            {
-                spriteBatch.Draw(health3Texture, new Rectangle(65, 5, hptw, hpth), Color.White);
-                spriteBatch.Draw(health2Texture, new Rectangle(35, 5, hptw, hpth), Color.White);
-                spriteBatch.Draw(health1Texture, new Rectangle(5, 5, hptw, hpth), Color.White);
-            }
-            else if (life == 2)
-            {
-                spriteBatch.Draw(health2Texture, new Rectangle(35, 5, hptw, hpth), Color.White);
-                spriteBatch.Draw(health1Texture, new Rectangle(5, 5, hptw, hpth), Color.White);
-            }
-            else if (life == 1)
-            {
-                spriteBatch.Draw(health1Texture, new Rectangle(5, 5, hptw, hpth), Color.White);
-            }
-            spriteBatch.DrawString(debug_font, "Score: "+score, new Vector2(100, 10), Color.White);
-           
-spriteBatch.DrawString(debug_font, "Level: "+difficulty, new Vector2(GraphicsDevice.Viewport.Width - 100, 10), Color.White);
+            if (life == 3){spriteBatch.Draw(health3Texture, new Rectangle(65, 5, hptw, hpth), Color.White);spriteBatch.Draw(health2Texture, new Rectangle(35, 5, hptw, hpth), Color.White);spriteBatch.Draw(health1Texture, new Rectangle(5, 5, hptw, hpth), Color.White);}
+            else if (life == 2){spriteBatch.Draw(health2Texture, new Rectangle(35, 5, hptw, hpth), Color.White);spriteBatch.Draw(health1Texture, new Rectangle(5, 5, hptw, hpth), Color.White);}
+            else if (life == 1){spriteBatch.Draw(health1Texture, new Rectangle(5, 5, hptw, hpth), Color.White);}
+            spriteBatch.DrawString(debug_font, "Score: "+score, new Vector2(100, 10), Color.White);spriteBatch.DrawString(debug_font, "Level: "+difficulty, new Vector2(GraphicsDevice.Viewport.Width - 100, 10), Color.White);
 
-            if (shoot1||shoot2||shoot3||shoot4||failed)
-            {
-                spriteBatch.Draw(shootefTexture, new Rectangle(0, GraphicsDevice.Viewport.Height-100, 100, 100), Color.White);
-                spriteBatch.Draw(shootef2Texture, new Rectangle(GraphicsDevice.Viewport.Width-100, GraphicsDevice.Viewport.Height-100, 100, 100), Color.White);
-            }
+            if ((shoot1||shoot2||shoot3||shoot4||failed) && !pause)
+            {spriteBatch.Draw(shootefTexture, new Rectangle(0, GraphicsDevice.Viewport.Height-100, 100, 100), Color.White);spriteBatch.Draw(shootef2Texture, new Rectangle(GraphicsDevice.Viewport.Width-100, GraphicsDevice.Viewport.Height-100, 100, 100), Color.White);}
+            if (pause){spriteBatch.Draw(resumebtnTexture, resumebtnPosition, Color.White);spriteBatch.Draw(menubtnTexture, menubtnPosition, Color.White);}
             if (debug)
             {
                 spriteBatch.DrawString(debug_font, "Player: ", new Vector2(10, 30), Color.White);
@@ -804,8 +807,7 @@ spriteBatch.DrawString(debug_font, "Level: "+difficulty, new Vector2(GraphicsDev
                 spriteBatch.DrawString(debug_font, "hp: " + life, new Vector2(10, 90), Color.White);
                 spriteBatch.DrawString(debug_font, "shoot1: " + shoot1, new Vector2(10, 110), Color.White);
                 spriteBatch.DrawString(debug_font, "cooldown1: " + cooldown1, new Vector2(10, 130), Color.White);
-                //spriteBatch.DrawString(debug_font, "revive1time: " + revive1time, new Vector2(0, 10), Color.White);
-                //spriteBatch.DrawString(debug_font, "move delay enemy 1: " + endelay1, new Vector2(50, 10), Color.White);
+
                 spriteBatch.DrawString(debug_font, "Enemy: ", new Vector2(10, 150), Color.White);
                 spriteBatch.DrawString(debug_font, "en3hp: " + en3hp, new Vector2(10, 170), Color.White);
                 spriteBatch.DrawString(debug_font, "lootcont: " + lootcont, new Vector2(10, 190), Color.White);
@@ -820,8 +822,6 @@ spriteBatch.DrawString(debug_font, "Level: "+difficulty, new Vector2(GraphicsDev
                 spriteBatch.DrawString(debug_font, "level4: " + level4, new Vector2(GraphicsDevice.Viewport.Width - 100, 90), Color.White);
                 spriteBatch.DrawString(debug_font, "level5: " + level5, new Vector2(GraphicsDevice.Viewport.Width - 100, 110), Color.White);
 
-
-
                 spriteBatch.Draw(keyboardTexture, keyboardPosition, Color.White);
                 spriteBatch.Draw(akeyTexture, akeyPosition, Color.White);
                 spriteBatch.Draw(skeyTexture, skeyPosition, Color.White);
@@ -830,7 +830,10 @@ spriteBatch.DrawString(debug_font, "Level: "+difficulty, new Vector2(GraphicsDev
                 spriteBatch.Draw(keyboardspcTexture, keyboardspcPosition, Color.White);
                 spriteBatch.Draw(spacekeyTexture, spacekeyPosition, Color.White);
             }
-
+            }
+            else if (menu){
+                spriteBatch.Draw(portraitTexture, new Rectangle((int)portraitPosition.X-200, (int)portraitPosition.Y-180, pw, ph), Color.White); spriteBatch.Draw(playbtnTexture, playbtnPosition, Color.White); spriteBatch.Draw(exitbtnTexture, exitbtnPosition, Color.White); 
+              }
             spriteBatch.Draw(pointerTexture, pointerPosition, Color.White);
             spriteBatch.End();
 
