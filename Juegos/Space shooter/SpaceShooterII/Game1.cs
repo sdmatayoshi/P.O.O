@@ -90,6 +90,10 @@ namespace SpaceShooterII
             wkeyTexture = Content.Load<Texture2D>("resources/img/w");
             keyboardspcTexture = Content.Load<Texture2D>("resources/img/space");
             spacekeyTexture = Content.Load<Texture2D>("resources/img/spacepress");
+            keyboardPosition = new Vector2(GraphicsDevice.Viewport.Width - keyboardTexture.Width, GraphicsDevice.Viewport.Height - keyboardTexture.Height);
+
+
+
             resumebtnTexture = Content.Load<Texture2D>("resources/img/resume");
             resumebtnPosition = new Vector2(GraphicsDevice.Viewport.Width / 2 - resumebtnTexture.Width / 2, GraphicsDevice.Viewport.Height - 200);
             menubtnTexture = Content.Load<Texture2D>("resources/img/menu");
@@ -151,17 +155,17 @@ namespace SpaceShooterII
                 {
                     int originx = rnd1.Next(250, 500);
                     int originy = rnd1.Next(200, 400);
-                    enemies.Add(new Enemy(enemyTexture, originx,originy, 23, 13, 2, 1, 1));
+                    enemies.Add(new Enemy(enemyTexture, originx,originy, 23, 13, 2, 1, 1, GraphicsDevice.Viewport.Width, GraphicsDevice.Viewport.Height));
                     timew = DateTime.Now;
                 }
 
-                //for (int i = 0; i < enemies.Count; i++)
-                //{
-                //    if (enemies[i].tw > 200)
-                //    {
-                //        enemies.RemoveAt(i);
-                //    }
-                //}
+                for (int i = 0; i < enemies.Count; i++)
+                {
+                    if (enemies[i].tw > 200)
+                    {
+                        enemies.RemoveAt(i);
+                    }
+                }
             }
 
             del++;
@@ -178,7 +182,7 @@ namespace SpaceShooterII
             {
                 foreach (Enemy e in enemies)
                 {
-                    _spriteBatch.Draw(e.entexture, new Vector2(e.px,e.py) , Color.White);
+                    _spriteBatch.Draw(e.entexture, new Rectangle(e.px,e.py,e.tw,e.th) , Color.White);
                     
                 }
             }

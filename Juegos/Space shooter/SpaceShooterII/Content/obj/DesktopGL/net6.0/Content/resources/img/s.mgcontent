@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <SourceFile>C:/xampp/htdocs/P.O.O/Juegos/Space shooter/SpaceShooterII/Content/resources/img/s.png</SourceFile>
-  <SourceTime>2023-11-01T09:23:13.720236-03:00</SourceTime>
+  <SourceTime>2023-11-09T18:59:28.7016863-03:00</SourceTime>
   <DestFile>C:/xampp/htdocs/P.O.O/Juegos/Space shooter/SpaceShooterII/Content/bin/DesktopGL/Content/resources/img/s.xnb</DestFile>
-  <DestTime>2023-11-09T15:11:29.1462633-03:00</DestTime>
+  <DestTime>2023-11-09T19:01:39.972775-03:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2022-07-26T08:44:56-03:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
