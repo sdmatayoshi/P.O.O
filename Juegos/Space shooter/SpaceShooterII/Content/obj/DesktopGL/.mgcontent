@@ -34,6 +34,7 @@
     <File>C:/xampp/htdocs/P.O.O/Juegos/Space shooter/SpaceShooterII/Content/resources/img/menu.png</File>
     <File>C:/xampp/htdocs/P.O.O/Juegos/Space shooter/SpaceShooterII/Content/resources/img/menub.png</File>
     <File>C:/xampp/htdocs/P.O.O/Juegos/Space shooter/SpaceShooterII/Content/resources/img/pause.png</File>
+    <File>C:/xampp/htdocs/P.O.O/Juegos/Space shooter/SpaceShooterII/Content/resources/img/pbullet.png</File>
     <File>C:/xampp/htdocs/P.O.O/Juegos/Space shooter/SpaceShooterII/Content/resources/img/play.png</File>
     <File>C:/xampp/htdocs/P.O.O/Juegos/Space shooter/SpaceShooterII/Content/resources/img/playb.png</File>
     <File>C:/xampp/htdocs/P.O.O/Juegos/Space shooter/SpaceShooterII/Content/resources/img/point-hitbox.png</File>
@@ -52,6 +53,7 @@
     <File>C:/xampp/htdocs/P.O.O/Juegos/Space shooter/SpaceShooterII/Content/resources/img/wasd.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

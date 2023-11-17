@@ -40,36 +40,84 @@ namespace SpaceShooterII
 
         public void Mov1()
         {
-            if (px >= (width/2-entexture.Width/2) + 50)
+            if (px > (width/2-entexture.Width/2) - tw/2)
             {
                 px += spdx; tw += spdz; th += spdz;
-                if (tw==100)
-                {
-                    spdz+=1;
-                }
+                //if (tw==100)
+                //{
+                //    spdz+=1;
+                //}
             }
-            if (px < (width / 2 - entexture.Width / 2) - 50)
+            if (px < (width / 2 - entexture.Width / 2) - tw / 2)
             {
-                px -= spdx; th += spdz; th += spdz;
-                if (tw == 100)
-                {
-                    spdz += 1;
-                }
+                px -= spdx; tw += spdz; th += spdz;
             }
-            if (py >= height/2-entexture.Height/2)
+            if (px == (width / 2 - entexture.Width / 2) - tw / 2)
+            {
+                tw += spdz; th += spdz;
+            }
+            if (py > height / 2 - entexture.Height / 2 - th / 2)
             {
                 py += spdy; tw += spdz; th += spdz;
-                if (tw == 100)
-                {
-                    spdz += 1;
-                }
             }
-            if (py < height / 2 - entexture.Height / 2)
+            if (py < height / 2 - entexture.Height / 2 - th / 2)
             {
                 py -= spdy; tw += spdz; th += spdz;
-                if (tw == 100)
+            }
+            if (py == height / 2 - entexture.Height / 2 - th / 2)
+            {
+                tw += spdz; th += spdz;
+            }
+        }
+
+        public void Mov2()
+        {
+            if (px > (width / 2 - entexture.Width / 2) - tw / 2)
+            {
+                px += spdx; tw += spdz; th += spdz;
+                if (tw==75)
                 {
-                    spdz += 1;
+                    spdz+=2;
+                }
+            }
+            if (px < (width / 2 - entexture.Width / 2) - tw / 2)
+            {
+                px -= spdx; tw += spdz; th += spdz;
+                if (tw == 75)
+                {
+                    spdz += 2;
+                }
+            }
+            if (px == (width / 2 - entexture.Width / 2) - tw / 2)
+            {
+                tw += spdz; th += spdz;
+                if (tw == 75)
+                {
+                    spdz += 2;
+                }
+            }
+            if (py > height / 2 - entexture.Height / 2 - th / 2)
+            {
+                py += spdy; tw += spdz; th += spdz;
+                if (tw == 75)
+                {
+                    spdz += 2;
+                }
+            }
+            if (py < height / 2 - entexture.Height / 2 - th / 2)
+            {
+                py -= spdy; tw += spdz; th += spdz;
+                if (tw == 75)
+                {
+                    spdz += 2;
+                }
+            }
+            if (py == height / 2 - entexture.Height / 2 - th / 2)
+            {
+                tw += spdz; th += spdz;
+                if (tw == 75)
+                {
+                    spdz += 2;
                 }
             }
         }

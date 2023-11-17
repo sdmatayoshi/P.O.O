@@ -15,6 +15,12 @@ namespace SpaceShooterII
         List<Rectangle> enemiesrectangles;
         private Texture2D enemyTexture;
         private Vector2 enemyPosition;
+        private Texture2D enemy2Texture;
+        private Vector2 enemy2Position;
+        private Texture2D enemy3Texture;
+        private Vector2 enemy3Position;
+        private Texture2D enemy4Texture;
+        private Vector2 enemy4Position;
         DateTime timew;
         DateTime tiempoactual;
         TimeSpan tiempo;
@@ -22,7 +28,12 @@ namespace SpaceShooterII
         //playes beta
         private Texture2D pointerTexture;
         private Vector2 pointerPosition;
+        Player player;
+        Pbullet pbullet;
 
+        List<Pbullet> pbullets;
+        private Texture2D pbulletTexture;
+        private Vector2 pbulletPosition;
         //debug keys
         private Texture2D keyboardTexture;
         private Vector2 keyboardPosition;
@@ -75,13 +86,17 @@ namespace SpaceShooterII
 
             _spriteBatch = new SpriteBatch(GraphicsDevice);
             enemies = new List<Enemy>();
+            pbullet = new Pbullet();
+            player = new Player();
             enemyTexture = Content.Load<Texture2D>("resources/img/enemy11");
-
-
+            enemy2Texture = Content.Load<Texture2D>("resources/img/enemy21");
+            enemy3Texture = Content.Load<Texture2D>("resources/img/enemy31");
+            enemy4Texture = Content.Load<Texture2D>("resources/img/enemy41");
 
             pointerTexture = Content.Load<Texture2D>("resources/img/cross-pointer");
             pointerPosition = new Vector2(GraphicsDevice.Viewport.Width / 2 - pointerTexture.Width / 2, GraphicsDevice.Viewport.Height / 2 - pointerTexture.Height / 2);
-
+            player.texture = Content.Load<Texture2D>("resources/img/cross-pointer");
+            pbulletTexture = Content.Load<Texture2D>("resources/img/pbullet");
 
             keyboardTexture = Content.Load<Texture2D>("resources/img/wasd");
             akeyTexture = Content.Load<Texture2D>("resources/img/a");
@@ -144,7 +159,6 @@ namespace SpaceShooterII
             if (Keyboard.GetState().IsKeyDown(Keys.W)) { w = true; } else { w = false; }
 
 
-
             
             if (!pause && !menu)
             {
@@ -155,16 +169,68 @@ namespace SpaceShooterII
                 {
                     int originx = rnd1.Next(250, 500);
                     int originy = rnd1.Next(200, 400);
-                    enemies.Add(new Enemy(enemyTexture, originx,originy, 23, 13, 2, 1, 1, GraphicsDevice.Viewport.Width, GraphicsDevice.Viewport.Height));
+                    enemies.Add(new Enemy(enemyTexture, originx, originy, 23, 13, 2, 1, 1, GraphicsDevice.Viewport.Width, GraphicsDevice.Viewport.Height));
                     timew = DateTime.Now;
                 }
-
                 for (int i = 0; i < enemies.Count; i++)
                 {
-                    if (enemies[i].tw > 200)
+                    if (enemies[i].tw > 250)
                     {
                         enemies.RemoveAt(i);
                     }
+                }
+
+                foreach (Pbullet pb in pbullets)
+                {
+                    pb.Mov(player);
+                }
+                if (Keyboard.GetState().IsKeyDown(Keys.A))
+                {
+                    player.MovA();
+                }
+                if (Keyboard.GetState().IsKeyDown(Keys.D))
+                {
+                    player.MovD();
+                }
+                if (Keyboard.GetState().IsKeyDown(Keys.W))
+                {
+                    player.MovW();
+                }
+                if (Keyboard.GetState().IsKeyDown(Keys.S))
+                {
+                    player.MovS();
+                }
+
+                foreach (Enemy e in enemies)
+                {
+                    e.Mov1();
+                    enemyPosisition.Add(new Rectangle(r.positionX, r.positionY, enemy.Width, enemy.Height));
+                    foreach (Bala a in balasJug)
+                    {
+                        if (a.visible == true)
+                        {
+                            if (new Rectangle(r.positionX, r.positionY, r.img.Width, r.img.Height).Intersects(new Rectangle((a.PosBalaX + (player.img.Width / 2)) - 3, a.PosBalaY - 20, player.disparoimg.Width, player.disparoimg.Height)))
+                            {
+                                balasJug.Remove(a);
+                                enemigos.Remove(r);
+                                player.score = player.score + 20;
+                                break;
+
+                            }
+                        }
+                        if (a.PosBalaY < 0)
+                        {
+                            balasJug.Remove(a);
+                            break;
+                        }
+                    }
+                    if (new Rectangle(player.positionX, player.positionY, player.img.Width, player.img.Height).Intersects(new Rectangle(r.positionX, r.positionY, r.img.Width, r.img.Height)))
+                    {
+                        enemigos.Remove(r);
+                        player.vida = player.vida - 25;
+                        break;
+                    }
+                    break;
                 }
             }
 
@@ -185,13 +251,23 @@ namespace SpaceShooterII
                     _spriteBatch.Draw(e.entexture, new Rectangle(e.px,e.py,e.tw,e.th) , Color.White);
                     
                 }
-            }
-            foreach (Enemy e in enemies)
-            {
-                e.Mov1();
+                foreach (Enemy e in enemies)
+                {
+                    e.Mov1();
 
-            }
+                }
+                foreach (Pbullet pb in pbullets)
+                {
+                    _spriteBatch.Draw(pb.texture, new Rectangle(pb.x, pb.y, pb.tw, pb.th), Color.White);
 
+                }
+                foreach (Pbullet pb in pbullets)
+                {
+                    pb.Mov(player);
+
+                }
+            }
+            
             if (debug)
             {
                 _spriteBatch.DrawString(debug_font, "Player: ", new Vector2(10, 30), Color.White);
