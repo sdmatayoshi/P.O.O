@@ -21,6 +21,12 @@ namespace SpaceShooterII
         public int ammo = 7;
         public bool shoot = true;
         public Player() { }
+        public Player(Texture2D texture, int x, int y) 
+        { 
+            this.texture = texture;
+            this.x = x;
+            this.y = y;
+        }
 
         public void MovA()
         {

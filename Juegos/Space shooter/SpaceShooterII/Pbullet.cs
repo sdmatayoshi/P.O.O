@@ -18,13 +18,9 @@ namespace SpaceShooterII
         int spd = 5;
 
         public Pbullet() { }
-        public Pbullet(Texture2D texture, int x, int y, int tw, int th) 
+        public Pbullet(Texture2D texture) 
         { 
             this.texture = texture;
-            this.x = x;
-            this.y = y;
-            this.tw = tw;
-            this.th = th;
         }
         public void Mov(Player player)
         {

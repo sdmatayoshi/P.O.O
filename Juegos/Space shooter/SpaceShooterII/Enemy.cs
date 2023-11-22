@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection.Metadata;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -24,6 +25,7 @@ namespace SpaceShooterII
         public int spdz = 1;
         public int width;
         public int height;
+        public Rectangle rectangle;
         public Enemy(Texture2D entexture, int px, int py, int tw, int th, int spdx, int spdy, int spdz, int width, int height)
         {
             this.entexture = entexture;
@@ -43,10 +45,6 @@ namespace SpaceShooterII
             if (px > (width/2-entexture.Width/2) - tw/2)
             {
                 px += spdx; tw += spdz; th += spdz;
-                //if (tw==100)
-                //{
-                //    spdz+=1;
-                //}
             }
             if (px < (width / 2 - entexture.Width / 2) - tw / 2)
             {

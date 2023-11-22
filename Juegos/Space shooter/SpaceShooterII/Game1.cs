@@ -11,16 +11,20 @@ namespace SpaceShooterII
     {
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
+
         List<Enemy> enemies;
         List<Rectangle> enemiesrectangles;
         private Texture2D enemyTexture;
-        private Vector2 enemyPosition;
+        List<Enemy> enemies2;
+        List<Rectangle> enemies2rectangles;
         private Texture2D enemy2Texture;
-        private Vector2 enemy2Position;
+        List<Enemy> enemies3;
+        List<Rectangle> enemies3rectangles;
         private Texture2D enemy3Texture;
-        private Vector2 enemy3Position;
+        List<Enemy> enemies4;
+        List<Rectangle> enemies4rectangles;
         private Texture2D enemy4Texture;
-        private Vector2 enemy4Position;
+        
         DateTime timew;
         DateTime tiempoactual;
         TimeSpan tiempo;
@@ -77,6 +81,11 @@ namespace SpaceShooterII
             base.Initialize();
         }
         bool space = false; bool a = false; bool s = false; bool d = false; bool w = false; bool bossanim = false; bool pause = false; bool menu = true; bool debug = false; int debugdelay = 0; int del = 0;
+        bool level1  =true;
+        bool level2 = true;
+        bool level3 = false;
+        bool level4 = false;
+        int en1movdel; int en2movdel;
 
         Random rnd1 = new Random();
         Random rnd2 = new Random();
@@ -86,17 +95,23 @@ namespace SpaceShooterII
 
             _spriteBatch = new SpriteBatch(GraphicsDevice);
             enemies = new List<Enemy>();
-            pbullet = new Pbullet();
-            player = new Player();
+            enemiesrectangles = new List<Rectangle>();
             enemyTexture = Content.Load<Texture2D>("resources/img/enemy11");
+
+            enemies2 = new List<Enemy>();
+            enemies2rectangles = new List<Rectangle>();
             enemy2Texture = Content.Load<Texture2D>("resources/img/enemy21");
+
+            enemies3 = new List<Enemy>();
+            enemies3rectangles = new List<Rectangle>();
             enemy3Texture = Content.Load<Texture2D>("resources/img/enemy31");
+
+            enemies4 = new List<Enemy>();
+            enemies4rectangles = new List<Rectangle>();
             enemy4Texture = Content.Load<Texture2D>("resources/img/enemy41");
 
             pointerTexture = Content.Load<Texture2D>("resources/img/cross-pointer");
             pointerPosition = new Vector2(GraphicsDevice.Viewport.Width / 2 - pointerTexture.Width / 2, GraphicsDevice.Viewport.Height / 2 - pointerTexture.Height / 2);
-            player.texture = Content.Load<Texture2D>("resources/img/cross-pointer");
-            pbulletTexture = Content.Load<Texture2D>("resources/img/pbullet");
 
             keyboardTexture = Content.Load<Texture2D>("resources/img/wasd");
             akeyTexture = Content.Load<Texture2D>("resources/img/a");
@@ -134,7 +149,7 @@ namespace SpaceShooterII
             if (Keyboard.GetState().IsKeyDown(Keys.A) && pointerPosition.X > 0) { pointerPosition.X -= 10; }
             if (Keyboard.GetState().IsKeyDown(Keys.D) && pointerPosition.X < GraphicsDevice.Viewport.Width - 48) { pointerPosition.X += 10; }
 
-            if (pointerRectangle.Intersects(playbtnRectangle) && menu) { playbtnTexture = Content.Load<Texture2D>("resources/img/playb"); if (Keyboard.GetState().IsKeyDown(Keys.Space)) { menu = false; pause = false; } } else { playbtnTexture = Content.Load<Texture2D>("resources/img/play"); }
+            if (pointerRectangle.Intersects(playbtnRectangle) && menu) { playbtnTexture = Content.Load<Texture2D>("resources/img/playb"); if (Keyboard.GetState().IsKeyDown(Keys.Space)) { menu = false; pause = false; enemies.Clear(); } } else { playbtnTexture = Content.Load<Texture2D>("resources/img/play"); }
             if (pointerRectangle.Intersects(exitbtnRectangle) && menu) { exitbtnTexture = Content.Load<Texture2D>("resources/img/exitb"); if (Keyboard.GetState().IsKeyDown(Keys.Space)) { Exit(); } } else { exitbtnTexture = Content.Load<Texture2D>("resources/img/exit"); }
 
             if (Keyboard.GetState().IsKeyDown(Keys.Escape) && !pause) { pause = true; }
@@ -159,81 +174,91 @@ namespace SpaceShooterII
             if (Keyboard.GetState().IsKeyDown(Keys.W)) { w = true; } else { w = false; }
 
 
-            
+
             if (!pause && !menu)
             {
                 tiempoactual = DateTime.Now;
                 tiempo = tiempoactual - timew;
 
-                if (tiempo.Seconds >= 2)
+                if (level1)
                 {
-                    int originx = rnd1.Next(250, 500);
-                    int originy = rnd1.Next(200, 400);
-                    enemies.Add(new Enemy(enemyTexture, originx, originy, 23, 13, 2, 1, 1, GraphicsDevice.Viewport.Width, GraphicsDevice.Viewport.Height));
-                    timew = DateTime.Now;
-                }
-                for (int i = 0; i < enemies.Count; i++)
-                {
-                    if (enemies[i].tw > 250)
+                    if (tiempo.Seconds >= 2)
                     {
-                        enemies.RemoveAt(i);
+                        int originx = rnd1.Next(250, 500);
+                        int originy = rnd1.Next(200, 400);
+                        enemies.Add(new Enemy(enemyTexture, originx, originy, 23, 13, 2, 1, 1, GraphicsDevice.Viewport.Width, GraphicsDevice.Viewport.Height));
+                        timew = DateTime.Now;
                     }
-                }
-
-                foreach (Pbullet pb in pbullets)
-                {
-                    pb.Mov(player);
-                }
-                if (Keyboard.GetState().IsKeyDown(Keys.A))
-                {
-                    player.MovA();
-                }
-                if (Keyboard.GetState().IsKeyDown(Keys.D))
-                {
-                    player.MovD();
-                }
-                if (Keyboard.GetState().IsKeyDown(Keys.W))
-                {
-                    player.MovW();
-                }
-                if (Keyboard.GetState().IsKeyDown(Keys.S))
-                {
-                    player.MovS();
-                }
-
-                foreach (Enemy e in enemies)
-                {
-                    e.Mov1();
-                    enemyPosisition.Add(new Rectangle(r.positionX, r.positionY, enemy.Width, enemy.Height));
-                    foreach (Bala a in balasJug)
+                    for (int i = 0; i < enemies.Count; i++)
                     {
-                        if (a.visible == true)
+                        if (enemies[i].tw > 250)
                         {
-                            if (new Rectangle(r.positionX, r.positionY, r.img.Width, r.img.Height).Intersects(new Rectangle((a.PosBalaX + (player.img.Width / 2)) - 3, a.PosBalaY - 20, player.disparoimg.Width, player.disparoimg.Height)))
+                            enemies.RemoveAt(i);
+                        }
+                    }
+                    foreach (Enemy e in enemies)
+                    {
+                        if (en1movdel > 5)
+                        {
+                            e.Mov1();
+                            enemiesrectangles.Add(new Rectangle(e.px, e.py, e.tw, e.th));
+
+                            if (new Rectangle(e.px, e.py, e.tw, e.th).Intersects(pointerRectangle) && Keyboard.GetState().IsKeyDown(Keys.Space))
                             {
-                                balasJug.Remove(a);
-                                enemigos.Remove(r);
-                                player.score = player.score + 20;
+
+                                enemies.Remove(e);
                                 break;
 
                             }
+                            en1movdel = 0;
                         }
-                        if (a.PosBalaY < 0)
-                        {
-                            balasJug.Remove(a);
-                            break;
-                        }
-                    }
-                    if (new Rectangle(player.positionX, player.positionY, player.img.Width, player.img.Height).Intersects(new Rectangle(r.positionX, r.positionY, r.img.Width, r.img.Height)))
-                    {
-                        enemigos.Remove(r);
-                        player.vida = player.vida - 25;
                         break;
                     }
-                    break;
+                    en1movdel++;
                 }
-            }
 
+                if (level2)
+                {
+                    if (tiempo.Seconds >= 3)
+                    {
+                        int originx = rnd1.Next(250, 500);
+                        int originy = rnd1.Next(200, 400);
+                        enemies2.Add(new Enemy(enemy2Texture, originx, originy, 23, 13, 2, 1, 1, GraphicsDevice.Viewport.Width, GraphicsDevice.Viewport.Height));
+                        timew = DateTime.Now;
+                    }
+                    for (int i = 0; i < enemies.Count; i++)
+                    {
+                        if (enemies2[i].tw > 250)
+                        {
+                            enemies2.RemoveAt(i);
+                        }
+                    }
+                    foreach (Enemy e2 in enemies2)
+                    {
+                        if (en2movdel > 3)
+                        {
+                            e2.Mov2();
+                            enemies2rectangles.Add(new Rectangle(e2.px, e2.py, e2.tw, e2.th));
+
+                            if (new Rectangle(e2.px, e2.py, e2.tw, e2.th).Intersects(pointerRectangle) && Keyboard.GetState().IsKeyDown(Keys.Space))
+                            {
+
+                                enemies2.Remove(e2);
+                                break;
+
+                            }
+                            en1movdel = 0;
+                        }
+                        break;
+                    }
+                    en2movdel++;
+                }
+
+
+
+
+            }
+            
             del++;
             debugdelay++;
             base.Update(gameTime);
@@ -256,14 +281,15 @@ namespace SpaceShooterII
                     e.Mov1();
 
                 }
-                foreach (Pbullet pb in pbullets)
+
+                foreach (Enemy e2 in enemies2)
                 {
-                    _spriteBatch.Draw(pb.texture, new Rectangle(pb.x, pb.y, pb.tw, pb.th), Color.White);
+                    _spriteBatch.Draw(e2.entexture, new Rectangle(e2.px, e2.py, e2.tw, e2.th), Color.White);
 
                 }
-                foreach (Pbullet pb in pbullets)
+                foreach (Enemy e2 in enemies2)
                 {
-                    pb.Mov(player);
+                    e2.Mov2();
 
                 }
             }
