@@ -23,6 +23,7 @@ namespace SpaceShooterII
         public int spdx = 1;
         public int spdy = 1;
         public int spdz = 1;
+        public int delay = 0;
         public int width;
         public int height;
         public Rectangle rectangle;
@@ -75,7 +76,7 @@ namespace SpaceShooterII
                 px += spdx; tw += spdz; th += spdz;
                 if (tw==75)
                 {
-                    spdz+=2;
+                    spdz+=1;
                 }
             }
             if (px < (width / 2 - entexture.Width / 2) - tw / 2)
@@ -83,7 +84,7 @@ namespace SpaceShooterII
                 px -= spdx; tw += spdz; th += spdz;
                 if (tw == 75)
                 {
-                    spdz += 2;
+                    spdz += 1;
                 }
             }
             if (px == (width / 2 - entexture.Width / 2) - tw / 2)
@@ -91,7 +92,7 @@ namespace SpaceShooterII
                 tw += spdz; th += spdz;
                 if (tw == 75)
                 {
-                    spdz += 2;
+                    spdz += 1;
                 }
             }
             if (py > height / 2 - entexture.Height / 2 - th / 2)
@@ -99,7 +100,7 @@ namespace SpaceShooterII
                 py += spdy; tw += spdz; th += spdz;
                 if (tw == 75)
                 {
-                    spdz += 2;
+                    spdz += 1;
                 }
             }
             if (py < height / 2 - entexture.Height / 2 - th / 2)
@@ -107,7 +108,7 @@ namespace SpaceShooterII
                 py -= spdy; tw += spdz; th += spdz;
                 if (tw == 75)
                 {
-                    spdz += 2;
+                    spdz += 1;
                 }
             }
             if (py == height / 2 - entexture.Height / 2 - th / 2)
@@ -115,7 +116,7 @@ namespace SpaceShooterII
                 tw += spdz; th += spdz;
                 if (tw == 75)
                 {
-                    spdz += 2;
+                    spdz += 1;
                 }
             }
         }
