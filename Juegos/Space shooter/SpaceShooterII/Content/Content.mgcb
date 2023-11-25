@@ -272,6 +272,18 @@
 /processorParam:TextureFormat=Color
 /build:resources/img/explosion2.png
 
+#begin resources/img/gameover.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:resources/img/gameover.png
+
 #begin resources/img/health-gold.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -283,6 +295,30 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:resources/img/health-gold.png
+
+#begin resources/img/health-gold.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:resources/img/health-gold.png
+
+#begin resources/img/health-metal.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:resources/img/health-metal.png
 
 #begin resources/img/health-metal.png
 /importer:TextureImporter
@@ -308,6 +344,18 @@
 /processorParam:TextureFormat=Color
 /build:resources/img/health.png
 
+#begin resources/img/health.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:resources/img/health.png
+
 #begin resources/img/life-box.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -319,6 +367,30 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:resources/img/life-box.png
+
+#begin resources/img/life-box.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:resources/img/life-box.png
+
+#begin resources/img/mega-box.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:resources/img/mega-box.png
 
 #begin resources/img/mega-box.png
 /importer:TextureImporter
@@ -344,6 +416,18 @@
 /processorParam:TextureFormat=Color
 /build:resources/img/menu.png
 
+#begin resources/img/menu.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:resources/img/menu.png
+
 #begin resources/img/menub.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -355,6 +439,30 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:resources/img/menub.png
+
+#begin resources/img/menub.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:resources/img/menub.png
+
+#begin resources/img/pause.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:resources/img/pause.png
 
 #begin resources/img/pause.png
 /importer:TextureImporter
@@ -380,6 +488,18 @@
 /processorParam:TextureFormat=Color
 /build:resources/img/pbullet.png
 
+#begin resources/img/pbullet.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:resources/img/pbullet.png
+
 #begin resources/img/play.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -391,6 +511,30 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:resources/img/play.png
+
+#begin resources/img/play.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:resources/img/play.png
+
+#begin resources/img/playb.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:resources/img/playb.png
 
 #begin resources/img/playb.png
 /importer:TextureImporter
@@ -416,6 +560,18 @@
 /processorParam:TextureFormat=Color
 /build:resources/img/point-hitbox.png
 
+#begin resources/img/point-hitbox.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:resources/img/point-hitbox.png
+
 #begin resources/img/portrait.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -427,6 +583,30 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:resources/img/portrait.png
+
+#begin resources/img/portrait.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:resources/img/portrait.png
+
+#begin resources/img/resume.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:resources/img/resume.png
 
 #begin resources/img/resume.png
 /importer:TextureImporter
@@ -452,6 +632,18 @@
 /processorParam:TextureFormat=Color
 /build:resources/img/resumeb.png
 
+#begin resources/img/resumeb.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:resources/img/resumeb.png
+
 #begin resources/img/s.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -463,6 +655,30 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:resources/img/s.png
+
+#begin resources/img/s.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:resources/img/s.png
+
+#begin resources/img/shiled-box.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:resources/img/shiled-box.png
 
 #begin resources/img/shiled-box.png
 /importer:TextureImporter
@@ -488,6 +704,30 @@
 /processorParam:TextureFormat=Color
 /build:resources/img/shooteffect.png
 
+#begin resources/img/shooteffect.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:resources/img/shooteffect.png
+
+#begin resources/img/shooteffect2.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:resources/img/shooteffect2.png
+
 #begin resources/img/shooteffect2.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -512,6 +752,18 @@
 /processorParam:TextureFormat=Color
 /build:resources/img/space.png
 
+#begin resources/img/space.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:resources/img/space.png
+
 #begin resources/img/spacepress.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -523,6 +775,30 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:resources/img/spacepress.png
+
+#begin resources/img/spacepress.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:resources/img/spacepress.png
+
+#begin resources/img/title.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:resources/img/title.png
 
 #begin resources/img/upgrade-cross.png
 /importer:TextureImporter

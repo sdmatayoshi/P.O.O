@@ -18,7 +18,7 @@ namespace SpaceShooterII
         public int spd = 10;
         public int width;
         public int height;
-        public int hp = 3;
+        public int hp = 7;
         public int ammo = 7;
         public bool shoot = true;
         public Player() { }

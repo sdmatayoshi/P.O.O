@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "o8b7xPaaXRERYsgEMK2/ojwzYA3tyKIRH7Pune2uHSgJN8I1RqlpMh3r6hlfU4qLw+ez73MXR5NEEQ6UhKoUYA==",
+  "dgSpecHash": "9BJYe3aE/EvrVRRa2dfCtdAFXz7ZfivcmtYrhDI17HQ+ZTbTA935AmtTbdB7X2gdzV4JbAQd/jo/qa0MyZOpJg==",
   "success": true,
   "projectFilePath": "C:\\xampp\\htdocs\\P.O.O\\Juegos\\Space shooter\\SpaceShooterII\\SpaceShooterII.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Alumno\\.nuget\\packages\\monogame.content.builder.task\\3.8.1.303\\monogame.content.builder.task.3.8.1.303.nupkg.sha512",
-    "C:\\Users\\Alumno\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.1.303\\monogame.framework.desktopgl.3.8.1.303.nupkg.sha512"
+    "C:\\Users\\Comedor\\.nuget\\packages\\monogame.content.builder.task\\3.8.1.303\\monogame.content.builder.task.3.8.1.303.nupkg.sha512",
+    "C:\\Users\\Comedor\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.1.303\\monogame.framework.desktopgl.3.8.1.303.nupkg.sha512"
   ],
   "logs": []
 }
