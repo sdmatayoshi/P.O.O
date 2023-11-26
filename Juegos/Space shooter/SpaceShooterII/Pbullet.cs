@@ -9,45 +9,49 @@ namespace SpaceShooterII
 {
     internal class Pbullet
     {
-        public Texture2D texture;
-        public int x = 0;
-        public int y = 0;
-        public int tw = 500;
-        public int th = 500;
-        public bool visible = false;
-        int spd = 5;
 
-        public Pbullet() { }
-        public Pbullet(Texture2D texture) 
-        { 
-            this.texture = texture;
-        }
-        public void Mov(Player player)
+        GraphicsDevice Screen;
+        public Texture2D texture;
+        public int x = 200;
+        public int y = 200;
+        public int w = 500;
+        public int h = 500;
+        public int spdx = 1;
+        public int spdy = 1;
+        public int spdz = 1;
+        public int width;
+        public int height;
+        public Pbullet(Texture2D texture, int px, int py, int tw, int th, int spdx, int spdy, int spdz, int width, int height)
         {
-            if (visible == true)
-            {
-                if (x > player.x)
-                {
-                    x -= spd-3; tw -= spd; th -= spd;
-                }
-                if (x < player.x)
-                {
-                    x += spd-3; tw -= spd; th -= spd;
-                }
-                if (y > player.x)
-                {
-                    y -= spd-3; tw -= spd; th -= spd;
-                }
-                if (y < player.x)
-                {
-                    y += spd-3; tw -= spd; th -= spd;
-                }
-            }
-            else
-            {
-                x = player.x;
-                y = player.y;
-            }
+            this.texture = texture;
+            this.x = px;
+            this.y = py;
+            this.w = tw;
+            this.h = th;
+            this.spdx = spdx;
+            this.spdy = spdy;
+            this.spdz = spdz;
+            this.width = width;
+            this.height = height;
         }
+        public void Mov(Player cursor)
+        {
+            if (x > cursor.x) { x += spdx; w -= spdz; h -= spdz; }
+            if (y > cursor.y) { y += spdy; w -= spdz; h -= spdz; }
+            if (y < cursor.y) { y -= spdy; w -= spdz; h -= spdz; }
+            if (x < cursor.x) { x -= spdx; w -= spdz; h -= spdz; }
+            if (x == cursor.x) { w -= spdz; h -= spdz; }
+            if (y == cursor.y) { w -= spdz; h -= spdz; }
+        }
+
+
+
+
+
+
+
+        
+
+        
     }
 }

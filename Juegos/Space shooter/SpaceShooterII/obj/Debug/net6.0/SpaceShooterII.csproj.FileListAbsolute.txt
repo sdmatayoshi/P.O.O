@@ -72,3 +72,4 @@ C:\xampp\htdocs\P.O.O\Juegos\Space shooter\SpaceShooterII\bin\Debug\net6.0\Conte
 C:\xampp\htdocs\P.O.O\Juegos\Space shooter\SpaceShooterII\bin\Debug\net6.0\Content\resources\img\pbullet.xnb
 C:\xampp\htdocs\P.O.O\Juegos\Space shooter\SpaceShooterII\bin\Debug\net6.0\Content\resources\img\gameover.xnb
 C:\xampp\htdocs\P.O.O\Juegos\Space shooter\SpaceShooterII\bin\Debug\net6.0\Content\resources\img\title.xnb
+C:\xampp\htdocs\P.O.O\Juegos\Space shooter\SpaceShooterII\obj\Debug\net6.0\SpaceShooterII.sourcelink.json

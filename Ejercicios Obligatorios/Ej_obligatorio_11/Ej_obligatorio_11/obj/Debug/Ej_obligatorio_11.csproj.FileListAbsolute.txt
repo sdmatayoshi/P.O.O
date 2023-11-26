@@ -1,0 +1,7 @@
+C:\xampp\htdocs\P.O.O\Ejercicios Obligatorios\Ej_obligatorio_11\Ej_obligatorio_11\bin\Debug\Ej_obligatorio_11.exe.config
+C:\xampp\htdocs\P.O.O\Ejercicios Obligatorios\Ej_obligatorio_11\Ej_obligatorio_11\bin\Debug\Ej_obligatorio_11.exe
+C:\xampp\htdocs\P.O.O\Ejercicios Obligatorios\Ej_obligatorio_11\Ej_obligatorio_11\bin\Debug\Ej_obligatorio_11.pdb
+C:\xampp\htdocs\P.O.O\Ejercicios Obligatorios\Ej_obligatorio_11\Ej_obligatorio_11\obj\Debug\Ej_obligatorio_11.csproj.AssemblyReference.cache
+C:\xampp\htdocs\P.O.O\Ejercicios Obligatorios\Ej_obligatorio_11\Ej_obligatorio_11\obj\Debug\Ej_obligatorio_11.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\P.O.O\Ejercicios Obligatorios\Ej_obligatorio_11\Ej_obligatorio_11\obj\Debug\Ej_obligatorio_11.exe
+C:\xampp\htdocs\P.O.O\Ejercicios Obligatorios\Ej_obligatorio_11\Ej_obligatorio_11\obj\Debug\Ej_obligatorio_11.pdb

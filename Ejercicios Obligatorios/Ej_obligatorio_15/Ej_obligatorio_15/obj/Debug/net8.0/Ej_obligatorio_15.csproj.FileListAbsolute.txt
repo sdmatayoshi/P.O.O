@@ -1,0 +1,15 @@
+C:\xampp\htdocs\P.O.O\Ejercicios Obligatorios\Ej_obligatorio_15\Ej_obligatorio_15\bin\Debug\net8.0\Ej_obligatorio_15.exe
+C:\xampp\htdocs\P.O.O\Ejercicios Obligatorios\Ej_obligatorio_15\Ej_obligatorio_15\bin\Debug\net8.0\Ej_obligatorio_15.deps.json
+C:\xampp\htdocs\P.O.O\Ejercicios Obligatorios\Ej_obligatorio_15\Ej_obligatorio_15\bin\Debug\net8.0\Ej_obligatorio_15.runtimeconfig.json
+C:\xampp\htdocs\P.O.O\Ejercicios Obligatorios\Ej_obligatorio_15\Ej_obligatorio_15\bin\Debug\net8.0\Ej_obligatorio_15.dll
+C:\xampp\htdocs\P.O.O\Ejercicios Obligatorios\Ej_obligatorio_15\Ej_obligatorio_15\bin\Debug\net8.0\Ej_obligatorio_15.pdb
+C:\xampp\htdocs\P.O.O\Ejercicios Obligatorios\Ej_obligatorio_15\Ej_obligatorio_15\obj\Debug\net8.0\Ej_obligatorio_15.GeneratedMSBuildEditorConfig.editorconfig
+C:\xampp\htdocs\P.O.O\Ejercicios Obligatorios\Ej_obligatorio_15\Ej_obligatorio_15\obj\Debug\net8.0\Ej_obligatorio_15.AssemblyInfoInputs.cache
+C:\xampp\htdocs\P.O.O\Ejercicios Obligatorios\Ej_obligatorio_15\Ej_obligatorio_15\obj\Debug\net8.0\Ej_obligatorio_15.AssemblyInfo.cs
+C:\xampp\htdocs\P.O.O\Ejercicios Obligatorios\Ej_obligatorio_15\Ej_obligatorio_15\obj\Debug\net8.0\Ej_obligatorio_15.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\P.O.O\Ejercicios Obligatorios\Ej_obligatorio_15\Ej_obligatorio_15\obj\Debug\net8.0\Ej_obligatorio_15.sourcelink.json
+C:\xampp\htdocs\P.O.O\Ejercicios Obligatorios\Ej_obligatorio_15\Ej_obligatorio_15\obj\Debug\net8.0\Ej_obligatorio_15.dll
+C:\xampp\htdocs\P.O.O\Ejercicios Obligatorios\Ej_obligatorio_15\Ej_obligatorio_15\obj\Debug\net8.0\refint\Ej_obligatorio_15.dll
+C:\xampp\htdocs\P.O.O\Ejercicios Obligatorios\Ej_obligatorio_15\Ej_obligatorio_15\obj\Debug\net8.0\Ej_obligatorio_15.pdb
+C:\xampp\htdocs\P.O.O\Ejercicios Obligatorios\Ej_obligatorio_15\Ej_obligatorio_15\obj\Debug\net8.0\Ej_obligatorio_15.genruntimeconfig.cache
+C:\xampp\htdocs\P.O.O\Ejercicios Obligatorios\Ej_obligatorio_15\Ej_obligatorio_15\obj\Debug\net8.0\ref\Ej_obligatorio_15.dll

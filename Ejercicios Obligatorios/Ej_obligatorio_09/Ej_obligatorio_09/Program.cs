@@ -283,44 +283,6 @@ namespace Ej_obligatorio_09
                 }
 
 
-
-
-
-                //int l = 0;
-                //int n = 1;
-                //bool ocupado = false;
-                //for (int j = 0; j < (columnas * filas); j++)
-                //{
-                //    if (espectadores[j].lugar() == true && espectadores[j].plata() >= peli[0].precioEntrada())
-                //    {
-                //        ocupado = true;
-                //    }
-                //    else
-                //    {
-                //        ocupado = false;
-                //    }
-                //    asientos[j] = new Asiento(n, letras[l], ocupado);
-                //    n++;
-                //    if (n == filas + 1)
-                //    {
-                //        l++;
-                //        n = 1;
-                //    }
-                //    if (l == filas)
-                //    {
-                //        l = 0;
-                //    }
-                //}
-
-
-
-
-
-
-
-
-
-
                 Console.Write(peli[0].datos());
                 a++;
                 System.Threading.Thread.Sleep(500);

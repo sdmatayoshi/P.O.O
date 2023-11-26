@@ -17,6 +17,11 @@ namespace SpaceShooterII
         private Vector2 goPosition;
         private Texture2D pTexture;
         private Vector2 pPosition;
+
+        List<Pbullet> bullets;
+        private Texture2D bulletTexture;
+        List<Rectangle> bulletsrectangles;
+
         List<Enemy> enemies;
         List<Enemy> enemies2;
         List<Enemy> enemies3;
@@ -43,6 +48,9 @@ namespace SpaceShooterII
         TimeSpan tiempo3;
         TimeSpan tiempo4;
         TimeSpan tiempoeb;
+
+        DateTime timewpb;
+        TimeSpan tiempopb;
         //player
         Player cursor;
         Rectangle cursorR;
@@ -108,7 +116,8 @@ namespace SpaceShooterII
             goPosition = new Vector2(GraphicsDevice.Viewport.Width / 2 - titleTexture.Width / 2,200);
             pTexture = Content.Load<Texture2D>("resources/img/pause");
             pPosition = new Vector2(GraphicsDevice.Viewport.Width / 2 - titleTexture.Width / 2,200);
-            ;
+
+            bullets = new List<Pbullet>();
             enemies = new List<Enemy>();
             enemies2 = new List<Enemy>();
             enemies3 = new List<Enemy>();
@@ -183,6 +192,7 @@ namespace SpaceShooterII
                 tiempo3 = tiempoactual - timew3;
                 tiempo4 = tiempoactual - timew4;
                 tiempoeb = tiempoactual - timeweb;
+                tiempopb = tiempoactual - timewpb;
 
                 if (level1) 
                 { 
@@ -351,6 +361,32 @@ namespace SpaceShooterII
                         }
                     }
                 }
+
+
+            if (Keyboard.GetState().IsKeyDown(Keys.Space))
+            {
+                if (tiempopb.Milliseconds >= 750)
+                {
+                    bullets.Add(new Pbullet(bulletTexture, GraphicsDevice.Viewport.Width/2, GraphicsDevice.Viewport.Height, 500, 500, 2, 1, 1, GraphicsDevice.Viewport.Width, GraphicsDevice.Viewport.Height)); timewpb = DateTime.Now;
+                }
+                for (int i = 0; i < bullets.Count; i++)
+                {
+                    if (bullets[i].w < 10)
+                    {
+                        bullets.RemoveAt(i);
+                    }
+                }
+                foreach (Pbullet b in bullets)
+                {
+                   
+                        b.Mov(cursor); bulletsrectangles.Add(new Rectangle(b.x + 10, b.y + 10, b.w - 20, b.h - 20));
+                    
+                }
+            }
+
+
+
+
             if (score == 10)level2 = true;
             if (score == 30) level3 = true;
             if (score == 50) level4 = true;
@@ -412,21 +448,23 @@ namespace SpaceShooterII
             }
             if (pause)
             {
-                if(gameover)
-                {
-                    _spriteBatch.Draw(goTexture, goPosition, Color.White);
-                }
-                else
-                {
+                
                     _spriteBatch.Draw(pTexture, pPosition, Color.White);
-                }
                 _spriteBatch.Draw(resumebtnTexture, resumebtnPosition, Color.White); 
                 _spriteBatch.Draw(menubtnTexture, menubtnPosition, Color.White); 
             }
             else if (menu){
                 _spriteBatch.Draw(playbtnTexture, playbtnPosition, Color.White); 
                 _spriteBatch.Draw(exitbtnTexture, exitbtnPosition, Color.White);
-                _spriteBatch.Draw(titleTexture, titlePosition, Color.White);
+                if (gameover)
+                {
+                    _spriteBatch.Draw(goTexture, goPosition, Color.White);
+                }
+                else
+                {
+                    _spriteBatch.Draw(titleTexture, titlePosition, Color.White);
+                }
+                
             }
             _spriteBatch.Draw(cursor.texture, new Rectangle(cursor.x, cursor.y, cursor.w, cursor.h), Color.White);
             _spriteBatch.End();

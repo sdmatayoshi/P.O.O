@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SpaceShooterII")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4dc5b66bb913f753b52a8de86e0678eac36ebc92")]
 [assembly: System.Reflection.AssemblyProductAttribute("SpaceShooterII")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SpaceShooterII")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -119,17 +119,17 @@ namespace Ej_obligatorio_08
         int identificador;
         int max_estudiantes = 30;
         string materia;
-        bool hay_profe = false;
+        bool sin_profe = false;
         int alumnos_faltas = 0;
         bool hay_clase = false;
         public Aula() { }
 
-        public Aula(int identificador, int max_estudiantes, string materia, bool hay_profe, int alumnos_faltas, bool hay_clase)
+        public Aula(int identificador, int max_estudiantes, string materia, bool sin_profe, int alumnos_faltas, bool hay_clase)
         {
             this.identificador = identificador;
             this.max_estudiantes = max_estudiantes;
             this.materia = materia;
-            this.hay_profe = hay_profe;
+            this.sin_profe = sin_profe;
             this.alumnos_faltas = alumnos_faltas;
             this.hay_clase = hay_clase;
         }
@@ -157,13 +157,13 @@ namespace Ej_obligatorio_08
         {
             string prof = null;
             string clase = null;
-            if (hay_profe == true)
+            if (sin_profe == true)
             {
-                prof = "no faltó";
+                prof = "faltó";
             }
             else
             {
-                prof = "faltó";
+                prof = "no faltó";
             }
             if (hay_clase == true)
             {
