@@ -14,7 +14,6 @@ namespace SpaceShooterII
 {
     internal class Enemy
     {
-        GraphicsDevice Screen;
         public Texture2D entexture;
         public int px = 200;
         public int py = 200;
@@ -72,10 +71,27 @@ namespace SpaceShooterII
 
         public void Mov4()
         {
-            if (px > width-100) { side = "left"; }
-            if (px < 100) { side = "right"; }
+            if (px > width-100) { side = "left";}
+            if (px < 100) { side = "right";}
             if (side == "right"){px += spdx+3;tw += 0; th += 0;if (spdz < 20) { spdz++; }}
             if (side == "left" ){px -= spdx+3;tw += 0; th += 0;if (spdz < 20) { spdz++; }}
+        }
+
+        public void Mov5()
+        {
+            tw += spdz; th += spdz; 
+            if (px > (width / 2 - entexture.Width / 2) - tw / 2) { px -= spdz;}
+            if (py > height / 2 - entexture.Height / 2 - th / 2) { py -= spdz;}
+            if (px < (width / 2 - entexture.Width / 2) - tw / 2) { px += spdz;}
+            if (py < height / 2 - entexture.Height / 2 - th / 2) { py += spdz;}
+        }
+
+        public void Mov6()
+        {
+            if (py > height - 150) { side = "up"; }
+            if (py < 50) { side = "down"; }
+            if (side == "down") { py += spdx + 4;}
+            if (side == "up") { py -= spdx + 4;}
         }
     }
 }
